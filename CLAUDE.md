@@ -8,6 +8,9 @@ This file is the complete operating manual. Read it fully before touching anythi
 
 - `sites/<slug>/` — one static site per prospect (plain HTML/CSS/JS, no build step).
 - `index.html` (repo root) — PRIVATE directory of all prospect sites. Never send this URL in outreach.
+- `outreach/<slug>-handoff.md` — per-prospect brief for the outreach person (contacts, URLs, selling points).
+- `tools/qt-sync/` — Quality Tooling Etsy auto-sync (browser harvest + diff/apply engine; see its README).
+  Runs as scheduled task `qt-etsy-sync`, Mondays 8am. Reusable pattern for future catalog-backed prospects.
 - `push.bat` — legacy one-click deploy from the Cowork cloud era. In Claude Code you just run
   `git add -A && git commit && git push` directly instead.
 - Vercel auto-deploys `main` on every push. Two kinds of projects, all in team `bo-n`
@@ -24,7 +27,7 @@ This file is the complete operating manual. Read it fully before touching anythi
 | Prospect | Folder | Live | Status |
 |---|---|---|---|
 | Scrap Now Metal Recycling | sites/scrap-now-metal | factory-sites-bo-n.vercel.app/sites/scrap-now-metal/ | done; needs dedicated Vercel project before outreach |
-| Quality Tooling, LLC | sites/quality-tooling | quality-tooling.vercel.app | done, approved by Braden |
+| Quality Tooling, LLC | sites/quality-tooling | quality-tooling.vercel.app | done, approved; Etsy auto-sync live; handoff: outreach/quality-tooling-handoff.md |
 
 ## The workflow (per prospect)
 
@@ -35,7 +38,15 @@ This file is the complete operating manual. Read it fully before touching anythi
    courier) OR you design coded concepts. He approves ONE. This gate is mandatory.
 3. **Build**: implement the approved concept EXACTLY (see Hard Rules), all pages, then QA.
 4. **Deploy**: git push → verify the Vercel deployment state and the live URL in a real browser.
-5. Braden handles outreach.
+5. **Handoff**: write `outreach/<slug>-handoff.md` for whoever runs outreach. Required contents:
+   contact info (phone, email, address, person names + roles — mine the Etsy/Facebook "about"
+   pages for who actually runs what), original site URL, our concept URL (dedicated per-prospect
+   domain ONLY), trust stats for rapport, ranked selling points/upgrades (lead with anything
+   automated — e.g. the Etsy auto-sync), a 60-second demo flow, likely objections with honest
+   answers, cautions (noindex is intentional; never send the factory directory URL; don't promise
+   pages the original lacked), and what happens on a yes (launch-checklist pointer).
+   Reference example: `outreach/quality-tooling-handoff.md`.
+6. Braden (or the outreach person) handles outreach.
 
 ## HARD RULES (each one exists because a violation caused a rework round)
 
@@ -87,7 +98,9 @@ harvested listings). Client-side search indexes all products + pages (assets/sea
 
 - **Quality Tooling, LLC**: 315 Wesley Chapel Rd, Moultrie, GA 31788 · 1-229-324-2124 ·
   quality_tooling@windstream.net · since 1985 · etsy.com/shop/QualityToolingLLC (4.8★, 1.3k reviews,
-  7.3k sales, 12 yrs) · FB @QualityToolingLLC · IG @quality_tooling_llc.
+  7.3k sales, on Etsy since 2013) · FB @QualityToolingLLC · IG @quality_tooling_llc ·
+  original site: qualitytoolingllc.com (Wix) · people: John (Owner) + Janice (Co-Owner), founders;
+  Jennifer — runs metal art dept + the Etsy shop (primary outreach contact); Timothy — CNC/laser.
 - **Scrap Now Metal Recycling**: Moultrie GA 31788 · (229) 985-1041 · info@scrapnowmetal.com ·
   scrapnowmetal.com. CAUTION: street address (550 Industrial Rd vs 305 Industrial Pkwy) and hours
   conflict across sources; site shows first-party info with "call to confirm" notes.
