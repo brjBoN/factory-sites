@@ -1,5 +1,7 @@
 # Outreach Handoff — Quality Tooling, LLC
 
+![Quality Tooling, LLC logo](../sites/quality-tooling/assets/logo.png)
+
 Prepared 2026-07-24 · Concept approved by Braden · Site live & auto-syncing weekly
 
 ## The one-liner
@@ -33,13 +35,6 @@ their story — they're proud of the humble-beginnings arc. Timothy runs the CNC
 
 > ⚠️ **Never send any factory-sites-bo-n.vercel.app URL.** That's the internal directory with
 > other prospects' work on it. The prospect sees quality-tooling.vercel.app and nothing else.
-
-## Trust stats to weave in
-
-- In business **since 1985**; on Etsy **since 2013**
-- Etsy: **4.8★**, ~1,300 reviews, **7,300+ sales**
-- Patent-pending product lines (fishing rod holders, paper towel holders — their claim, from their site)
-- Full-service shop: CNC milling, laser cutting, etching, powder coating, welding, engraving
 
 ## What we built — selling points, strongest first
 
@@ -92,8 +87,42 @@ their story — they're proud of the humble-beginnings arc. Timothy runs the CNC
 - Don't promise pages their current site doesn't have (we mirror their structure on purpose).
 - Don't reference any other business's concept site.
 
-## If they say yes
+## If they say yes — connecting their domain (they're on Wix)
 
-Domain cutover is documented in the repo (CLAUDE.md → "Client launch checklist"). We need:
-their registrar/DNS access (they keep ownership), ~1–2 days of turnaround, old site stays up
-until DNS + redirects verify. SEO equity carries over; expect a brief, normal ranking wobble.
+The thing to say in the room: **"You keep your domain. Nothing gets transferred or bought.
+It's a ten-minute settings change in your Wix account, we do it together on a screen-share,
+and your old site stays up until the new one is verified live."**
+
+How it actually works, in order:
+
+1. **We prep the site for launch first** (our side, before touching DNS): remove the
+   noindex/robots blocks, add sitemap + redirects per the launch checklist in CLAUDE.md.
+2. **We add their domain to the Vercel project** (Settings → Domains → add
+   `qualitytoolingllc.com` and `www`). Vercel then displays the exact two DNS records it wants.
+3. **In their Wix account** (they log in; screen-share): **Domains → qualitytoolingllc.com →
+   Advanced → Edit DNS**, then:
+   - change the **A record** for `@` to the IP Vercel displayed (currently `76.76.21.21` —
+     always use what Vercel shows, not this doc),
+   - change the **CNAME** for `www` to `cname.vercel-dns.com`.
+   That's the whole change. Wix will warn that the domain is being pointed away from the Wix
+   site — that's expected; click through it.
+4. **Wait for propagation** (minutes to a few hours, worst case 48h). Vercel issues the SSL
+   certificate automatically once it sees the records. Old Wix site keeps serving until then —
+   zero downtime.
+5. **Verify + clean up**: we confirm the live domain, redirects, and Google Search Console.
+   Then they can downgrade/cancel their **Wix site plan** (the monthly website fee). If the
+   domain is *registered* at Wix, they keep that small annual registration fee with Wix —
+   that's normal and fine.
+
+Notes for likely follow-ups:
+
+- **Email is unaffected.** Their business email is `quality_tooling@windstream.net` — not tied
+  to the domain at all. (And even for domain email, we'd only touch A/CNAME records, never MX.)
+- **If the domain turns out to be registered elsewhere** (GoDaddy etc.) and just connected to
+  Wix: same two records, edited at that registrar instead. Nothing else changes.
+- **Optional, later, never required for launch**: moving the domain registration away from Wix
+  entirely (Wix → Domains → Advanced → Transfer away from Wix; they unlock it, get an auth
+  code, and the new registrar pulls it in ~5–7 days; ICANN blocks transfers within 60 days of
+  registration/renewal). Only worth it if they want to stop dealing with Wix altogether.
+- Timeline end to end: **1–2 days**, most of it DNS propagation and verification. Expect a
+  brief, normal ranking wobble while Google recrawls; equity carries over per the checklist.

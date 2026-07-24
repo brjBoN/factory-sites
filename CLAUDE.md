@@ -39,13 +39,17 @@ This file is the complete operating manual. Read it fully before touching anythi
 3. **Build**: implement the approved concept EXACTLY (see Hard Rules), all pages, then QA.
 4. **Deploy**: git push → verify the Vercel deployment state and the live URL in a real browser.
 5. **Handoff**: write `outreach/<slug>-handoff.md` for whoever runs outreach. Required contents:
-   contact info (phone, email, address, person names + roles — mine the Etsy/Facebook "about"
-   pages for who actually runs what), original site URL, our concept URL (dedicated per-prospect
-   domain ONLY), trust stats for rapport, ranked selling points/upgrades (lead with anything
-   automated — e.g. the Etsy auto-sync), a 60-second demo flow, likely objections with honest
-   answers, cautions (noindex is intentional; never send the factory directory URL; don't promise
-   pages the original lacked), and what happens on a yes (launch-checklist pointer).
-   Reference example: `outreach/quality-tooling-handoff.md`.
+   the target's logo at the top (relative image ref into `sites/<slug>/assets/` — the
+   background-removed original), contact info (phone, email, address, person names + roles —
+   mine the Etsy/Facebook "about" pages for who actually runs what), original site URL, our
+   concept URL (dedicated per-prospect domain ONLY), ranked selling points/upgrades (lead with
+   anything automated — e.g. the Etsy auto-sync), a 60-second demo flow, likely objections with
+   honest answers, cautions (noindex is intentional; never send the factory directory URL;
+   don't promise pages the original lacked), and a **domain-connection walkthrough tailored to
+   where their domain actually lives** (for Wix domains: Wix account → Domains → Advanced →
+   Edit DNS; A `@` → Vercel's displayed IP, CNAME `www` → cname.vercel-dns.com; registration
+   never moves for launch). No trust-stats section — fold any needed rapport facts into the
+   contacts/one-liner. Reference example: `outreach/quality-tooling-handoff.md`.
 6. Braden (or the outreach person) handles outreach.
 
 ## HARD RULES (each one exists because a violation caused a rework round)
@@ -110,6 +114,13 @@ harvested listings). Client-side search indexes all products + pages (assets/sea
 When a prospect becomes a client and their real domain points at our site, execute ALL of this.
 The domain is NOT "transferred" — the client keeps their registrar; we add the domain to the
 prospect's dedicated Vercel project and they update DNS (A/CNAME per Vercel's instructions).
+Wix-registered domains: edit records in Wix under Domains → <domain> → Advanced → Edit DNS
+(A `@` → Vercel's displayed IP, CNAME `www` → cname.vercel-dns.com); Wix warns about pointing
+away from the Wix site — expected. Client keeps paying only Wix's small domain-registration fee
+and can cancel the Wix *site plan* once cutover verifies. Moving the registration off Wix is
+optional later housekeeping (auth code via Transfer-away flow; blocked within 60 days of
+registration/renewal), never a launch requirement. Domain email would ride on untouched MX
+records, but check first whether they even use domain email (QT doesn't — windstream.net).
 Domain-level SEO equity (backlinks, Google Business Profile, age) survives automatically.
 The risks are URL-level and crawl-directive-level:
 
