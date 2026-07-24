@@ -84,8 +84,8 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
    first viewport bottom on desktop, like the concept canvas. Hero flexes between
    420-620px; band2 stretches to absorb the remainder. */
 @media (min-width: 901px) {
-  .hero { --hh: clamp(460px, calc(100vh - 590px), 620px); height: var(--hh); }
-  .band2 { min-height: max(0px, calc(100vh - 260px - clamp(460px, calc(100vh - 590px), 620px))); }
+  .hero { --hh: clamp(460px, calc(100vh - 573px), 620px); height: var(--hh); }
+  .band2 { min-height: max(0px, calc(100vh - 243px - clamp(460px, calc(100vh - 573px), 620px))); }
 }
 .hero-copy {
   padding: 1.5rem clamp(2rem, 4.2vw, 4.2rem);
@@ -151,7 +151,10 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
 
 /* ------------------------------------------------------------- home bands */
 .band2 {
-  display: grid; grid-template-columns: 44.6% 55.4%; margin-top: 17px;
+  /* revert note: concept spacing had margin-top: 17px here (and 590/260 fold
+     constants above, and a 2px #B25046 border-top on .panel-paper) — Braden
+     asked to remove the gap 2026-07-24; restore those three to bring it back */
+  display: grid; grid-template-columns: 44.6% 55.4%; margin-top: 0;
   border-bottom: 2px solid #B25046;  /* clean terminus for the illustration band */
 }
 .panel-navy {
@@ -189,7 +192,6 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
   position: relative; padding: clamp(1rem, 1.9vw, 1.8rem) clamp(2rem, 3.6vw, 3.4rem) clamp(1.8rem, 3.4vw, 3.2rem);
   overflow: hidden; display: grid; grid-template-columns: 22% 1fr; gap: 0 1.2rem;
   align-items: start;
-  border-top: 2px solid #B25046;
 }
 .panel-paper h2 { font-family: var(--display); font-weight: 600; font-size: clamp(2rem, 3.3vw, 3.1rem); line-height: .98; letter-spacing: -.035em; position: relative; z-index: 2; }
 .panel-paper .loc-copy { position: relative; z-index: 2; margin-top: .8rem; max-width: 40ch; }

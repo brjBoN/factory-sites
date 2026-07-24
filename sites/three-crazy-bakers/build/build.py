@@ -135,7 +135,7 @@ home = f"""
 {rail_html()}
 <section class="band2">
   <div class="panel-navy">
-    <h2>MENU INDEX</h2>
+    <h2>OUR MENUS</h2>
     <hr class="ded">
     <ul class="index-links">
       <li><a href="breakfast.html">BREAKFAST</a></li>
