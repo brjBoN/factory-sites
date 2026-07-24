@@ -1,0 +1,703 @@
+{
+  "schemaVersion": 1,
+  "prospectSlug": "environmental-construction-services",
+  "packageId": "selected-field-notes-assets-v1",
+  "createdAt": "2026-07-24",
+  "selectedDirection": "C — Field Notes",
+  "status": "private_developer_handoff_not_official_website",
+  "entrypoints": [
+    "DEVELOPER_AI_BRIEF.md",
+    "README.md",
+    "reference/asset-board.png",
+    "concept/selected-field-notes-reference.png",
+    "reference/implementation-data.json",
+    "reference/layout-spec.json",
+    "brand/design-tokens.css"
+  ],
+  "generationSummary": {
+    "imageGenCallsForThisPackage": 3,
+    "masters": [
+      "illustrations/service-sketch-atlas-master.png",
+      "illustrations/hero-excavation-collage-master.png",
+      "illustrations/hero-excavation-collage-mobile-master.png"
+    ],
+    "deterministicDerivatives": 35,
+    "rejectedOrRemovedAssets": 0,
+    "prompts": "PROMPTS.md",
+    "boundedPriorLogoIntegration": {
+      "bounds": {
+        "x": 82,
+        "y": 12,
+        "width": 320,
+        "height": 150
+      },
+      "logoPlacement": {
+        "x": 105,
+        "y": 30,
+        "proportionalHeight": 92
+      },
+      "changedPixelsOutsideBounds": 0
+    }
+  },
+  "logoIntegrity": {
+    "sourceUrl": "https://static.wixstatic.com/media/fcc2cd_da02280d7747495ebf2959cb7c1f8419~mv2.png/v1/crop/x_28,y_0,w_884,h_788/fill/w_554,h_495,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ECS%20circular%20logo.png",
+    "retrievedAt": "2026-07-24",
+    "asServedPath": "brand/ecs-logo-as-served.avif",
+    "asServedSha256": "461a69c2753b010534cbcda1cffc178ba1be6143b1631021a08c77c4352c3c6c",
+    "decodedPngPath": "brand/ecs-logo-original.png",
+    "decodedPngSha256": "f4977e8ebd4420f689f8d46c93d474559fb673d6ce303a5022a0abb08eea5454",
+    "permittedTransformations": [
+      "Proportional scaling",
+      "Placement on the private concept"
+    ],
+    "prohibitedTransformations": [
+      "Redrawing",
+      "Generative approximation",
+      "Tracing",
+      "Cropping",
+      "Recoloring",
+      "Filtering",
+      "Distortion",
+      "Material alteration"
+    ]
+  },
+  "globalUsageBoundary": "Private concept for Environmental Construction Services only. Generated construction and engineering imagery is illustrative, not evidence of ECS projects, equipment, staff, methods, measurements, properties, or results. No public deployment, indexing, outreach, business impersonation, data collection, or logo alteration is authorized.",
+  "assets": [
+    {
+      "path": "brand/design-tokens.css",
+      "role": "design_tokens",
+      "provenance": "Original implementation tokens based on the selected concept and recorded brand palette.",
+      "usagePolicy": "developer_reference; verify production fonts and licensing",
+      "mimeType": "text/css",
+      "bytes": 1462,
+      "sha256": "a81595aa403fc82031c139552c0fe06fa17bef583a3a32515db4cdd0aee98a67"
+    },
+    {
+      "path": "brand/ecs-logo-as-served.avif",
+      "role": "first_party_logo_as_served",
+      "provenance": "Retrieved byte-for-byte from the first-party Wix asset URL on 2026-07-24.",
+      "usagePolicy": "private_concept_for_environmental_construction_services_only; preserve unchanged; request owner master before production",
+      "mimeType": "image/avif",
+      "bytes": 51315,
+      "sha256": "461a69c2753b010534cbcda1cffc178ba1be6143b1631021a08c77c4352c3c6c",
+      "dimensions": {
+        "width": 554,
+        "height": 495
+      }
+    },
+    {
+      "path": "brand/ecs-logo-original.png",
+      "role": "first_party_logo_png_decode",
+      "provenance": "Pixel-equivalent PNG decode of the first-party AVIF served by the business-controlled website.",
+      "usagePolicy": "private_concept_for_environmental_construction_services_only; proportional scaling and placement only; do not redraw, recolor, crop, filter, distort, or materially alter",
+      "mimeType": "image/png",
+      "bytes": 308193,
+      "sha256": "f4977e8ebd4420f689f8d46c93d474559fb673d6ce303a5022a0abb08eea5454",
+      "dimensions": {
+        "width": 554,
+        "height": 495
+      }
+    },
+    {
+      "path": "brand/logo-placement-reference.png",
+      "role": "logo_placement_reference",
+      "provenance": "Deterministic crop of the human-selected refined concept.",
+      "usagePolicy": "placement_reference_only; use the separate exact logo and native text in implementation",
+      "mimeType": "image/png",
+      "bytes": 102350,
+      "sha256": "7d9ddfa48a6edb0c5b01f129cf38e4e8eb8a1cac1916b6199052080d306c2632",
+      "dimensions": {
+        "width": 330,
+        "height": 160
+      }
+    },
+    {
+      "path": "brand/palette.png",
+      "role": "palette_reference",
+      "provenance": "Deterministic concept-palette reference derived from recorded brand tokens.",
+      "usagePolicy": "private_concept_design_system",
+      "mimeType": "image/png",
+      "bytes": 20609,
+      "sha256": "0f715b39e3de16e94d167acd13397cfeb927a99f0ce26b4ccbace56caefb7233",
+      "dimensions": {
+        "width": 1200,
+        "height": 300
+      }
+    },
+    {
+      "path": "brand/palette.svg",
+      "role": "palette_reference",
+      "provenance": "Deterministic concept-palette reference derived from recorded brand tokens.",
+      "usagePolicy": "private_concept_design_system",
+      "mimeType": "image/svg+xml",
+      "bytes": 1295,
+      "sha256": "c60e6288eb4a5d99d6db14ae13d50b24d215427b46a1378c28794b2fe5b2a792",
+      "dimensions": {
+        "width": 1200,
+        "height": 300
+      }
+    },
+    {
+      "path": "concept/selected-field-notes-pre-logo-reference.png",
+      "role": "human_selected_source_reference",
+      "provenance": "Exact human-supplied Field Notes source reference before final logo integration.",
+      "usagePolicy": "private_concept_provenance_reference_only",
+      "mimeType": "image/png",
+      "bytes": 3204453,
+      "sha256": "7f0b37c80097b2027f8cff0bba6c8776e6f6b466c32a0cdb640927213eb73451",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "concept/selected-field-notes-reference.png",
+      "role": "human_selected_refined_design_reference",
+      "provenance": "Exact human-selected Field Notes reference with one bounded paper repair and deterministic placement of the unchanged first-party logo and verified name.",
+      "usagePolicy": "private_concept_design_reference_only; generated engineering and project-like imagery is illustrative",
+      "mimeType": "image/png",
+      "bytes": 3657125,
+      "sha256": "274a257f071ddfb843da57ce2403c7bd26e55c97e67dc1c96ac16acb6134fa22",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "DEVELOPER_AI_BRIEF.md",
+      "role": "developer_ai_build_brief",
+      "provenance": "Original evidence-controlled implementation prompt.",
+      "usagePolicy": "developer_reference",
+      "mimeType": "text/markdown",
+      "bytes": 3424,
+      "sha256": "f93848d2a20f5d891876e605bf4784fea942803402fe98397a6eebf7bbca3eed"
+    },
+    {
+      "path": "illustrations/hero-excavation-collage-master.png",
+      "role": "openai_imagegen_master",
+      "provenance": "Created with one OpenAI built-in ImageGen call from a local style reference; exact prompt recorded in PROMPTS.md.",
+      "usagePolicy": "private_concept_illustration_only; not evidence of ECS equipment, staff, property, projects, methods, measurements, or results",
+      "mimeType": "image/png",
+      "bytes": 3320286,
+      "sha256": "6576a355ab86f785234df56df69088b49170572575377193aa5c841a76caaf66",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "illustrations/hero-excavation-collage-mobile-master.png",
+      "role": "openai_imagegen_master",
+      "provenance": "Created with one OpenAI built-in ImageGen call from a local style reference; exact prompt recorded in PROMPTS.md.",
+      "usagePolicy": "private_concept_illustration_only; not evidence of ECS equipment, staff, property, projects, methods, measurements, or results",
+      "mimeType": "image/png",
+      "bytes": 2786473,
+      "sha256": "1b60e923301999232c8781892b6caec56c0ba8edbb1dd74457f9c26580799d1b",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "illustrations/hero-excavation-collage-mobile.webp",
+      "role": "hero_delivery_image",
+      "provenance": "Deterministic WebP encode from the corresponding lossless ImageGen master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or owned equipment",
+      "mimeType": "image/webp",
+      "bytes": 316480,
+      "sha256": "e98d2e896d597b392275f7fb235c9587d3c1372a637749e4a8ea0894ab9bb3ab",
+      "dimensions": {
+        "width": 1122,
+        "height": 1402
+      }
+    },
+    {
+      "path": "illustrations/hero-excavation-collage.webp",
+      "role": "hero_delivery_image",
+      "provenance": "Deterministic WebP encode from the corresponding lossless ImageGen master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or owned equipment",
+      "mimeType": "image/webp",
+      "bytes": 397402,
+      "sha256": "f1c7f497934444774866388d2e4ac4f649b56972476e572a21ab286cd3ec81c0",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "illustrations/pinned-build-access-reference.png",
+      "role": "selected_concept_component_reference",
+      "provenance": "Deterministic crop from the human-selected refined concept.",
+      "usagePolicy": "placement_reference_only; implement labels and links as native accessible controls",
+      "mimeType": "image/png",
+      "bytes": 126665,
+      "sha256": "7f887653193ff6edf883f08920d40d673e154dab095d02d46d3a9955c42641c4",
+      "dimensions": {
+        "width": 372,
+        "height": 145
+      }
+    },
+    {
+      "path": "illustrations/pinned-clear-prep-reference.png",
+      "role": "selected_concept_component_reference",
+      "provenance": "Deterministic crop from the human-selected refined concept.",
+      "usagePolicy": "placement_reference_only; implement labels and links as native accessible controls",
+      "mimeType": "image/png",
+      "bytes": 126659,
+      "sha256": "199fede4596167ac0dad676280a7f687cfc2447bbf3c1d9ec401de2fe582ab10",
+      "dimensions": {
+        "width": 371,
+        "height": 145
+      }
+    },
+    {
+      "path": "illustrations/pinned-control-water-reference.png",
+      "role": "selected_concept_component_reference",
+      "provenance": "Deterministic crop from the human-selected refined concept.",
+      "usagePolicy": "placement_reference_only; implement labels and links as native accessible controls",
+      "mimeType": "image/png",
+      "bytes": 137532,
+      "sha256": "dd9d41017259b824e9de8790c297e757f941aa035c82603b7ddccf7f7b5f2f1b",
+      "dimensions": {
+        "width": 412,
+        "height": 145
+      }
+    },
+    {
+      "path": "illustrations/service-drainage.png",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/png",
+      "bytes": 525479,
+      "sha256": "fa8fb8cb5a33f68df7f0963e22335a57267c5e8a96b586fdac9fbed001d797a3",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-drainage.webp",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/webp",
+      "bytes": 69318,
+      "sha256": "89b449086fc93b7ed8c703945f78c5747cd8110b1e2795242776a01c441d1b76",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-driveways.png",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/png",
+      "bytes": 544194,
+      "sha256": "0b94a6199dbe8256681db29194e43fbb0414dfceefc916087309cbcda29e482c",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-driveways.webp",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/webp",
+      "bytes": 76584,
+      "sha256": "fbc2828f967fa909556a1c4fafcac8f0cb96ab80d1cb84b89ac39a2bc80c0019",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-land-clearing-excavation.png",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/png",
+      "bytes": 539041,
+      "sha256": "0b9ee763ae3d9b65a0459e188a5969392fcf6afe109e272c87d89e6383c1c67e",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-land-clearing-excavation.webp",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/webp",
+      "bytes": 71336,
+      "sha256": "2711e2ca605a7447be99012617d14af7c8239d7c402a207bfb9e90fef60749af",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-landscaping-hardscaping.png",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/png",
+      "bytes": 537157,
+      "sha256": "3ceaeefbfe1b37c9deabbfd967c0c6518652db0f084f1d8383b00a4416c40662",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-landscaping-hardscaping.webp",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/webp",
+      "bytes": 71534,
+      "sha256": "546bdaa75afa46a6c39f694ff82c3be53d644529a3a0a8bca11bf599b9e2f396",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-seawalls-retention-waterproofing.png",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/png",
+      "bytes": 521496,
+      "sha256": "b176ad300685fd5e8b4caec7001357b364793ba49723212f696be3fabf2e8a19",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-seawalls-retention-waterproofing.webp",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/webp",
+      "bytes": 60380,
+      "sha256": "0b5f841355ab910dd46f0a39941f1181db3d8d1bc5d2b4d75c21ffca75c0f9da",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-site-prep-culverts.png",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/png",
+      "bytes": 527852,
+      "sha256": "3cad4a762027a55717fc4ac885b63fc32a2c7a78464d333a08062c8a08dd2916",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-site-prep-culverts.webp",
+      "role": "service_illustration",
+      "provenance": "Deterministic 512-by-512 crop and optional WebP encode from the ImageGen service-atlas master.",
+      "usagePolicy": "illustrative_only; never present as completed ECS work or technical evidence",
+      "mimeType": "image/webp",
+      "bytes": 69228,
+      "sha256": "862e554f98a4798648413176ccf875855546ea919e3c0e088a2c282dc0bda7d1",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "illustrations/service-sketch-atlas-master.png",
+      "role": "openai_imagegen_master",
+      "provenance": "Created with one OpenAI built-in ImageGen call from a local style reference; exact prompt recorded in PROMPTS.md.",
+      "usagePolicy": "private_concept_illustration_only; not evidence of ECS equipment, staff, property, projects, methods, measurements, or results",
+      "mimeType": "image/png",
+      "bytes": 3417342,
+      "sha256": "5a8f7080684cf3e1851a02664ab6b8f88dd1a4273c96aef5ed6b2f852c66dc49",
+      "dimensions": {
+        "width": 1536,
+        "height": 1024
+      }
+    },
+    {
+      "path": "PROMPTS.md",
+      "role": "generation_record",
+      "provenance": "Exact prompt and generation-mode record for the three new ImageGen masters.",
+      "usagePolicy": "developer_reference_and_provenance",
+      "mimeType": "text/markdown",
+      "bytes": 5568,
+      "sha256": "b750acb5207aeb33298c99937a06fb1ed867715167c10c3aea7025fc3865b9ce"
+    },
+    {
+      "path": "README.md",
+      "role": "developer_guide",
+      "provenance": "Original evidence-controlled developer handoff.",
+      "usagePolicy": "developer_reference",
+      "mimeType": "text/markdown",
+      "bytes": 7531,
+      "sha256": "9a2c94980eaf89044cc3f4a750cc2bb32343bf82e9e0650c201ab88b8545527d"
+    },
+    {
+      "path": "reference/asset-board.png",
+      "role": "asset_board",
+      "provenance": "Deterministic montage of package assets.",
+      "usagePolicy": "developer_reference_only",
+      "mimeType": "image/png",
+      "bytes": 2358550,
+      "sha256": "6b22eecb2d67a6094b7985fb6df5601dd6d5bb1330a35e6bc85d0182488d2877",
+      "dimensions": {
+        "width": 1600,
+        "height": 1200
+      }
+    },
+    {
+      "path": "reference/implementation-blueprint.md",
+      "role": "implementation_reference",
+      "provenance": "Original evidence-controlled implementation documentation.",
+      "usagePolicy": "developer_reference",
+      "mimeType": "text/markdown",
+      "bytes": 3529,
+      "sha256": "93ed3a0edf89f30af9557394f53d66cbfd7fccdf8f6c9d0271747bb560052006"
+    },
+    {
+      "path": "reference/implementation-data.json",
+      "role": "implementation_reference",
+      "provenance": "Original evidence-controlled implementation documentation.",
+      "usagePolicy": "developer_reference",
+      "mimeType": "application/json",
+      "bytes": 5171,
+      "sha256": "a1df4a16deb179c12bcf9a767d4a42e9e84291af895c467f50ee54f8532ac4af"
+    },
+    {
+      "path": "reference/layout-spec.json",
+      "role": "implementation_reference",
+      "provenance": "Original evidence-controlled implementation documentation.",
+      "usagePolicy": "developer_reference",
+      "mimeType": "application/json",
+      "bytes": 2725,
+      "sha256": "c68cdf0d0a69b12df9dd68cf7c0fb05f1f58c58743874e27b35ed7dfda5fb9d6"
+    },
+    {
+      "path": "reference/owner-asset-checklist.md",
+      "role": "implementation_reference",
+      "provenance": "Original evidence-controlled implementation documentation.",
+      "usagePolicy": "developer_reference",
+      "mimeType": "text/markdown",
+      "bytes": 1315,
+      "sha256": "476175450760a9e43e63dd1ba10bcce73737d30ccac09bd6055f09524153c443"
+    },
+    {
+      "path": "reference/provenance.md",
+      "role": "implementation_reference",
+      "provenance": "Original evidence-controlled implementation documentation.",
+      "usagePolicy": "developer_reference",
+      "mimeType": "text/markdown",
+      "bytes": 2673,
+      "sha256": "a039547aeaec14f4b1ae771f592d4bd77c60e008627ddfae4a52f51e85bb3641"
+    },
+    {
+      "path": "reference/validate-package.mjs",
+      "role": "package_validator",
+      "provenance": "Original self-contained Node.js validation script.",
+      "usagePolicy": "developer_tool",
+      "mimeType": "text/javascript",
+      "bytes": 6464,
+      "sha256": "a928491fda92fd1868b43feff3d53f122c46824d13dac5c27dcdcabac0b6a7a0"
+    },
+    {
+      "path": "social/ecs-field-notes-og.png",
+      "role": "private_preview_social_image",
+      "provenance": "Deterministic composition of generated hero art, exact first-party logo, original concept copy, and a visible private-concept label.",
+      "usagePolicy": "private_preview_only; not authorization for public publication or indexing",
+      "mimeType": "image/png",
+      "bytes": 1338805,
+      "sha256": "89a5d7ef6f3edcd27876fc362a88c038dca057ab766ba53856be5502c1161cbf",
+      "dimensions": {
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "path": "textures/brass-pin.png",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/png",
+      "bytes": 5170,
+      "sha256": "575e35d73986ecfcee9cff87191e590ec14b6d8259d110f5e71bd0f2eecfce24",
+      "dimensions": {
+        "width": 96,
+        "height": 96
+      }
+    },
+    {
+      "path": "textures/brass-pin.svg",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/svg+xml",
+      "bytes": 763,
+      "sha256": "de276eec27594fe7ebd52766854020d35051ca218dea9e6c804b8e1e5fc24746",
+      "dimensions": {
+        "width": 96,
+        "height": 96
+      }
+    },
+    {
+      "path": "textures/concept-paper-sample.png",
+      "role": "concept_derived_paper_sample",
+      "provenance": "Deterministic crop of the bounded generated paper repair used behind the exact logo.",
+      "usagePolicy": "decorative_private_concept_texture",
+      "mimeType": "image/png",
+      "bytes": 77271,
+      "sha256": "0939b4f71a56aef708f30334d75b6802c28b4dd2640565f1b7dd73f8226ab901",
+      "dimensions": {
+        "width": 320,
+        "height": 150
+      }
+    },
+    {
+      "path": "textures/paper-grain.png",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/png",
+      "bytes": 166000,
+      "sha256": "a380ab43dc5d2ad2cc7bad41982f86447eac3fb87c02b1dde41f47b540fa1154",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "textures/paper-grain.svg",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/svg+xml",
+      "bytes": 664,
+      "sha256": "08e2ec3a29f5b28f23726b0ee344dc9b2d27ff1af717c66b058bc391c4d93c56",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "textures/survey-arrow.png",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/png",
+      "bytes": 3209,
+      "sha256": "048c1596a045e5f51b80f159b82364f263ffcf1cea33e4d5bd669a2efb701ae0",
+      "dimensions": {
+        "width": 520,
+        "height": 120
+      }
+    },
+    {
+      "path": "textures/survey-arrow.svg",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/svg+xml",
+      "bytes": 475,
+      "sha256": "2f0f7ae90d6e1589345f5221b55cd827c18af9b284e697acdc0ffa12871c11a4",
+      "dimensions": {
+        "width": 520,
+        "height": 120
+      }
+    },
+    {
+      "path": "textures/survey-grid.png",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/png",
+      "bytes": 12691,
+      "sha256": "3053753f29098446478f51d683c1a4e9cdd430f3c2c59bbcd01070d941cbc8f4",
+      "dimensions": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "path": "textures/survey-grid.svg",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/svg+xml",
+      "bytes": 648,
+      "sha256": "f3fbe756c4bc844a7933175b8c4dd48b10ab5b5f9dd8f551926ed4736164ff2a",
+      "dimensions": {
+        "width": 800,
+        "height": 800
+      }
+    },
+    {
+      "path": "textures/topographic-lines.png",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/png",
+      "bytes": 44238,
+      "sha256": "eab12a925b7bbbf4393cb8a1577df67a879ee63e12a4e98f6948bd959dc161af",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      }
+    },
+    {
+      "path": "textures/topographic-lines.svg",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/svg+xml",
+      "bytes": 758,
+      "sha256": "b34a1d08117cf505731c2cd23fd2b572dbc243194538ef89a9a812b63ddc1e88",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      }
+    },
+    {
+      "path": "textures/torn-paper-edge.png",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/png",
+      "bytes": 11449,
+      "sha256": "2ced6da204c9e3cced103ead7aa16a2f018f510bea1f2ff83b0571bcb562a131",
+      "dimensions": {
+        "width": 1536,
+        "height": 128
+      }
+    },
+    {
+      "path": "textures/torn-paper-edge.svg",
+      "role": "decorative_utility_asset",
+      "provenance": "Original code-native SVG utility or deterministic PNG rasterization of that SVG.",
+      "usagePolicy": "decorative_only; hide from assistive technology",
+      "mimeType": "image/svg+xml",
+      "bytes": 842,
+      "sha256": "d01ae9c79ece25e05d67e1b30686d7a63594b7032005c44f9a586df33fd2c9a4",
+      "dimensions": {
+        "width": 1536,
+        "height": 128
+      }
+    }
+  ]
+}

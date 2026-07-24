@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light;
+
+  --ecs-ink: #17191c;
+  --ecs-paper: #f4f2eb;
+  --ecs-paper-aged: #eee6d3;
+  --ecs-paper-shadow: #d8ccb5;
+  --ecs-survey-red: #c6372d;
+  --ecs-survey-red-text: #8f241d;
+  --ecs-machinery-ochre: #c99939;
+  --ecs-steel: #8b8e87;
+  --ecs-rule: rgb(23 25 28 / 18%);
+
+  --ecs-font-display: "League Gothic", "Roboto Condensed", "Arial Narrow",
+    Impact, sans-serif;
+  --ecs-font-body: "Courier Prime", "Courier New", ui-monospace, monospace;
+  --ecs-font-ui: "Barlow Condensed", "Roboto Condensed", "Arial Narrow",
+    system-ui, sans-serif;
+  --ecs-font-hand: "Caveat", "Segoe Print", cursive;
+
+  --ecs-space-1: 0.25rem;
+  --ecs-space-2: 0.5rem;
+  --ecs-space-3: 0.75rem;
+  --ecs-space-4: 1rem;
+  --ecs-space-6: 1.5rem;
+  --ecs-space-8: 2rem;
+  --ecs-space-12: 3rem;
+  --ecs-space-16: 4rem;
+  --ecs-space-24: 6rem;
+
+  --ecs-content-max: 90rem;
+  --ecs-page-gutter: clamp(1rem, 4vw, 4.5rem);
+  --ecs-ledger-width: clamp(0.25rem, 5vw, 5rem);
+
+  --ecs-border-thin: 1px;
+  --ecs-border-strong: 2px;
+  --ecs-radius-paper: 0.125rem;
+  --ecs-shadow-paper: 0 0.75rem 1.5rem rgb(23 25 28 / 16%);
+  --ecs-shadow-pin: 0 0.3rem 0.45rem rgb(23 25 28 / 35%);
+
+  --ecs-motion-fast: 180ms;
+  --ecs-motion-standard: 420ms;
+  --ecs-motion-hero: 700ms;
+  --ecs-ease-draw: cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ecs-motion-fast: 1ms;
+    --ecs-motion-standard: 1ms;
+    --ecs-motion-hero: 1ms;
+  }
+}

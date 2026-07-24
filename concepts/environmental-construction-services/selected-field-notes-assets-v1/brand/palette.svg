@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <rect width="1200" height="300" fill="#eee6d3"/>
+  <g font-family="Arial, sans-serif" font-size="22" fill="#17191c">
+    <text x="48" y="54" font-size="30" font-weight="700">FIELD NOTES PALETTE</text>
+    <g transform="translate(48 88)">
+      <rect width="180" height="116" rx="4" fill="#17191c"/><text y="151">NEAR BLACK</text><text y="178" font-size="17">#17191C</text>
+    </g>
+    <g transform="translate(278 88)">
+      <rect width="180" height="116" rx="4" fill="#f4f2eb" stroke="#8b8e87"/><text y="151">FIELD PAPER</text><text y="178" font-size="17">#F4F2EB</text>
+    </g>
+    <g transform="translate(508 88)">
+      <rect width="180" height="116" rx="4" fill="#eee6d3" stroke="#8b8e87"/><text y="151">AGED PAPER</text><text y="178" font-size="17">#EEE6D3</text>
+    </g>
+    <g transform="translate(738 88)">
+      <rect width="180" height="116" rx="4" fill="#c6372d"/><text y="151">SURVEY RED</text><text y="178" font-size="17">#C6372D</text>
+    </g>
+    <g transform="translate(968 88)">
+      <rect width="180" height="116" rx="4" fill="#c99939"/><text y="151">MACHINERY OCHRE</text><text y="178" font-size="17">#C99939</text>
+    </g>
+  </g>
+</svg>

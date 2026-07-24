@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "referenceCanvas": {
+    "width": 1536,
+    "height": 1024
+  },
+  "desktop": {
+    "contentMaxWidth": 1440,
+    "pageGutter": 48,
+    "ledgerWidth": 80,
+    "headerTop": 28,
+    "headerHeight": 126,
+    "heroTop": 154,
+    "heroBottom": 742,
+    "heroCopyLeft": 150,
+    "heroCopyMaxWidth": 520,
+    "heroArtLeft": 665,
+    "heroArtWidth": 800,
+    "pinnedRailTop": 748,
+    "pinnedRailBottom": 894,
+    "tornDividerTop": 892,
+    "serviceIndexTop": 936
+  },
+  "breakpoints": {
+    "large": 1200,
+    "medium": 900,
+    "small": 640,
+    "narrow": 480
+  },
+  "responsive": {
+    "below900": [
+      "Collapse navigation into a keyboard-operable menu.",
+      "Stack brand, headline, copy, actions, mobile hero art, pinned pathways, and service index.",
+      "Use hero-excavation-collage-mobile.webp instead of shrinking the desktop hero.",
+      "Reduce the left ledger to a thin survey-red rule.",
+      "Convert pinned cards to a vertical stack or accessible horizontal snap list."
+    ],
+    "below640": [
+      "Use two columns for the six-service index.",
+      "Keep at least 16 CSS pixels of page gutter.",
+      "Keep all touch targets at least 44 by 44 CSS pixels."
+    ],
+    "below480": [
+      "Use one column for the six-service index.",
+      "Prevent text or decorative art from creating horizontal overflow."
+    ]
+  },
+  "imageFit": {
+    "logo": "contain; preserve intrinsic aspect ratio; never crop",
+    "heroDesktop": "contain; use the full paper field",
+    "heroMobile": "contain; use the portrait master",
+    "serviceIllustrations": "contain; preserve the warm paper field",
+    "pinnedReferences": "reference only; labels and links must be native HTML"
+  },
+  "recommendedTypography": {
+    "display": "League Gothic, Roboto Condensed, or equivalently licensed condensed display face",
+    "body": "Courier Prime or equivalently licensed readable monospaced face",
+    "ui": "Barlow Condensed, Roboto Condensed, or equivalently licensed compact sans serif",
+    "handAnnotation": "Caveat, Segoe Print, or equivalently licensed restrained handwriting face"
+  },
+  "motion": {
+    "durationFastMs": 180,
+    "durationStandardMs": 420,
+    "durationHeroMs": 700,
+    "maxParallaxPx": 16,
+    "maxCardRotationDeg": 0.5,
+    "reducedMotionRequired": true,
+    "reducedMotionBehavior": "Remove drawing animations, parallax, page wipes, and spring effects; use immediate or short opacity changes."
+  },
+  "accessibility": {
+    "minimumTouchTargetPx": 44,
+    "minimumViewportTestWidthPx": 320,
+    "skipLinkRequired": true,
+    "visibleFocusRequired": true,
+    "decorativeIllustrationsHiddenFromAssistiveTechnology": true,
+    "logoAltEmptyWhenAdjacentNamePresent": true
+  }
+}

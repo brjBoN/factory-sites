@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "businessName": "Environmental Construction Services",
+  "selectedDirection": "C — Field Notes",
+  "conceptStatus": "private_design_reference_not_official_website",
+  "headline": {
+    "copy": "START WITH THE GROUND.",
+    "classification": "inferred_design_assumption",
+    "ownerApprovalRequiredForProduction": true
+  },
+  "heroSummary": {
+    "copy": "Drainage; land clearing and excavation; landscaping and hardscaping; seawalls, retention, and waterproofing; site preparation and culverts; and driveways.",
+    "classification": "verified_first_party",
+    "copyPolicy": "May be rewritten as original prose without adding methods, materials, project types, capacity, results, warranties, or availability."
+  },
+  "primaryActions": [
+    {
+      "label": "EXPLORE SERVICES",
+      "href": "/services",
+      "mode": "internal_navigation"
+    },
+    {
+      "label": "CALL (229) 516-0821",
+      "href": "tel:+12295160821",
+      "mode": "user_initiated_tel_link",
+      "classification": "corroborated"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "HOME",
+      "href": "/"
+    },
+    {
+      "label": "SERVICES",
+      "href": "/services"
+    },
+    {
+      "label": "ABOUT",
+      "href": "/about"
+    },
+    {
+      "label": "CONTACT",
+      "href": "/contact"
+    }
+  ],
+  "verifiedFacts": {
+    "familyOwned": "Family-owned and operated.",
+    "address": "33 Pine Cone Road, Moultrie, GA",
+    "phoneDisplay": "(229) 516-0821",
+    "phoneHref": "tel:+12295160821",
+    "emailDisplay": "ecs.outdoorcustoms@gmail.com",
+    "emailHref": "mailto:ecs.outdoorcustoms@gmail.com"
+  },
+  "serviceCategories": [
+    {
+      "label": "Drainage",
+      "href": "/services/drainage",
+      "asset": "illustrations/service-drainage.webp"
+    },
+    {
+      "label": "Land Clearing & Excavation",
+      "href": "/services/land-clearing-excavation",
+      "asset": "illustrations/service-land-clearing-excavation.webp"
+    },
+    {
+      "label": "Landscaping & Hardscaping",
+      "href": "/services/landscaping-hardscaping",
+      "asset": "illustrations/service-landscaping-hardscaping.webp"
+    },
+    {
+      "label": "Seawalls, Retention & Waterproofing",
+      "href": "/services/seawalls-retention-waterproofing",
+      "asset": "illustrations/service-seawalls-retention-waterproofing.webp"
+    },
+    {
+      "label": "Site Preparation & Culverts",
+      "href": "/services/site-prep-culverts",
+      "asset": "illustrations/service-site-prep-culverts.webp"
+    },
+    {
+      "label": "Driveways",
+      "href": "/services/driveways",
+      "asset": "illustrations/service-driveways.webp"
+    }
+  ],
+  "homepagePinnedPathways": [
+    {
+      "label": "CONTROL WATER",
+      "safeAccessibleLabel": "Explore drainage services",
+      "href": "/services/drainage"
+    },
+    {
+      "label": "CLEAR & PREP",
+      "safeAccessibleLabel": "Explore land clearing, excavation, and site preparation services",
+      "href": "/services/land-clearing-excavation"
+    },
+    {
+      "label": "BUILD ACCESS",
+      "safeAccessibleLabel": "Explore culvert and driveway services",
+      "href": "/services/site-prep-culverts"
+    }
+  ],
+  "routes": [
+    "/",
+    "/services",
+    "/services/drainage",
+    "/services/land-clearing-excavation",
+    "/services/landscaping-hardscaping",
+    "/services/seawalls-retention-waterproofing",
+    "/services/site-prep-culverts",
+    "/services/driveways",
+    "/about",
+    "/contact",
+    "/accessibility",
+    "/concept-data-use"
+  ],
+  "blockedRoutes": [
+    {
+      "path": "/work",
+      "reason": "Owner-controlled project photography and accurate captions are not available."
+    },
+    {
+      "path": "/process",
+      "reason": "The actual ECS workflow has not been owner-confirmed."
+    }
+  ],
+  "requiredNotices": [
+    "Private website concept — not the official Environmental Construction Services website.",
+    "Illustrative concept imagery — not photographs of completed ECS projects.",
+    "This concept does not accept quote requests, inquiries, files, payments, or customer information."
+  ],
+  "dataHandling": {
+    "formsPresent": false,
+    "externalSubmission": false,
+    "analytics": false,
+    "cookies": false,
+    "quoteRequests": false,
+    "payments": false,
+    "accounts": false,
+    "uploads": false
+  },
+  "preview": {
+    "noindex": true,
+    "nofollow": true,
+    "robotsDisallowAllRecommended": true,
+    "publicDeploymentAuthorized": false
+  },
+  "copyRestrictions": [
+    "Do not publish service-area boundaries, cities, counties, or travel radius.",
+    "Do not publish operating hours or emergency availability.",
+    "Do not invent project types, methods, materials, equipment ownership, capacity, timelines, staffing, or availability.",
+    "Do not publish prices, free-estimate claims, financing, guarantees, warranties, licenses, insurance, bonding, certifications, awards, or affiliations without owner-confirmed evidence.",
+    "Do not publish testimonials, ratings, review counts, or generated project claims.",
+    "Do not describe generated art as ECS staff, equipment, property, or completed work.",
+    "Omit the postal code until confirmed."
+  ]
+}
