@@ -129,7 +129,6 @@ home = f"""
       <a class="btn fill" href="menu.html">VIEW THE MENU</a>
       <a class="btn line" href="directions.html">PLAN A VISIT</a>
     </div>
-    <img class="hero-pencil" src="assets/courthouse-pencil-alpha.png" alt="">
   </div>
   <div class="hero-photo"><img src="assets/hero-menu-spread.webp" alt="Illustrative restaurant menu spread"></div>
 </section>

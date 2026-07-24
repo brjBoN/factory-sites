@@ -58,17 +58,19 @@ header.mast {
 }
 .mast .logo { flex: 0 0 auto; display: block; }
 .mast .logo img { height: 112px; width: auto; }
-nav.primary { margin-left: auto; display: flex; align-items: center; gap: 3rem; }
+nav.primary { margin-left: auto; display: flex; align-items: center; gap: clamp(2rem, 3vw, 3.6rem); }
 nav.primary a {
-  font-family: var(--label); font-weight: 600; font-size: 15px;
+  font-family: var(--label); font-weight: 600;
+  font-size: clamp(15px, 1.05vw, 21px);
   letter-spacing: .26em; text-decoration: none; color: #fff;
   padding: 6px 0; border-bottom: 2px solid transparent; white-space: nowrap;
 }
 nav.primary a:hover { border-bottom-color: var(--tomato); }
 nav.primary a.order-btn {
-  font-family: var(--label); font-weight: 600; font-size: 15px; letter-spacing: .3em;
+  font-family: var(--label); font-weight: 600;
+  font-size: clamp(15px, 1vw, 20px); letter-spacing: .3em;
   background: var(--tomato); color: #FFFAF0; text-decoration: none;
-  padding: 16px 58px; border-radius: 3px; white-space: nowrap;
+  padding: 16px clamp(42px, 3vw, 64px); border-radius: 3px; white-space: nowrap;
   border-bottom: 0; flex-shrink: 0;
 }
 nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0; }
@@ -97,10 +99,6 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
   height: calc(var(--hh, 620px) - 148px);
   background: url("rule-ornament-strip.png") top right / contain no-repeat;
   mix-blend-mode: multiply; z-index: 2;
-}
-.hero-pencil {  /* courthouse rising from the hero's bottom-left, per concept */
-  position: absolute; left: 12px; bottom: 0; width: 108px;
-  mix-blend-mode: multiply; z-index: 1;
 }
 .hero h1 {
   font-family: var(--display); font-weight: 600;
@@ -196,15 +194,15 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
 .panel-paper h2 { font-family: var(--display); font-weight: 600; font-size: clamp(2rem, 3.3vw, 3.1rem); line-height: .98; letter-spacing: -.035em; position: relative; z-index: 2; }
 .panel-paper .loc-copy { position: relative; z-index: 2; margin-top: .8rem; max-width: 40ch; }
 .panel-paper .loc-copy .addr { font-family: var(--label); font-size: 18px; letter-spacing: .12em; }
-.panel-paper .pencil-l {  /* concept's own band courthouse, native proportions */
-  position: absolute; left: 0; top: 2px; height: calc(100% - 2px); width: 24%;
-  object-fit: contain; object-position: left top;
+.panel-paper .pencil-l {  /* band courthouse: grows from the band's bottom edge, always touching it */
+  position: absolute; left: 0; bottom: 0; height: calc(100% - 16px); width: 27%;
+  object-fit: contain; object-position: left bottom;
   z-index: 1; mix-blend-mode: multiply;
 }
 .panel-paper .pencil-body { position: relative; z-index: 2; padding-top: .3rem; grid-column: 2; }
-.panel-paper .pencil-r {  /* concept's own band tree, native proportions */
-  position: absolute; right: 0; top: 2px; height: calc(100% - 2px); width: 38%;
-  object-fit: contain; object-position: right top; z-index: 1; mix-blend-mode: multiply;
+.panel-paper .pencil-r {  /* band tree: rooted at the band's bottom edge, always touching it */
+  position: absolute; right: 0; bottom: 0; height: calc(100% - 16px); width: 42%;
+  object-fit: contain; object-position: right bottom; z-index: 1; mix-blend-mode: multiply;
 }
 
 /* --------------------------------------------------------------- sections */
@@ -311,7 +309,6 @@ footer li { margin: .4rem 0; font-family: var(--label); font-size: 16px; letter-
   .panel-navy::after { display: none; }
   .panel-paper { grid-template-columns: 1fr; }
   .panel-paper .pencil-l { display: none; }
-  .hero-pencil { display: none; }
   .mast-in { padding: 0 20px; }
   .hero-copy { border-right: 0; border-bottom: 1.5px solid rgba(199,70,50,.55); }
   .hero-copy::after, .hero-copy::before { display: none; }
