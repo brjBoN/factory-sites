@@ -307,8 +307,14 @@ footer li { margin: .4rem 0; font-family: var(--label); font-size: 16px; letter-
 }
 @media (max-width: 900px) {
   .hero, .band2 { grid-template-columns: 1fr; }
-  .panel-navy { margin-right: 0; }
+  /* centered hero copy + CTAs on stacked layouts (Braden mobile round) */
+  .hero-copy { align-items: center; text-align: center; }
+  .hero .sub { margin-left: auto; margin-right: auto; }
+  .btn-row { justify-content: center; }
+  .panel-navy { margin-right: 0; align-items: center; text-align: center; }
   .panel-navy::after { display: none; }
+  .panel-navy .ded { align-self: center; }
+  .index-links { text-align: center; }
   .panel-paper { grid-template-columns: 1fr; }
   .panel-paper .pencil-l { display: none; }
   .mast-in { padding: 0 20px; }
@@ -342,6 +348,7 @@ footer li { margin: .4rem 0; font-family: var(--label); font-size: 16px; letter-
   a.order-btn { padding: 11px 16px; font-size: 13px; letter-spacing: .16em; }
   .rail-in { grid-template-columns: repeat(2, 1fr); }
   .rail a.cell { border: 0; border-top: 1px solid var(--rule); padding: 12px 0; }
+  .rail a.cell:last-of-type { grid-column: span 2; }  /* CATERING fills its row — no empty slot */
   .rail a.cell .dia { display: none; }
   .gal { grid-template-columns: 1fr 1fr; }
   .gal img { height: 150px; }
