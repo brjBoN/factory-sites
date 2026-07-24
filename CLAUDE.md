@@ -35,6 +35,10 @@ This file is the complete operating manual. Read it fully before touching anythi
 1. **Research**: crawl the business's current site (sitemap.xml → full page inventory), directories,
    Etsy/social. Record name, phone, email, address, hours, services, products+prices, socials, trust
    stats (review counts, years in business). Verify facts; never publish invented claims, prices, or hours.
+   **Absence claims need real-browser verification**: fetch-based crawls miss JS-injected content
+   (entry popups, chat/order widgets) — TCB's on-load DoorDash popup was invisible to page fetches
+   and "their site has no path to online ordering" nearly shipped in an outreach doc. Before
+   asserting a competitor site LACKS something, load it in a real browser and watch what appears.
 2. **Concept**: generate 2–3 landing-page concept images in-house (`tools/concept_gen.py`,
    gpt-image-1; OPENAI_API_KEY is a machine env var — never in repo/chat) from a
    research-grounded brief, save under `concepts/<slug>/`, present to Braden. He approves ONE.

@@ -8,7 +8,8 @@ Prepared 2026-07-24 · Concept approved · Site live, fold-verified at 1080p/144
 
 The #1-ranked restaurant in Moultrie (of 46 on TripAdvisor) — a 27-year institution on the
 Square — has a fixed-width website from around 2013 whose menus are photo scans Google can't
-read, with no mention of online ordering. We built the full redesign from their own identity
+read, and whose only path to online ordering is a dismissible popup. We built the full redesign
+from their own identity
 (their storefront sign literally reads "On the Square · Established 1998"), with every menu as
 live text and their DoorDash ordering wired into every page.
 
@@ -35,20 +36,21 @@ live text and their DoorDash ordering wired into every page.
 
 ## What we built — selling points, strongest first
 
-1. **Online ordering, finally visible.** A tomato ORDER NOW button on every page, wired to
-   their live DoorDash storefront. Their current website never mentions online ordering at all
-   — customers who land there have no path to order.
-2. **Menus Google can actually read.** Their current menus are JPEG scans inside a webpage —
+1. **Menus Google can actually read.** Their current menus are JPEG scans inside a webpage —
    invisible to search engines, unreadable for accessibility, painful on phones. We transcribed
    every one: 18 roll-ups, burgers & sandwiches, salads, quiche, soups, full dinner menu,
    breakfast, all ten take-and-bake casseroles, catering — every item with its description and
    posted price, as live text.
+2. **Works on phones.** The current site is fixed-width desktop-only; most restaurant traffic
+   is mobile. The redesign is verified overflow-free at phone/tablet width on every page.
 3. **Built from their own identity, not a template.** The wordmark matches their storefront
    sign, the headline is their window banner ("On the Square · Established 1998"), and the
    pencil heritage illustrations echo the courthouse drawing printed on their actual menus.
    Show them the storefront photo on the site and let them make the connection.
-4. **Works on phones.** The current site is fixed-width desktop-only; most restaurant traffic
-   is mobile. The redesign is verified overflow-free at phone/tablet width on every page.
+4. **Ordering that's always in reach.** Today their DoorDash lives in a popup that appears
+   when you land — close it (or let a popup blocker eat it) and the path to order is gone.
+   Ours keeps a persistent ORDER NOW button in the header of every page, wired to the same
+   DoorDash storefront: no interruption, never more than one click away.
 5. **Take & Bake gets the spotlight.** Their most distinctive offering — ten casseroles,
    order by 2pm, pick up by 3pm — was buried on a text page; it's now a signature section with
    its own page, linked from the landing rail.
@@ -64,7 +66,8 @@ live text and their DoorDash ordering wired into every page.
    as a website.
 2. Scroll: story section with their real storefront photo → "that's your sign."
 3. Open **MENU** — scroll the live text menu. "Google can read this now. Your scans, it can't."
-4. Click **ORDER NOW** — their real DoorDash storefront opens. "Already wired to your ordering."
+4. Click **ORDER NOW** — their real DoorDash storefront opens. "Same ordering you have today —
+   but it lives in the corner of every page instead of a popup people close."
 5. Pull it up on your phone next to their current site on your phone. That contrast closes.
 
 ## Honest answers to likely questions
@@ -94,6 +97,9 @@ live text and their DoorDash ordering wired into every page.
   launch; don't quote prices as current in the meeting.
 - The **hero food photo is an illustrative composite** grounded in their own photography —
   never present it as a photo of a current dish. Every other photo on the site is genuinely theirs.
+- **Their current site DOES offer DoorDash ordering** — via a popup on page load. Never
+  claim they have no online ordering; the pitch is presentation (persistent button on every
+  page vs. a dismissible popup), not absence.
 - Verify the **DoorDash storefront link still works** the morning of any demo.
 - Don't promise pages their current site doesn't have (we mirror their structure on purpose).
 - Don't reference any other business's concept site.
