@@ -2,3 +2,12 @@ push.bat
 *.zip
 Thumbs.db
 desktop.ini
+
+# Secrets — never commit API keys (repo is public)
+.env
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.pyc
