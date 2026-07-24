@@ -92,6 +92,31 @@ harvested listings). Client-side search indexes all products + pages (assets/sea
   scrapnowmetal.com. CAUTION: street address (550 Industrial Rd vs 305 Industrial Pkwy) and hours
   conflict across sources; site shows first-party info with "call to confirm" notes.
 
+## Client launch checklist (domain cutover — SEO-safe)
+
+When a prospect becomes a client and their real domain points at our site, execute ALL of this.
+The domain is NOT "transferred" — the client keeps their registrar; we add the domain to the
+prospect's dedicated Vercel project and they update DNS (A/CNAME per Vercel's instructions).
+Domain-level SEO equity (backlinks, Google Business Profile, age) survives automatically.
+The risks are URL-level and crawl-directive-level:
+
+1. **REMOVE the demo blocks — the #1 landmine.** Every page ships with
+   `<meta name="robots" content="noindex, nofollow">` and robots.txt is Disallow-all (intentional
+   for private concepts). Launching like that doesn't damage SEO, it deletes it. Flip to indexable,
+   write a real robots.txt, drop the "Website concept" footer line.
+2. **301-map every old URL.** Enable `cleanUrls: true` in vercel.json so /about serves about.html —
+   because of Hard Rule 2 (feature parity), our filenames already mirror the old site's paths
+   almost 1:1. Redirect the leftovers (e.g. Wix's /home → /, /etsy-shop → Etsy). Crawl the old
+   site's sitemap.xml for the definitive URL list; nothing may 404.
+3. **Add sitemap.xml + canonical tags**, submit the domain in Google Search Console, and request
+   recrawl. Add JSON-LD LocalBusiness schema (verified NAP only).
+4. **Update the Google Business Profile** website link if it pointed at a now-redirected URL.
+5. Keep the old site live until DNS + redirects are verified, then expect a brief (days-to-weeks)
+   ranking wobble while Google recrawls — normal. Net effect should be positive: static-fast Core
+   Web Vitals, semantic HTML, and richer content than the Wix/Sites originals, with the client's
+   existing keyword language preserved in the copy.
+6. Optional hardening at launch: self-host the Etsy-hotlinked catalog images.
+
 ## Ecosystem
 
 - GitHub: brjBoN/factory-sites (public repo — flip private in settings if desired; Vercel keeps working).

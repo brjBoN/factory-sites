@@ -1,0 +1,20 @@
+{
+ "_comment": "Human-approved additions: only listing ids present here are ever auto-added to the site. New physical items found on Etsy but absent here land in the sync report's review queue. Display titles are curated to match the site's naming style (short, Title Case, no SEO spam).",
+ "add": {
+  "1390465140": {"title": "Alien Among Us Wall Hook", "section": "Wall Decor & Signs"},
+  "732848894": {"title": "Candy Corn Yard Stake", "section": "Yard & Garden"},
+  "1429603990": {"title": "Fishtail Font Letter Monogram", "section": "Monograms & Name Signs"},
+  "164297338": {"title": "Deer Garden Flag", "section": "Yard & Garden"},
+  "198328966": {"title": "Deer Paper Towel Holder", "section": "Kitchen & Home"},
+  "1424284196": {"title": "Pool Towel Wall Hook, Small", "section": "Wall Decor & Signs"},
+  "1602055268": {"title": "Nativity Yard Stake", "section": "Yard & Garden"},
+  "168276434": {"title": "Lake Scene Garden Flag", "section": "Yard & Garden"},
+  "1344684881": {"title": "Light Bulb Ornament", "section": "Seasonal & Holiday"},
+  "741167064": {"title": "Metal Christmas Tree", "section": "Seasonal & Holiday"},
+  "179841967": {"title": "Metal Letter, Small", "section": "Monograms & Name Signs"},
+  "192533192": {"title": "Metal Wall Letters, Medium", "section": "Monograms & Name Signs"},
+  "165311807": {"title": "Scary Pumpkin Yard Stake", "section": "Yard & Garden"},
+  "200328093": {"title": "Patina Letter, Medium", "section": "Monograms & Name Signs"},
+  "1456947126": {"title": "X-Large Single Letter Monogram", "section": "Monograms & Name Signs"}
+ }
+}

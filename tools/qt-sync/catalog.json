@@ -1,0 +1,3421 @@
+{
+ "generated_at": "2026-07-24T14:57:20+00:00",
+ "site": "sites/quality-tooling",
+ "section_inventory": {
+  "catalog.html": [
+   {
+    "name": "Monograms & Name Signs",
+    "count": 46
+   },
+   {
+    "name": "Wall Decor & Signs",
+    "count": 44
+   }
+  ],
+  "catalog-2.html": [
+   {
+    "name": "Yard & Garden",
+    "count": 29
+   },
+   {
+    "name": "Kitchen & Home",
+    "count": 14
+   }
+  ],
+  "catalog-3.html": [
+   {
+    "name": "Hunting & Outdoors",
+    "count": 11
+   },
+   {
+    "name": "Seasonal & Holiday",
+    "count": 7
+   }
+  ]
+ },
+ "search_page_entries": [
+  {
+   "t": "Industrial Services",
+   "u": "services.html",
+   "p": ""
+  },
+  {
+   "t": "Metal Art Shop",
+   "u": "art-shop.html",
+   "p": ""
+  },
+  {
+   "t": "Full Catalog",
+   "u": "catalog.html",
+   "p": ""
+  },
+  {
+   "t": "Gallery",
+   "u": "gallery.html",
+   "p": ""
+  },
+  {
+   "t": "About Us",
+   "u": "about.html",
+   "p": ""
+  },
+  {
+   "t": "Contact & Visit",
+   "u": "contact.html",
+   "p": ""
+  },
+  {
+   "t": "Customer Feedback",
+   "u": "customer-feedback.html",
+   "p": ""
+  },
+  {
+   "t": "Gift Cards",
+   "u": "gift-card.html",
+   "p": ""
+  },
+  {
+   "t": "Monograms",
+   "u": "monograms.html",
+   "p": ""
+  },
+  {
+   "t": "Wall Decor",
+   "u": "wall-decor.html",
+   "p": ""
+  },
+  {
+   "t": "Patina Letters",
+   "u": "patina.html",
+   "p": ""
+  },
+  {
+   "t": "Holiday",
+   "u": "holiday.html",
+   "p": ""
+  },
+  {
+   "t": "Paper Towel Holders",
+   "u": "paper-towel-holders.html",
+   "p": ""
+  },
+  {
+   "t": "Fishing Rod Holders",
+   "u": "fishing-rod-holders.html",
+   "p": ""
+  }
+ ],
+ "products": {
+  "1418154419": {
+   "title": "\"Life is Good\" in Patina",
+   "price": "80.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2250/1788/0/403/il/0efcfd/4646957760/il_340x270.4646957760_lzvf.jpg",
+     "alt": "\"Life is Good\" in Patina"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "\"Life is Good\" in Patina",
+     "price": "80.00"
+    }
+   ],
+   "raw_title": "Vintage Vibes: \"Life is Good\" in Patina //Custom Metal Sign // Life is Good Here Metal Quote // FREE SHIPPING",
+   "img_uid": "4646957760"
+  },
+  "769924577": {
+   "title": "Air Force Firefighter Garden Flag",
+   "price": "32.99",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/1666/1324/427/505/il/597d6d/2232614141/il_800x800.2232614141_otn6.jpg",
+     "alt": "Air Force Firefighter Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Air Force Firefighter Garden Flag",
+     "price": "32.99"
+    }
+   ],
+   "raw_title": "Air Force Firefighter Garden Flag, Christmas Gift, Air Force",
+   "img_uid": "2232614141"
+  },
+  "1390465140": {
+   "title": "Alien Among Us Wall Hook",
+   "price": "59.30",
+   "raw_title": "Alien among us Wall Hook, SUS",
+   "img_uid": "4617435249",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/89e0a8/4617435249/il_800x800.4617435249_bhnq.jpg",
+     "alt": "Alien Among Us Wall Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Alien Among Us Wall Hook",
+     "price": "59.30"
+    }
+   ]
+  },
+  "189459769": {
+   "title": "Anchor Monogram, 20 in.",
+   "price": "63.15",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/7bdb46/643589710/il_340x270.643589710_lfbr.jpg",
+     "alt": "Anchor Monogram, 20 in."
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Anchor Monogram, 20 in.",
+     "price": "63.15"
+    }
+   ],
+   "raw_title": "20\" Metal Anchor Monogram Wall/Door HangerPersonalized Home Decor",
+   "img_uid": "643589710"
+  },
+  "541194560": {
+   "title": "Antler Monogrammed Garden Flag",
+   "price": "38.49",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/2244/1783/0/728/il/5ae9f2/3507685266/il_340x270.3507685266_ossv.jpg",
+     "alt": "Antler Monogrammed Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Antler Monogrammed Garden Flag",
+     "price": "38.49"
+    }
+   ],
+   "raw_title": "Metal Antler Monogrammed Garden Flag, Rustic Yard Art",
+   "img_uid": "3507685266"
+  },
+  "184993868": {
+   "title": "Arrow with Heart Wall Art",
+   "price": "21.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/42c21f/589359922/il_340x270.589359922_jj36.jpg",
+     "alt": "Arrow with Heart Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Arrow with Heart Wall Art",
+     "price": "21.99"
+    }
+   ],
+   "raw_title": "Arrow with Heart Metal Wall ArtPersonalized Home Decor",
+   "img_uid": "589359922"
+  },
+  "827987024": {
+   "title": "As-Is KHM Monogram, 5.5 in.",
+   "price": "25.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/efb420/2470608375/il_340x270.2470608375_1pn8.jpg",
+     "alt": "As-Is KHM Monogram, 5.5 in."
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "As-Is KHM Monogram, 5.5 in.",
+     "price": "25.00"
+    }
+   ],
+   "raw_title": "As Is, Ready to Ship, KHM monogram 5-1/2” tall, FREE SHIPPING, Personalized Home Decor",
+   "img_uid": "2470608375"
+  },
+  "198329192": {
+   "title": "Bear Paper Towel Holder",
+   "price": "24.99",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/d26a10/634531665/il_340x270.634531665_2g3e.jpg",
+     "alt": "Bear Paper Towel Holder"
+    },
+    {
+     "file": "paper-towel-holders.html",
+     "kind": "feature",
+     "img": "assets/pth-bear.jpg",
+     "title": "Bear Paper Towel Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Bear Paper Towel Holder",
+     "price": "24.99"
+    }
+   ],
+   "raw_title": "Bear Metal Paper Towel Holder, Christmas Gift, Unique Gift, Cabin Decor",
+   "img_uid": "634531665"
+  },
+  "164305577": {
+   "title": "Bird Hunting Garden Flag",
+   "price": "32.99",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/a8c6f0/507484520/il_340x270.507484520_kqry.jpg",
+     "alt": "Bird Hunting Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Bird Hunting Garden Flag",
+     "price": "32.99"
+    }
+   ],
+   "raw_title": "Bird Hunting Metal Garden Flag",
+   "img_uid": "507484520"
+  },
+  "506642631": {
+   "title": "Birds on a Branch Paper Towel Holder",
+   "price": "26.25",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/c/692/550/26/467/il/23eb08/1213827077/il_800x800.1213827077_cjbr.jpg",
+     "alt": "Birds on a Branch Paper Towel Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Birds on a Branch Paper Towel Holder",
+     "price": "26.25"
+    }
+   ],
+   "raw_title": "Birds on a Branch Paper Towel Holder",
+   "img_uid": "1213827077"
+  },
+  "184192976": {
+   "title": "Birds on a Branch Wall Art",
+   "price": "65.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/e7d732/582174185/il_340x270.582174185_53le.jpg",
+     "alt": "Birds on a Branch Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Birds on a Branch Wall Art",
+     "price": "65.00"
+    }
+   ],
+   "raw_title": "Birds on A Branch Metal Art, Home Decor, Bird Art",
+   "img_uid": "582174185"
+  },
+  "176201888": {
+   "title": "Birds on a Wire Wall Art",
+   "price": "29.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/a86d39/2344368479/il_340x270.2344368479_nklu.jpg",
+     "alt": "Birds on a Wire Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Birds on a Wire Wall Art",
+     "price": "29.99"
+    }
+   ],
+   "raw_title": "Birds On A Wire {Metal Wall Art} Mother's Day Gift, Housewarming Gift",
+   "img_uid": "2344368479"
+  },
+  "1702639501": {
+   "title": "Boho Sunburst Wall Art",
+   "price": "115.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/7516f7/5917645055/il_340x270.5917645055_g4pm.jpg",
+     "alt": "Boho Sunburst Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Boho Sunburst Wall Art",
+     "price": "115.00"
+    }
+   ],
+   "raw_title": "Boho Sun Metal Sunburst Wall Art – Eclectic Indoor/Outdoor Décor | Whimsical Sun Sculpture | 26\"x28\" Powder-Coated Steel",
+   "img_uid": "5917645055"
+  },
+  "271580678": {
+   "title": "Butcher Cuts Kitchen Art",
+   "price": "53.50",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/87100c/936796930/il_340x270.936796930_i1x4.jpg",
+     "alt": "Butcher Cuts Kitchen Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Butcher Cuts Kitchen Art",
+     "price": "53.50"
+    }
+   ],
+   "raw_title": "Rustic Delights: Metal Butcher Cuts Art with Patina Finish",
+   "img_uid": "936796930"
+  },
+  "732848894": {
+   "title": "Candy Corn Yard Stake",
+   "price": "37.50",
+   "raw_title": "Candy Corn Metal Yard Stake",
+   "img_uid": "5442100085",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/2250/1786/0/587/il/8a5eec/5442100085/il_800x800.5442100085_1avu.jpg",
+     "alt": "Candy Corn Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Candy Corn Yard Stake",
+     "price": "37.50"
+    }
+   ]
+  },
+  "1593720424": {
+   "title": "Christmas Gnome Yard Stake",
+   "price": "30.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/a94bb6/5538948433/il_340x270.5538948433_ij7x.jpg",
+     "alt": "Christmas Gnome Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Christmas Gnome Yard Stake",
+     "price": "30.00"
+    }
+   ],
+   "raw_title": "Metal Christmas Gnome Yard Stake - Festive Holiday Lawn Decoration, Outdoor Garden Décor",
+   "img_uid": "5538948433"
+  },
+  "1335212774": {
+   "title": "Christmas Tree Cake Ornament",
+   "price": "24.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Seasonal & Holiday",
+     "img": "https://i.etsystatic.com/8622503/r/il/05e83d/4358016162/il_340x270.4358016162_feum.jpg",
+     "alt": "Christmas Tree Cake Ornament"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Christmas Tree Cake Ornament",
+     "price": "24.00"
+    }
+   ],
+   "raw_title": "Christmas Tree Cake Ornament, Metal Christmas Ornament, Christmas Gift Idea",
+   "img_uid": "4358016162"
+  },
+  "1346223776": {
+   "title": "Christmas Tree Cake Yard Stake",
+   "price": "30.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/3e3965/6478195947/il_340x270.6478195947_ses2.jpg",
+     "alt": "Christmas Tree Cake Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Christmas Tree Cake Yard Stake",
+     "price": "30.00"
+    }
+   ],
+   "raw_title": "Christmas Tree Cake Yard Stake Door Hanger, Metal Christmas Décor, Yard Stake, Christmas Front Porch",
+   "img_uid": "6478195947"
+  },
+  "1826528359": {
+   "title": "Christmas Tree Yard Stake",
+   "price": "40.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/9d1abf/6499511277/il_340x270.6499511277_a7x7.jpg",
+     "alt": "Christmas Tree Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Christmas Tree Yard Stake",
+     "price": "40.00"
+    }
+   ],
+   "raw_title": "Christmas Tree Yard Stake, Handpainted",
+   "img_uid": "6499511277"
+  },
+  "179986996": {
+   "title": "Circle Monogram Door Hanger",
+   "price": "26.40",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/158d61/566676319/il_340x270.566676319_j6j6.jpg",
+     "alt": "Circle Monogram Door Hanger"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Circle Monogram Door Hanger",
+     "price": "26.40"
+    }
+   ],
+   "raw_title": "Metal Circle Monogram Wall/Door HangerPersonalized Home Decor",
+   "img_uid": "566676319"
+  },
+  "170929480": {
+   "title": "Construction Themed Wall Hook",
+   "price": "64.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/edcfdb/2710070954/il_340x270.2710070954_89my.jpg",
+     "alt": "Construction Themed Wall Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Construction Themed Wall Hook",
+     "price": "64.99"
+    }
+   ],
+   "raw_title": "Construction Themed Wall Hook, Christmas Gift, Crane Truck, Dump Truck",
+   "img_uid": "2710070954"
+  },
+  "1840979834": {
+   "title": "Construction Wall Hook, Dump Truck",
+   "price": "64.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/edcfdb/2710070954/il_340x270.2710070954_89my.jpg",
+     "alt": "Construction Wall Hook, Dump Truck"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Construction Wall Hook, Dump Truck",
+     "price": "64.99"
+    }
+   ],
+   "raw_title": "Construction Themed Wall Hook II Dump Truck",
+   "img_uid": "2710070954"
+  },
+  "1579574133": {
+   "title": "Cowgirls Only Bathroom Sign",
+   "price": "72.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2250/1786/0/501/il/98a6d3/5354528594/il_340x270.5354528594_rm6n.jpg",
+     "alt": "Cowgirls Only Bathroom Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Cowgirls Only Bathroom Sign",
+     "price": "72.00"
+    }
+   ],
+   "raw_title": "Cowgirls Only Bathroom Sign",
+   "img_uid": "5354528594"
+  },
+  "1413108674": {
+   "title": "Custom Memorial Garden Stake",
+   "price": "105.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/1396/1109/71/5/il/c4ba3c/4722513205/il_340x270.4722513205_phab.jpg",
+     "alt": "Custom Memorial Garden Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Custom Memorial Garden Stake",
+     "price": "105.00"
+    }
+   ],
+   "raw_title": "Custom Metal Memorial Garden Stake – Personalized Name & Dates | Outdoor Remembrance Plaque | Sympathy Gift for Loved Ones",
+   "img_uid": "4722513205"
+  },
+  "756038808": {
+   "title": "Custom Monogram Wall Decor Signs",
+   "price": "159.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/503/400/335/122/il/c06625/2162019738/il_340x270.2162019738_7cyo.jpg",
+     "alt": "Custom Monogram Wall Decor Signs"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Custom Monogram Wall Decor Signs",
+     "price": "159.50"
+    }
+   ],
+   "raw_title": "Custom Metal Signs | Monogram Wall Decor | Custom Metal Art | Family Last Name Sign I Personalized Wedding Gift I Scroll Border Monogram",
+   "img_uid": "2162019738"
+  },
+  "1728607755": {
+   "title": "Custom Monogram, Fishtail Font",
+   "price": "84.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1840/1461/438/594/il/5e11d4/5978977746/il_340x270.5978977746_1ela.jpg",
+     "alt": "Custom Monogram, Fishtail Font"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Custom Monogram, Fishtail Font",
+     "price": "84.50"
+    }
+   ],
+   "raw_title": "Custom Metal Monogram in Fishtail Font with Vine Border & Birds - Personalized Home Décor {Indoor/Outdoor}",
+   "img_uid": "5978977746"
+  },
+  "769943261": {
+   "title": "Custom Quail Sign with Family Name",
+   "price": "70.34",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/0f6f4c/2150685774/il_800x800.2150685774_85bo.jpg",
+     "alt": "Custom Quail Sign with Family Name"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Custom Quail Sign with Family Name",
+     "price": "70.34"
+    }
+   ],
+   "raw_title": "Custom Quail Sign with Family Name – Unique Metal Art for Nature Lovers",
+   "img_uid": "2150685774"
+  },
+  "1154214698": {
+   "title": "Deer Abstract Wall Art",
+   "price": "172.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/524/416/273/15/il/c4174c/3627263422/il_340x270.3627263422_6a5q.jpg",
+     "alt": "Deer Abstract Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Deer Abstract Wall Art",
+     "price": "172.00"
+    }
+   ],
+   "raw_title": "Metal Deer Abstract Wall Art",
+   "img_uid": "3627263422"
+  },
+  "270526392": {
+   "title": "Deer Antler Monogram Sign",
+   "price": "66.75",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/770/612/167/441/il/edf51d/4652799185/il_800x800.4652799185_4hrk.jpg",
+     "alt": "Deer Antler Monogram Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Deer Antler Monogram Sign",
+     "price": "66.75"
+    }
+   ],
+   "raw_title": "Personalized Deer Antler Metal Monogram Sign – Custom Family Name Wall Décor | Rustic Cabin & Lodge Accent | Hunting Gift",
+   "img_uid": "4652799185"
+  },
+  "164297338": {
+   "title": "Deer Garden Flag",
+   "price": "32.99",
+   "raw_title": "Deer Metal Garden Flag, Welcome Sign, Family Name Sign, Housewarming Gift, Mother's Day Gift, Father's Day Gift, Birthday Gift, Hunting Gift",
+   "img_uid": "507542501",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/016f30/507542501/il_800x800.507542501_aom1.jpg",
+     "alt": "Deer Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Deer Garden Flag",
+     "price": "32.99"
+    }
+   ]
+  },
+  "198328966": {
+   "title": "Deer Paper Towel Holder",
+   "price": "41.50",
+   "raw_title": "Deer Metal Paper Towel Holder, Christmas Gift, Gifts for Him, Hunting Gift, Hunting Camp Decor",
+   "img_uid": "634417878",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/d7e8fb/634417878/il_800x800.634417878_cyvb.jpg",
+     "alt": "Deer Paper Towel Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Deer Paper Towel Holder",
+     "price": "41.50"
+    }
+   ]
+  },
+  "1855133471": {
+   "title": "Duck Key Hook, Country Style",
+   "price": "34.50",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/1490/1184/375/1037/il/6c5b9b/5440161182/il_800x800.5440161182_3vgi.jpg",
+     "alt": "Duck Key Hook, Country Style"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Duck Key Hook, Country Style",
+     "price": "34.50"
+    }
+   ],
+   "raw_title": "Metal Duck Key Hook – Country Style Wall Hook for Keys, Leashes & Accessories",
+   "img_uid": "5440161182"
+  },
+  "772289839": {
+   "title": "Easter Bunny Door Hanger Monogram",
+   "price": "70.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Seasonal & Holiday",
+     "img": "https://i.etsystatic.com/8622503/r/il/15b408/2161630766/il_340x270.2161630766_7lzj.jpg",
+     "alt": "Easter Bunny Door Hanger Monogram"
+    },
+    {
+     "file": "holiday.html",
+     "kind": "feature",
+     "img": "assets/art-bunnies.jpg",
+     "title": "Easter Bunny Door Hanger Monogram"
+    },
+    {
+     "file": "monograms.html",
+     "kind": "feature",
+     "img": "assets/art-bunnies.jpg",
+     "title": "Easter Bunny Door Hanger Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Easter Bunny Door Hanger Monogram",
+     "price": "70.00"
+    }
+   ],
+   "raw_title": "Easter Bunny Door Hanger, Metal Monogram, Easter, Personalized, Spring Décor",
+   "img_uid": "2161630766"
+  },
+  "1389777392": {
+   "title": "Easter Bunny Yard Stake",
+   "price": "65.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/2250/1788/0/596/il/b165b0/4779410009/il_340x270.4779410009_kwf7.jpg",
+     "alt": "Easter Bunny Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Easter Bunny Yard Stake",
+     "price": "65.00"
+    }
+   ],
+   "raw_title": "Metal Easter Bunny Yard Stake – Large Garden Bunny Stake – Outdoor Easter Yard Decor – Spring Lawn Decoration – Metal Rabbit Garden Art",
+   "img_uid": "4779410009"
+  },
+  "1685703087": {
+   "title": "Easter Bunny Yard Stake, Large",
+   "price": "75.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/93a60c/5842625299/il_340x270.5842625299_rcqp.jpg",
+     "alt": "Easter Bunny Yard Stake, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Easter Bunny Yard Stake, Large",
+     "price": "75.00"
+    }
+   ],
+   "raw_title": "Easter Bunny Yard Stake [Metal] Large Outdoor Easter Decoration, Bunny Yard Décor, Easter Garden",
+   "img_uid": "5842625299"
+  },
+  "265529116": {
+   "title": "Easter Egg Yard Stake",
+   "price": "39.98",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/39e5f4/910072361/il_340x270.910072361_fm8t.jpg",
+     "alt": "Easter Egg Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Easter Egg Yard Stake",
+     "price": "39.98"
+    }
+   ],
+   "raw_title": "Easter Egg Yard Stake 1.5 ft, Easter Decor, Egg Decor",
+   "img_uid": "910072361"
+  },
+  "260879870": {
+   "title": "Elegant Filigree Monogram Sign",
+   "price": "107.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/693/550/68/243/il/e28d63/889588151/il_340x270.889588151_1pa2.jpg",
+     "alt": "Elegant Filigree Monogram Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Elegant Filigree Monogram Sign",
+     "price": "107.00"
+    }
+   ],
+   "raw_title": "Elegant Filigree Metal Monogram Sign - Personalized Initial Wall Décor, Perfect for Weddings & Home",
+   "img_uid": "889588151"
+  },
+  "1216866058": {
+   "title": "Farmhouse Floral Art Trio",
+   "price": "89.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/654/520/176/27/il/978149/3913805697/il_800x800.3913805697_eeje.jpg",
+     "alt": "Farmhouse Floral Art Trio"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Farmhouse Floral Art Trio",
+     "price": "89.99"
+    }
+   ],
+   "raw_title": "Farmhouse Floral Metal Art Trio",
+   "img_uid": "3913805697"
+  },
+  "1429603990": {
+   "title": "Fishtail Font Letter Monogram",
+   "price": "45.00",
+   "raw_title": "Custom Metal Monogram Sign - Fishtail Font Letter Wall Art {Indoor / Outdoor}",
+   "img_uid": "4791422970",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/e428e1/4791422970/il_800x800.4791422970_t9sm.jpg",
+     "alt": "Fishtail Font Letter Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Fishtail Font Letter Monogram",
+     "price": "45.00"
+    }
+   ]
+  },
+  "1409099980": {
+   "title": "Flame Colored Dragonfly Wall Art, Large",
+   "price": "140.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1119/889/76/23/il/9180a1/4702316233/il_1000x1000.4702316233_ea8f.jpg",
+     "alt": "Flame Colored Dragonfly Wall Art, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Flame Colored Dragonfly Wall Art, Large",
+     "price": "140.99"
+    }
+   ],
+   "raw_title": "Flame Colored Dragonfly Metal Wall Art LARGE {Indoor/Outdoor}",
+   "img_uid": "4702316233"
+  },
+  "4517016407": {
+   "title": "Flame Colored Hummingbird Wall Art",
+   "price": "99.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/823c03/8149654341/il_800x800.8149654341_cr4b.jpg",
+     "alt": "Flame Colored Hummingbird Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Flame Colored Hummingbird Wall Art",
+     "price": "99.99"
+    }
+   ],
+   "raw_title": "Flame Colored Metal Hummingbird Wall Art | Outdoor Garden Decor | Hand Torch-Flamed Steel Bird | Fence, Patio & Porch Decoration",
+   "img_uid": "8149654341"
+  },
+  "1422788177": {
+   "title": "Flame Colored Tree of Life",
+   "price": "197.25",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/5f9f8f/4702297551/il_800x800.4702297551_8qir.jpg",
+     "alt": "Flame Colored Tree of Life"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Flame Colored Tree of Life",
+     "price": "197.25"
+    }
+   ],
+   "raw_title": "Flame Colored Metal Tree of Life with Birds Sign LARGE {Indoor/Outdoor}",
+   "img_uid": "4702297551"
+  },
+  "1653935236": {
+   "title": "Fluffy Butt Hut Chicken Coop Stake",
+   "price": "85.75",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/2521/2001/478/980/il/0c3da0/6120893905/il_340x270.6120893905_3o78.jpg",
+     "alt": "Fluffy Butt Hut Chicken Coop Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Fluffy Butt Hut Chicken Coop Stake",
+     "price": "85.75"
+    }
+   ],
+   "raw_title": "Fluffy Butt Hut Metal Yard Stake – Funny Chicken Coop Sign | Farmhouse Garden Décor | 28\"x38\" Powder-Coated Steel",
+   "img_uid": "6120893905"
+  },
+  "168288739": {
+   "title": "Garden Flag Stand",
+   "price": "20.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/1125/894/0/177/il/a8e2be/2164598490/il_340x270.2164598490_1qca.jpg",
+     "alt": "Garden Flag Stand"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Garden Flag Stand",
+     "price": "20.00"
+    }
+   ],
+   "raw_title": "Garden Flag Stand",
+   "img_uid": "2164598490"
+  },
+  "1621745877": {
+   "title": "Gift Wrap Papers",
+   "price": "8.33",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/9f32eb/5548930692/il_340x270.5548930692_3zxe.jpg",
+     "alt": "Gift Wrap Papers"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Gift Wrap Papers",
+     "price": "8.33"
+    }
+   ],
+   "raw_title": "Gift Wrap Papers",
+   "img_uid": "5548930692"
+  },
+  "1698518959": {
+   "title": "God Bless America Garden Flag",
+   "price": "25.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/2d207c/5899538777/il_340x270.5899538777_g6pu.jpg",
+     "alt": "God Bless America Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "God Bless America Garden Flag",
+     "price": "25.00"
+    }
+   ],
+   "raw_title": "God Bless America Metal Garden Flag, Personalized Gift, Gift for Couple, Gift for Her, Patriotic, USA",
+   "img_uid": "5899538777"
+  },
+  "752933203": {
+   "title": "Handpainted Turkey Yard Stake",
+   "price": "75.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/ba4b53/5507693626/il_340x270.5507693626_di1u.jpg",
+     "alt": "Handpainted Turkey Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Handpainted Turkey Yard Stake",
+     "price": "75.00"
+    }
+   ],
+   "raw_title": "LAST CHANCE! Handpainted Metal Turkey Yard Stake I Thanksgiving Décor I Fall Garden Decoration I Outdoor Turkey",
+   "img_uid": "5507693626"
+  },
+  "192408923": {
+   "title": "Hanging Hook Add-On",
+   "price": "5.97",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/1da8ec/683837248/il_340x270.683837248_ciwp.jpg",
+     "alt": "Hanging Hook Add-On"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Hanging Hook Add-On",
+     "price": "5.97"
+    }
+   ],
+   "raw_title": "Hanging Hook Add-On",
+   "img_uid": "683837248"
+  },
+  "4335220172": {
+   "title": "Happy Sun Pool Sign, 18 in.",
+   "price": "67.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/4d6fe0/3161598761/il_800x800.3161598761_il8c.jpg",
+     "alt": "Happy Sun Pool Sign, 18 in."
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Happy Sun Pool Sign, 18 in.",
+     "price": "67.50"
+    }
+   ],
+   "raw_title": "Metal Happy Sun Pool Sign 18 INCHES {Indoor/Outdoor}, Spring, Summer, Pool Deck, Best Seller",
+   "img_uid": "3161598761"
+  },
+  "1446362940": {
+   "title": "Happy Sun Pool Sign, 22 in.",
+   "price": "82.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/4d6fe0/3161598761/il_800x800.3161598761_il8c.jpg",
+     "alt": "Happy Sun Pool Sign, 22 in."
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Happy Sun Pool Sign, 22 in.",
+     "price": "82.50"
+    }
+   ],
+   "raw_title": "Metal Happy Sun Pool Sign 22 INCHES {Indoor/Outdoor}, Spring, Summer, Pool Deck, Best Seller",
+   "img_uid": "3161598761"
+  },
+  "1678341110": {
+   "title": "Happy Sun Pool Sign, Large",
+   "price": "125.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/4d6fe0/3161598761/il_800x800.3161598761_il8c.jpg",
+     "alt": "Happy Sun Pool Sign, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Happy Sun Pool Sign, Large",
+     "price": "125.00"
+    }
+   ],
+   "raw_title": "Metal Happy Sun Pool Sign LARGE {Indoor/Outdoor}, Spring, Summer, Pool Deck, Best Seller",
+   "img_uid": "3161598761"
+  },
+  "4477561319": {
+   "title": "Happy Sun Yard Stake, 18 in.",
+   "price": "77.50",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/4d6fe0/3161598761/il_800x800.3161598761_il8c.jpg",
+     "alt": "Happy Sun Yard Stake, 18 in."
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Happy Sun Yard Stake, 18 in.",
+     "price": "77.50"
+    }
+   ],
+   "raw_title": "Metal Happy Sun Yard Stake 18 INCHES {Indoor/Outdoor}, Spring, Summer, Pool Deck, Best Seller",
+   "img_uid": "3161598761"
+  },
+  "757224054": {
+   "title": "Heart Border Single Letter Monogram",
+   "price": "95.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/766/609/101/0/il/a7bcda/3610525422/il_800x800.3610525422_gzoh.jpg",
+     "alt": "Heart Border Single Letter Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Heart Border Single Letter Monogram",
+     "price": "95.00"
+    }
+   ],
+   "raw_title": "Heart Border Single Letter Monogram {Indoor/Outdoor} Valentine's Day, Love, Just Because, Gift For Her",
+   "img_uid": "3610525422"
+  },
+  "1399680652": {
+   "title": "Heart-Shaped Tree of Life Sign, Large",
+   "price": "200.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/709/563/227/36/il/f28203/5129790928/il_800x800.5129790928_rhnt.jpg",
+     "alt": "Heart-Shaped Tree of Life Sign, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Heart-Shaped Tree of Life Sign, Large",
+     "price": "200.00"
+    }
+   ],
+   "raw_title": "Metal Heart Shaped Tree of Life Sign LARGE {Indoor/Outdoor}",
+   "img_uid": "5129790928"
+  },
+  "176201164": {
+   "title": "Heartfelt Monogram Wall Decor",
+   "price": "63.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2173/1726/826/197/il/55ee23/6037694035/il_340x270.6037694035_ag9e.jpg",
+     "alt": "Heartfelt Monogram Wall Decor"
+    },
+    {
+     "file": "holiday.html",
+     "kind": "feature",
+     "img": "assets/art-heart.jpg",
+     "title": "Heartfelt Monogram"
+    },
+    {
+     "file": "monograms.html",
+     "kind": "feature",
+     "img": "assets/art-heart.jpg",
+     "title": "Heartfelt Monogram"
+    },
+    {
+     "file": "wall-decor.html",
+     "kind": "feature",
+     "img": "assets/art-heart.jpg",
+     "title": "Heartfelt Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Heartfelt Monogram Wall Decor",
+     "price": "63.50"
+    }
+   ],
+   "raw_title": "Heartfelt Monogram: Metal Wall Décor",
+   "img_uid": "6037694035"
+  },
+  "1250492093": {
+   "title": "Hello Summer Watermelon Door Hanger",
+   "price": "75.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/566298/3987780099/il_340x270.3987780099_m6il.jpg",
+     "alt": "Hello Summer Watermelon Door Hanger"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Hello Summer Watermelon Door Hanger",
+     "price": "75.00"
+    }
+   ],
+   "raw_title": "Hello Summer Watermelon Door Hanger",
+   "img_uid": "3987780099"
+  },
+  "164091500": {
+   "title": "Hummingbird Garden Flag",
+   "price": "49.63",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/380/302/0/90/il/007e10/3807042158/il_340x270.3807042158_491u.jpg",
+     "alt": "Hummingbird Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Hummingbird Garden Flag",
+     "price": "49.63"
+    }
+   ],
+   "raw_title": "Metal Hummingbird Garden Flag - Decorative Outdoor Garden Art for Yard, Patio, or Lawn FREE SHIPPING",
+   "img_uid": "3807042158"
+  },
+  "1681960464": {
+   "title": "Hummingbird Yard Stake",
+   "price": "62.50",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/0f5d97/5888199532/il_340x270.5888199532_a9yz.jpg",
+     "alt": "Hummingbird Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Hummingbird Yard Stake",
+     "price": "62.50"
+    }
+   ],
+   "raw_title": "Hummingbird Yard Stake {Metal} Spring Décor, Spring Front Porch",
+   "img_uid": "5888199532"
+  },
+  "1317694523": {
+   "title": "Hunter Wall Hook & Coat Rack",
+   "price": "62.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/850/675/0/112/il/754082/4379684159/il_340x270.4379684159_trdp.jpg",
+     "alt": "Hunter Wall Hook & Coat Rack"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Hunter Wall Hook & Coat Rack",
+     "price": "62.00"
+    }
+   ],
+   "raw_title": "Hunter Wall Hook I Coat Rack I Gift for Hunter I Hunting Decor",
+   "img_uid": "4379684159"
+  },
+  "4429142294": {
+   "title": "Hunting Bow Holder, Euro Mount",
+   "price": "90.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/2250/3000/0/0/il/5cd24c/7580638007/il_800x800.7580638007_35mq.jpg",
+     "alt": "Hunting Bow Holder, Euro Mount"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Hunting Bow Holder, Euro Mount",
+     "price": "90.00"
+    }
+   ],
+   "raw_title": "Hunting Bow Holder Euro Mount Deer I Deer Mount I Gift for Hunter I Hunting Décor",
+   "img_uid": "7580638007"
+  },
+  "1398767190": {
+   "title": "Infinity Heart Name Sign",
+   "price": "65.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/365/290/257/98/il/fc1cec/4655655937/il_340x270.4655655937_rjd8.jpg",
+     "alt": "Infinity Heart Name Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Infinity Heart Name Sign",
+     "price": "65.00"
+    }
+   ],
+   "raw_title": "Infinity Heart Personalized Name Sign",
+   "img_uid": "4655655937"
+  },
+  "1290150702": {
+   "title": "Interlocking Initials Monogram",
+   "price": "175.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/4ad347/4206412429/il_800x800.4206412429_1z2m.jpg",
+     "alt": "Interlocking Initials Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Interlocking Initials Monogram",
+     "price": "175.00"
+    }
+   ],
+   "raw_title": "Interlocking Initials Metal Monogram - Custom 2-Letter Wall Art, Personalized Home Décor",
+   "img_uid": "4206412429"
+  },
+  "168276434": {
+   "title": "Lake Scene Garden Flag",
+   "price": "46.77",
+   "raw_title": "Lake Scene Garden Flag with Deer & Family NamePersonalized Home Decor",
+   "img_uid": "522242260",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/ce40b5/522242260/il_800x800.522242260_p8km.jpg",
+     "alt": "Lake Scene Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Lake Scene Garden Flag",
+     "price": "46.77"
+    }
+   ]
+  },
+  "802867675": {
+   "title": "Large Monogram with Family Name",
+   "price": "60.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/b37567/2970237394/il_800x800.2970237394_fw0w.jpg",
+     "alt": "Large Monogram with Family Name"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Monogram with Family Name",
+     "price": "60.00"
+    }
+   ],
+   "raw_title": "Large Metal Monogram with Family Name and EST date in Border {Indoor/Outdoor}, Anniversary Gift, Wedding Decor",
+   "img_uid": "2970237394"
+  },
+  "832038725": {
+   "title": "Large Police Badge Monogram",
+   "price": "95.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2608/2073/211/245/il/965e5b/2388100804/il_340x270.2388100804_c3uo.jpg",
+     "alt": "Large Police Badge Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Police Badge Monogram",
+     "price": "95.00"
+    }
+   ],
+   "raw_title": "LARGE Police Badge Metal Monogram, Gift for Police, Christmas Gift, Promotion Gift, Retirement Gift, Christmas Gift",
+   "img_uid": "2388100804"
+  },
+  "1206016876": {
+   "title": "Large Pool Towel Hook",
+   "price": "270.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1300/1033/255/1083/il/e7ecf2/3827312792/il_1000x1000.3827312792_iv7y.jpg",
+     "alt": "Large Pool Towel Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Pool Towel Hook",
+     "price": "270.00"
+    }
+   ],
+   "raw_title": "Large Pool Towel Hook – Metal Wall Mount for Outdoor Use | Heavy-Duty Towel Holder for Poolside, Patio, or Bathroom",
+   "img_uid": "3827312792"
+  },
+  "1310386220": {
+   "title": "Large Pumpkin Yard Stake",
+   "price": "85.75",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/2250/1788/0/336/il/84a9a2/5442397415/il_340x270.5442397415_jh8i.jpg",
+     "alt": "Large Pumpkin Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Pumpkin Yard Stake",
+     "price": "85.75"
+    }
+   ],
+   "raw_title": "Large Metal Pumpkin Yard Stake, Terra Cotta inspired",
+   "img_uid": "5442397415"
+  },
+  "819270326": {
+   "title": "Large Quail Sign with Family Name",
+   "price": "85.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/0f6f4c/2150685774/il_800x800.2150685774_85bo.jpg",
+     "alt": "Large Quail Sign with Family Name"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Quail Sign with Family Name",
+     "price": "85.50"
+    }
+   ],
+   "raw_title": "LARGE Quail Sign with Family Name, Door Hanger, Country Living, Housewarming, Hunting DecorPersonalized Home Decor",
+   "img_uid": "2150685774"
+  },
+  "194249576": {
+   "title": "Large Script Metal Monogram, Vine Font",
+   "price": "79.25",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1913/1519/0/176/il/789432/1452981946/il_800x800.1452981946_bda7.jpg",
+     "alt": "Large Script Metal Monogram, Vine Font"
+    },
+    {
+     "file": "monograms.html",
+     "kind": "feature",
+     "img": "assets/art-large-monogram.jpg",
+     "title": "Large Script Monogram, Vine Font"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Script Metal Monogram, Vine Font",
+     "price": "79.25"
+    }
+   ],
+   "raw_title": "Large Script Metal Monogram, Vine Font Monogram, Wedding Sign, Monogram Gift, Wedding Backdrop",
+   "img_uid": "1452981946"
+  },
+  "183912121": {
+   "title": "Large Single Letter Monogram",
+   "price": "80.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/852/676/0/132/il/db5472/4859435558/il_340x270.4859435558_5ieo.jpg",
+     "alt": "Large Single Letter Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Single Letter Monogram",
+     "price": "80.50"
+    }
+   ],
+   "raw_title": "Large Single Letter Metal Monogram Wall/Door HangerPersonalized Home Decor, Wedding Gift, Mother's Day, Bridesmaid, Birthday, Hostess Gift",
+   "img_uid": "4859435558"
+  },
+  "179843003": {
+   "title": "Large Wall Letters & Numbers",
+   "price": "39.88",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1125/1125/911/1069/il/aaa673/7220921247/il_340x270.7220921247_iij0.jpg",
+     "alt": "Large Wall Letters & Numbers"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Large Wall Letters & Numbers",
+     "price": "39.88"
+    }
+   ],
+   "raw_title": "LARGE Metal Wall Letters / Numbers [Personalized] Home Decor",
+   "img_uid": "7220921247"
+  },
+  "911025541": {
+   "title": "Last Name Split Letter Sign",
+   "price": "75.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1242/987/0/106/il/f0345c/2007800158/il_340x270.2007800158_ff68.jpg",
+     "alt": "Last Name Split Letter Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Last Name Split Letter Sign",
+     "price": "75.00"
+    }
+   ],
+   "raw_title": "Last Name Metal Sign | Split Letter Monogram Wall Décor | Metal Wall Art | Family Last Name Sign | Personalized Wedding Gift {24 INCHES}",
+   "img_uid": "2007800158"
+  },
+  "777662155": {
+   "title": "Laurel Wreath Paper Towel Holder",
+   "price": "30.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/c/666/529/0/17/il/f7a3c4/2232621849/il_340x270.2232621849_oyx6.jpg",
+     "alt": "Laurel Wreath Paper Towel Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Laurel Wreath Paper Towel Holder",
+     "price": "30.00"
+    }
+   ],
+   "raw_title": "Laurel Wreath Monogrammed Metal Paper Towel Holder",
+   "img_uid": "2232621849"
+  },
+  "1344684881": {
+   "title": "Light Bulb Ornament",
+   "price": "12.00",
+   "raw_title": "Light Bulb Christmas Ornament, Metal Christmas Ornament, Christmas Gift Idea",
+   "img_uid": "5526719074",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Seasonal & Holiday",
+     "img": "https://i.etsystatic.com/8622503/r/il/d5663d/5526719074/il_800x800.5526719074_b394.jpg",
+     "alt": "Light Bulb Ornament"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Light Bulb Ornament",
+     "price": "12.00"
+    }
+   ]
+  },
+  "1216048346": {
+   "title": "Lion \"Aslan\" Wall Art",
+   "price": "170.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1440/1144/0/560/il/767a86/3863391750/il_340x270.3863391750_lkqw.jpg",
+     "alt": "Lion \"Aslan\" Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Lion \"Aslan\" Wall Art",
+     "price": "170.00"
+    }
+   ],
+   "raw_title": "Lion, King, Aslan [Metal Wall Art] READY TO SHIP",
+   "img_uid": "3863391750"
+  },
+  "1421963245": {
+   "title": "Love Birds, Flame Colored",
+   "price": "69.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/959/763/0/184/il/5be970/4695586039/il_340x270.4695586039_oec3.jpg",
+     "alt": "Love Birds, Flame Colored"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Love Birds, Flame Colored",
+     "price": "69.99"
+    }
+   ],
+   "raw_title": "Love Birds Metal Art Sign // Flame Colored Metal Sign",
+   "img_uid": "4695586039"
+  },
+  "232355986": {
+   "title": "Mason Jar Single Letter Monogram",
+   "price": "41.48",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/265d30/891946704/il_340x270.891946704_htc5.jpg",
+     "alt": "Mason Jar Single Letter Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Mason Jar Single Letter Monogram",
+     "price": "41.48"
+    }
+   ],
+   "raw_title": "Mason Jar Single Letter Metal Monogram Wall/Door HangerPersonalized Home Decor",
+   "img_uid": "891946704"
+  },
+  "741167064": {
+   "title": "Metal Christmas Tree",
+   "price": "28.15",
+   "raw_title": "Metal Christmas Tree, Christmas Decor, Christmas Party, Rustic Christmas",
+   "img_uid": "2092573016",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Seasonal & Holiday",
+     "img": "https://i.etsystatic.com/8622503/r/il/c469cb/2092573016/il_800x800.2092573016_mz5p.jpg",
+     "alt": "Metal Christmas Tree"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Christmas Tree",
+     "price": "28.15"
+    }
+   ]
+  },
+  "177474660": {
+   "title": "Metal Deer Wall Hook",
+   "price": "80.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/r/il/2676b8/557285673/il_340x270.557285673_p4bf.jpg",
+     "alt": "Metal Deer Wall Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Deer Wall Hook",
+     "price": "80.00"
+    }
+   ],
+   "raw_title": "Metal Deer Wall Hook, Christmas Gift, Gifts for Him, Hunting Gift, Personalized Home Decor, Coat Rack, Hat Rack",
+   "img_uid": "557285673"
+  },
+  "1569465035": {
+   "title": "Metal Duck Key Hook",
+   "price": "34.50",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/1490/1184/375/1037/il/6c5b9b/5440161182/il_800x800.5440161182_3vgi.jpg",
+     "alt": "Metal Duck Key Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Duck Key Hook",
+     "price": "34.50"
+    }
+   ],
+   "raw_title": "Metal Duck Key Hook – Country Style Wall Hook for Keys, Leashes & Accessories",
+   "img_uid": "5440161182"
+  },
+  "714510596": {
+   "title": "Metal HOME Sign, 24 in.",
+   "price": "68.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/463/368/0/51/il/cbdb6c/3739610115/il_800x800.3739610115_bkw6.jpg",
+     "alt": "Metal HOME Sign, 24 in."
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal HOME Sign, 24 in.",
+     "price": "68.99"
+    }
+   ],
+   "raw_title": "Metal HOME Sign - 24 inches, Farmhouse Decor, Word Signage, Christmas Gift, Home Decor, Housewarming Gift",
+   "img_uid": "3739610115"
+  },
+  "179841967": {
+   "title": "Metal Letter, Small",
+   "price": "12.45",
+   "raw_title": "Metal Letter, Small Size, Wall Decor, Christmas Gift, Nursery, BedroomPersonalized Home Decor",
+   "img_uid": "593798107",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/6dbacb/593798107/il_800x800.593798107_90gy.jpg",
+     "alt": "Metal Letter, Small"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Letter, Small",
+     "price": "12.45"
+    }
+   ]
+  },
+  "1184544176": {
+   "title": "Metal Lion Wall Art",
+   "price": "162.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/4ba24e/3854047233/il_340x270.3854047233_lkqw.jpg",
+     "alt": "Metal Lion Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Lion Wall Art",
+     "price": "162.00"
+    }
+   ],
+   "raw_title": "Metal Lion Wall Art – Aslan-Inspired King Lion Décor | Custom Crowned Lion Sign | Indoor/Outdoor Metal Wall Hanging",
+   "img_uid": "3854047233"
+  },
+  "168284943": {
+   "title": "Metal Monogram Garden Flag",
+   "price": "25.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/c6de88/1972975704/il_340x270.1972975704_6uki.jpg",
+     "alt": "Metal Monogram Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Monogram Garden Flag",
+     "price": "25.00"
+    }
+   ],
+   "raw_title": "Metal Monogram Garden Flag, Personalized Gift, Gift for Couple, Gift for Her, Housewarming Gift, Christmas Gift, Unique Gift, Hostess Gift",
+   "img_uid": "1972975704"
+  },
+  "173440379": {
+   "title": "Metal Monogram Wall Art",
+   "price": "40.79",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/916b66/5943013341/il_800x800.5943013341_7si3.jpg",
+     "alt": "Metal Monogram Wall Art"
+    },
+    {
+     "file": "monograms.html",
+     "kind": "feature",
+     "img": "assets/art-medium-monogram.jpg",
+     "title": "Metal Monogram Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Monogram Wall Art",
+     "price": "40.79"
+    }
+   ],
+   "raw_title": "Metal Monogram Wall Art {Indoor/Outdoor}Personalized Home Decor, Wedding Gift, Wedding Decor, Bridesmaid Gift, Mother's Day, Gift for Couple",
+   "img_uid": "5943013341"
+  },
+  "238179324": {
+   "title": "Metal Monogram, Small Size",
+   "price": "32.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/c621f4/605598966/il_340x270.605598966_rjpo.jpg",
+     "alt": "Metal Monogram, Small Size"
+    },
+    {
+     "file": "monograms.html",
+     "kind": "feature",
+     "img": "assets/art-small-monogram.jpg",
+     "title": "Metal Monogram, Small Size"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Monogram, Small Size",
+     "price": "32.00"
+    }
+   ],
+   "raw_title": "Metal Monogram Wall Art, Small Size, FREE SHIPPINGPersonalized Home Decor",
+   "img_uid": "605598966"
+  },
+  "546758991": {
+   "title": "Metal Number Signs",
+   "price": "40.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/45d20e/1307138255/il_800x800.1307138255_rq9k.jpg",
+     "alt": "Metal Number Signs"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Number Signs",
+     "price": "40.00"
+    }
+   ],
+   "raw_title": "Metal Number Signs {Indoor/Outdoor}Personalized Home Decor",
+   "img_uid": "1307138255"
+  },
+  "494041017": {
+   "title": "Metal Snowflake Ornament",
+   "price": "25.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Seasonal & Holiday",
+     "img": "https://i.etsystatic.com/8622503/r/il/71650b/1305184817/il_800x800.1305184817_2doj.jpg",
+     "alt": "Metal Snowflake Ornament"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Snowflake Ornament",
+     "price": "25.00"
+    }
+   ],
+   "raw_title": "Metal Snowflake Ornament, Christmas Gift, Christmas Decor, Tree Decor, Secret Santa, Teacher Gift, Personalized GiftPersonalized Home Decor",
+   "img_uid": "1305184817"
+  },
+  "1824216771": {
+   "title": "Metal Wader Rack for Duck Hunters",
+   "price": "225.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/1133/901/164/0/il/22d8b3/2874858094/il_340x270.2874858094_l98e.jpg",
+     "alt": "Metal Wader Rack for Duck Hunters"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Wader Rack for Duck Hunters",
+     "price": "225.00"
+    }
+   ],
+   "raw_title": "Metal Wader Rack for Duck Hunters | Heavy-Duty Wader Hanger & Gear Organizer",
+   "img_uid": "2874858094"
+  },
+  "192533192": {
+   "title": "Metal Wall Letters, Medium",
+   "price": "22.57",
+   "raw_title": "Metal Wall Letters - Medium Sized (14\"-20\") Personalized Home Décor",
+   "img_uid": "593798107",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/6dbacb/593798107/il_800x800.593798107_90gy.jpg",
+     "alt": "Metal Wall Letters, Medium"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Wall Letters, Medium",
+     "price": "22.57"
+    }
+   ]
+  },
+  "534617026": {
+   "title": "Metal Word Wall Art",
+   "price": "30.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2777/2207/189/356/il/a987b7/2039583282/il_800x800.2039583282_efin.jpg",
+     "alt": "Metal Word Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Metal Word Wall Art",
+     "price": "30.00"
+    }
+   ],
+   "raw_title": "Metal Word Wall Art",
+   "img_uid": "2039583282"
+  },
+  "1664654319": {
+   "title": "Modern Mail Organizer",
+   "price": "30.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/a3d955/5701994200/il_800x800.5701994200_oci2.jpg",
+     "alt": "Modern Mail Organizer"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Modern Mail Organizer",
+     "price": "30.00"
+    }
+   ],
+   "raw_title": "Modern Mail Organizer - Metal Art",
+   "img_uid": "5701994200"
+  },
+  "603261807": {
+   "title": "Modern Monogram, Tribal Border",
+   "price": "88.67",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/390/309/0/55/il/7a113e/5177758476/il_800x800.5177758476_27js.jpg",
+     "alt": "Modern Monogram, Tribal Border"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Modern Monogram, Tribal Border",
+     "price": "88.67"
+    }
+   ],
+   "raw_title": "Modern Monogram with Tribal Border - Unique Metal Wall Art Decoration {Indoor/Outdoor}",
+   "img_uid": "5177758476"
+  },
+  "269396184": {
+   "title": "Monogram Christmas Tree",
+   "price": "45.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Seasonal & Holiday",
+     "img": "https://i.etsystatic.com/8622503/c/2250/1788/0/951/il/ea42a1/3510022852/il_340x270.3510022852_jtce.jpg",
+     "alt": "Monogram Christmas Tree"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogram Christmas Tree",
+     "price": "45.00"
+    }
+   ],
+   "raw_title": "Metal Monogram Christmas Tree, Christmas Decor, Christmas Gift, Rustic Christmas, Personalized Home Decor",
+   "img_uid": "3510022852"
+  },
+  "164716446": {
+   "title": "Monogram Garden Flag",
+   "price": "36.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/13ebdd/889503049/il_340x270.889503049_3ix9.jpg",
+     "alt": "Monogram Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogram Garden Flag",
+     "price": "36.00"
+    }
+   ],
+   "raw_title": "Metal Monogram Garden Flag",
+   "img_uid": "889503049"
+  },
+  "904033137": {
+   "title": "Monogram Snowman Tree",
+   "price": "45.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Seasonal & Holiday",
+     "img": "https://i.etsystatic.com/8622503/r/il/6a9e62/2140934113/il_340x270.2140934113_mmfr.jpg",
+     "alt": "Monogram Snowman Tree"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogram Snowman Tree",
+     "price": "45.00"
+    }
+   ],
+   "raw_title": "Metal Monogram Snowman Tree, Christmas Decor, Christmas Gift, Personalized Home Decor",
+   "img_uid": "2140934113"
+  },
+  "1022014446": {
+   "title": "Monogram with Elegant Vine Border",
+   "price": "88.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/912461/2718254743/il_340x270.2718254743_j6ce.jpg",
+     "alt": "Monogram with Elegant Vine Border"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogram with Elegant Vine Border",
+     "price": "88.00"
+    }
+   ],
+   "raw_title": "Custom Metal Monogram with Elegant Vine Border - Personalized Wall Décor for Home, Family Name Sign, Outdoor Garden Art, Wedding Gift 18\"",
+   "img_uid": "2718254743"
+  },
+  "596007726": {
+   "title": "Monogram with Scroll Border, 24 in.",
+   "price": "85.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2448/1944/0/290/il/8b80d8/1612679701/il_800x800.1612679701_sqaq.jpg",
+     "alt": "Monogram with Scroll Border, 24 in."
+    },
+    {
+     "file": "index.html",
+     "kind": "feature",
+     "img": "assets/art-filigree-fireplace.jpg",
+     "title": "Monogram with Scroll Border"
+    },
+    {
+     "file": "monograms.html",
+     "kind": "feature",
+     "img": "assets/art-filigree-fireplace.jpg",
+     "title": "Monogram with Scroll Border, 24″"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogram with Scroll Border, 24 in.",
+     "price": "85.00"
+    }
+   ],
+   "raw_title": "Metal Monogram with Scroll Border 24\" Diameter {Indoor/Outdoor}Personalized Home Decor",
+   "img_uid": "1612679701"
+  },
+  "261937314": {
+   "title": "Monogram Yard Stake",
+   "price": "40.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/0ddeb5/4077472152/il_800x800.4077472152_nxe7.jpg",
+     "alt": "Monogram Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogram Yard Stake",
+     "price": "40.00"
+    }
+   ],
+   "raw_title": "Metal Monogram Yard StakePersonalized Home Decor",
+   "img_uid": "4077472152"
+  },
+  "1649822041": {
+   "title": "Monogrammed Car Charm",
+   "price": "25.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/f3a5d8/5640430808/il_340x270.5640430808_7sdp.jpg",
+     "alt": "Monogrammed Car Charm"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogrammed Car Charm",
+     "price": "25.99"
+    }
+   ],
+   "raw_title": "Monogrammed Car Charm – Personalized Metal Rearview Mirror Accessory | Custom Initial Ornament | Gift for Her",
+   "img_uid": "5640430808"
+  },
+  "180229265": {
+   "title": "Monogrammed Paper Towel Holder",
+   "price": "66.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/ea2a93/598618900/il_340x270.598618900_fb2k.jpg",
+     "alt": "Monogrammed Paper Towel Holder"
+    },
+    {
+     "file": "index.html",
+     "kind": "feature",
+     "img": "assets/pth-monogram.jpg",
+     "title": "Monogrammed Paper Towel Holder"
+    },
+    {
+     "file": "paper-towel-holders.html",
+     "kind": "feature",
+     "img": "assets/pth-monogram.jpg",
+     "title": "Monogrammed Paper Towel Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Monogrammed Paper Towel Holder",
+     "price": "66.00"
+    }
+   ],
+   "raw_title": "Metal Paper Towel Holder with Monogram, Personalized Home Decor, Christmas Gift, Gift for Her, Gift for Couple, Housewarming Gift",
+   "img_uid": "598618900"
+  },
+  "1231266597": {
+   "title": "Moon Wall Art for Nursery",
+   "price": "69.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/96f90c/3867990158/il_800x800.3867990158_eey3.jpg",
+     "alt": "Moon Wall Art for Nursery"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Moon Wall Art for Nursery",
+     "price": "69.99"
+    }
+   ],
+   "raw_title": "Moon Metal Wall Art for Nursery, Typography, Minimalist Nursery",
+   "img_uid": "3867990158"
+  },
+  "170945251": {
+   "title": "Motorcycle Wall Hook",
+   "price": "31.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/r/il/5353ba/532135655/il_340x270.532135655_78bt.jpg",
+     "alt": "Motorcycle Wall Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Motorcycle Wall Hook",
+     "price": "31.00"
+    }
+   ],
+   "raw_title": "LAST ONE! Motorcycle Wall Hook Ready To Ship, Gift for Him",
+   "img_uid": "532135655"
+  },
+  "1602055268": {
+   "title": "Nativity Yard Stake",
+   "price": "75.00",
+   "raw_title": "LAST ONE! Nativity Yard Stake, Metal Christmas Décor, Yard Stake, Christmas Front Porch",
+   "img_uid": "5526710496",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/2250/1788/0/375/il/fadb7f/5526710496/il_800x800.5526710496_70dj.jpg",
+     "alt": "Nativity Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Nativity Yard Stake",
+     "price": "75.00"
+    }
+   ]
+  },
+  "1731757161": {
+   "title": "Outdoor Adventure Stacked Sign",
+   "price": "56.25",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2112/1677/294/218/il/ad742f/5991771552/il_800x800.5991771552_ibgn.jpg",
+     "alt": "Outdoor Adventure Stacked Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Outdoor Adventure Stacked Sign",
+     "price": "56.25"
+    }
+   ],
+   "raw_title": "Outdoor Adventure: Stacked Metal Sign - 'Go Play Outside' {Indoor/Outdoor Décor}",
+   "img_uid": "5991771552"
+  },
+  "1264318382": {
+   "title": "Paper Towel Holder with Monogram",
+   "price": "66.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/e53b1d/567523879/il_340x270.567523879_jlgk.jpg",
+     "alt": "Paper Towel Holder with Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Paper Towel Holder with Monogram",
+     "price": "66.00"
+    }
+   ],
+   "raw_title": "Metal Paper Towel Holder with Monogram, Personalized Home Decor, Christmas Gift, Gift for Her, Gift for Couple, Housewarming Gift",
+   "img_uid": "567523879"
+  },
+  "200162597": {
+   "title": "Patina Finish Metal Letter",
+   "price": "59.25",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/248ff0/667795252/il_340x270.667795252_aenc.jpg",
+     "alt": "Patina Finish Metal Letter"
+    },
+    {
+     "file": "patina.html",
+     "kind": "feature",
+     "img": "assets/patina-30.jpg",
+     "title": "Patina Letter, Statement Size"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Patina Finish Metal Letter",
+     "price": "59.25"
+    }
+   ],
+   "raw_title": "Vintage Charm: Metal Letter with Patina Finish [Large]",
+   "img_uid": "667795252"
+  },
+  "554246741": {
+   "title": "Patina Finish Metal Letter",
+   "price": "26.93",
+   "placements": [
+    {
+     "file": "index.html",
+     "kind": "feature",
+     "img": "assets/patina-18.jpg",
+     "title": "Patina Finish Metal Letter"
+    },
+    {
+     "file": "patina.html",
+     "kind": "feature",
+     "img": "assets/patina-18.jpg",
+     "title": "Patina Finish Metal Letter"
+    }
+   ],
+   "raw_title": "Vintage Charm: Metal Letter with Patina Finish [Small]",
+   "img_uid": "1282408430"
+  },
+  "1346747565": {
+   "title": "Patina Letter C",
+   "price": "26.93",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/5954e4/4346734442/il_800x800.4346734442_lhru.jpg",
+     "alt": "Patina Letter C"
+    },
+    {
+     "file": "patina.html",
+     "kind": "feature",
+     "img": "assets/patina-10.jpg",
+     "title": "Patina Letter"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Patina Letter C",
+     "price": "26.93"
+    }
+   ],
+   "raw_title": "Metal PATINA Letter C {3 available}, Rustic Decor, Home, Office, Christmas GiftPersonalized Home Decor, Letter C",
+   "img_uid": "4346734442"
+  },
+  "200328093": {
+   "title": "Patina Letter, Medium",
+   "price": "44.25",
+   "raw_title": "Vintage Charm: Metal Letter with Patina Finish [ Medium ]",
+   "img_uid": "655854119",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/ed6b96/655854119/il_800x800.655854119_924n.jpg",
+     "alt": "Patina Letter, Medium"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Patina Letter, Medium",
+     "price": "44.25"
+    }
+   ]
+  },
+  "205586195": {
+   "title": "Patina Letter, Small",
+   "price": "17.63",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/ed6b96/655854119/il_340x270.655854119_924n.jpg",
+     "alt": "Patina Letter, Small"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Patina Letter, Small",
+     "price": "17.63"
+    }
+   ],
+   "raw_title": "Vintage Charm: Metal Letter with Patina Finish [Small]",
+   "img_uid": "655854119"
+  },
+  "1636219670": {
+   "title": "Patina Peace Sign Wall Art",
+   "price": "59.25",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/ac2cfb/5642796186/il_340x270.5642796186_szmk.jpg",
+     "alt": "Patina Peace Sign Wall Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Patina Peace Sign Wall Art",
+     "price": "59.25"
+    }
+   ],
+   "raw_title": "Patina Peace: Metal Peace Sign Wall Art",
+   "img_uid": "5642796186"
+  },
+  "1271004055": {
+   "title": "Personalized Baby Name Sign",
+   "price": "66.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/937be5/4633322192/il_800x800.4633322192_bdfj.jpg",
+     "alt": "Personalized Baby Name Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Personalized Baby Name Sign",
+     "price": "66.99"
+    }
+   ],
+   "raw_title": "Personalized Metal Baby Name Sign – Custom Nursery Wall Décor | Over Crib Name Sign | Baby Shower Gift",
+   "img_uid": "4633322192"
+  },
+  "1729161397": {
+   "title": "Personalized Family Name Sign",
+   "price": "98.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/cd524d/5994476700/il_340x270.5994476700_e1xd.jpg",
+     "alt": "Personalized Family Name Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Personalized Family Name Sign",
+     "price": "98.50"
+    }
+   ],
+   "raw_title": "Personalized Metal Family Name Sign // Metal Stacked Name Wall Art {Indoor/Outdoor}Personalized Home Décor // Minimalist // Modern",
+   "img_uid": "5994476700"
+  },
+  "1371955051": {
+   "title": "Personalized Kitchen Wall Hook",
+   "price": "60.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/a64852/4486796423/il_340x270.4486796423_58uq.jpg",
+     "alt": "Personalized Kitchen Wall Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Personalized Kitchen Wall Hook",
+     "price": "60.00"
+    }
+   ],
+   "raw_title": "Personalized Metal Kitchen Wall Hook, Tea Towel Hook, Rolling Pin Wall Art, Kitchen Utensil Art, Gift for Her",
+   "img_uid": "4486796423"
+  },
+  "1579898315": {
+   "title": "Personalized Lacrosse Player Sign",
+   "price": "62.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/2d399c/5459859583/il_340x270.5459859583_mnou.jpg",
+     "alt": "Personalized Lacrosse Player Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Personalized Lacrosse Player Sign",
+     "price": "62.00"
+    }
+   ],
+   "raw_title": "Personalized Metal Lacrosse Player Sign - Custom Name Wall Décor - Lacrosse Gift for Players & Fans",
+   "img_uid": "5459859583"
+  },
+  "1793653888": {
+   "title": "Personalized Magnet Board",
+   "price": "39.99",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/50a31a/6384478997/il_800x800.6384478997_ez3a.jpg",
+     "alt": "Personalized Magnet Board"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Personalized Magnet Board",
+     "price": "39.99"
+    }
+   ],
+   "raw_title": "Magnet Board, Personalized with Name, Kids Room, Office, Dorm",
+   "img_uid": "6384478997"
+  },
+  "1656787520": {
+   "title": "Personalized Nursery Name Sign",
+   "price": "66.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/799/635/331/107/il/315eb2/5776859885/il_340x270.5776859885_bdfj.jpg",
+     "alt": "Personalized Nursery Name Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Personalized Nursery Name Sign",
+     "price": "66.99"
+    }
+   ],
+   "raw_title": "Personalized Metal Name Sign for Nursery // Custom Name Sign // Name Wall Décor // Metal Letters // Baby Name Cutouts",
+   "img_uid": "5776859885"
+  },
+  "968234068": {
+   "title": "Personalized Tree of Life Sign",
+   "price": "198.99",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/86c29b/3195816477/il_340x270.3195816477_9hq4.jpg",
+     "alt": "Personalized Tree of Life Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Personalized Tree of Life Sign",
+     "price": "198.99"
+    }
+   ],
+   "raw_title": "Personalized Tree of Life Metal Sign – Custom Family Name Wall Art, Outdoor / Indoor Décor, Housewarming & Wedding Gift",
+   "img_uid": "3195816477"
+  },
+  "737533930": {
+   "title": "Police Badge Metal Monogram",
+   "price": "68.28",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/427da7/2232748669/il_800x800.2232748669_8xnp.jpg",
+     "alt": "Police Badge Metal Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Police Badge Metal Monogram",
+     "price": "68.28"
+    }
+   ],
+   "raw_title": "Police Badge Metal Monogram, Father's Day, Gift for Police, Christmas Gift, Promotion Gift, Retirement Gift, Housewarming, Personalized Gift",
+   "img_uid": "2232748669"
+  },
+  "1270452693": {
+   "title": "Pool Towel Wall Hook, Large",
+   "price": "270.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/f6aff2/5904908569/il_800x800.5904908569_n3yp.jpg",
+     "alt": "Pool Towel Wall Hook, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Pool Towel Wall Hook, Large",
+     "price": "270.00"
+    }
+   ],
+   "raw_title": "Metal Pool Towel Wall Hook {LARGE}",
+   "img_uid": "5904908569"
+  },
+  "1424284196": {
+   "title": "Pool Towel Wall Hook, Small",
+   "price": "175.99",
+   "raw_title": "In Stock, Pool Towel Wall Hook {SMALLER VERSION}",
+   "img_uid": "4893475985",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/df9edc/4893475985/il_800x800.4893475985_jkqe.jpg",
+     "alt": "Pool Towel Wall Hook, Small"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Pool Towel Wall Hook, Small",
+     "price": "175.99"
+    }
+   ]
+  },
+  "1015092321": {
+   "title": "POW/MIA Garden Flag",
+   "price": "43.99",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/c/2244/1783/0/671/il/f64a2a/3195879285/il_800x800.3195879285_13nd.jpg",
+     "alt": "POW/MIA Garden Flag"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "POW/MIA Garden Flag",
+     "price": "43.99"
+    }
+   ],
+   "raw_title": "POW/MIA Garden Flag, Military Gift, Remembrance",
+   "img_uid": "3195879285"
+  },
+  "586430900": {
+   "title": "Powder-Coated Patina Letter",
+   "price": "59.25",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/248ff0/667795252/il_340x270.667795252_aenc.jpg",
+     "alt": "Powder-Coated Patina Letter"
+    },
+    {
+     "file": "patina.html",
+     "kind": "feature",
+     "img": "assets/patina-25.jpg",
+     "title": "Powder-Coated Patina Letter"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Powder-Coated Patina Letter",
+     "price": "59.25"
+    }
+   ],
+   "raw_title": "Metallic Charm: Powder-Coated Patina Letter Collection LARGE",
+   "img_uid": "667795252"
+  },
+  "742676229": {
+   "title": "Pumpkin Yard Stake",
+   "price": "38.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/57af14/2083397249/il_340x270.2083397249_k4zz.jpg",
+     "alt": "Pumpkin Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Pumpkin Yard Stake",
+     "price": "38.00"
+    }
+   ],
+   "raw_title": "Pumpkin Yard Stake, Fall Decor, Halloween Decor, Harvest, Thanksgiving, Hostess Gift",
+   "img_uid": "2083397249"
+  },
+  "893311783": {
+   "title": "Quail Paper Towel Holder",
+   "price": "48.50",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/0ee289/2663425703/il_340x270.2663425703_kcu8.jpg",
+     "alt": "Quail Paper Towel Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Quail Paper Towel Holder",
+     "price": "48.50"
+    }
+   ],
+   "raw_title": "Quail Paper Towel Holder",
+   "img_uid": "2663425703"
+  },
+  "771943329": {
+   "title": "Quatrefoil Monogrammed Sign",
+   "price": "75.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/1af005/2374632180/il_800x800.2374632180_hujv.jpg",
+     "alt": "Quatrefoil Monogrammed Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Quatrefoil Monogrammed Sign",
+     "price": "75.00"
+    }
+   ],
+   "raw_title": "Monogrammed Metal Sign [ Quatrefoil Metal Monogram ]",
+   "img_uid": "2374632180"
+  },
+  "540986914": {
+   "title": "Resurrection Cross Monogram",
+   "price": "75.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/36c338/2198953436/il_1000x1000.2198953436_hstc.jpg",
+     "alt": "Resurrection Cross Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Resurrection Cross Monogram",
+     "price": "75.00"
+    }
+   ],
+   "raw_title": "Resurrection Cross Monogram Metal, Easter Décor, Christian Gift, Jesus, He is Risen, Crucifixion, Religious Easter Décor, Easter Door Hanger",
+   "img_uid": "2198953436"
+  },
+  "762722512": {
+   "title": "Rooster Paper Towel Holder",
+   "price": "24.99",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/c/2244/1783/0/1198/il/fec2a1/2227793101/il_800x800.2227793101_8esa.jpg",
+     "alt": "Rooster Paper Towel Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Rooster Paper Towel Holder",
+     "price": "24.99"
+    }
+   ],
+   "raw_title": "Rooster Paper Towel Holder, Farmhouse Decor, Primitive Decor, Housewarming, Country Kitchen, Birthday Gift",
+   "img_uid": "2227793101"
+  },
+  "178515942": {
+   "title": "Scalloped Edge Frame Monogram",
+   "price": "44.55",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/31a25d/584784645/il_800x800.584784645_6qj9.jpg",
+     "alt": "Scalloped Edge Frame Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Scalloped Edge Frame Monogram",
+     "price": "44.55"
+    }
+   ],
+   "raw_title": "Scalloped Edge Frame Metal Monogram Wall/Door HangerPersonalized Home Decor",
+   "img_uid": "584784645"
+  },
+  "165311807": {
+   "title": "Scary Pumpkin Yard Stake",
+   "price": "42.00",
+   "raw_title": "Scary Pumpkin Yard Stake",
+   "img_uid": "511187820",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/8362e2/511187820/il_800x800.511187820_mti8.jpg",
+     "alt": "Scary Pumpkin Yard Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Scary Pumpkin Yard Stake",
+     "price": "42.00"
+    }
+   ]
+  },
+  "458011884": {
+   "title": "Scroll Border Monogram, Large",
+   "price": "141.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/447/355/311/34/il/b0606d/4433812940/il_340x270.4433812940_gpds.jpg",
+     "alt": "Scroll Border Monogram, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Scroll Border Monogram, Large",
+     "price": "141.50"
+    }
+   ],
+   "raw_title": "Metal Monogram with Scroll Border LARGE VERSION {Indoor/Outdoor} BESTSELLER, customized metal art",
+   "img_uid": "4433812940"
+  },
+  "178465608": {
+   "title": "Single Letter Monogram",
+   "price": "22.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/cbfd50/2198950170/il_340x270.2198950170_cdhe.jpg",
+     "alt": "Single Letter Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Single Letter Monogram",
+     "price": "22.50"
+    }
+   ],
+   "raw_title": "Single Letter Metal Monogram Wall Art {Indoor/Outdoor}Personalized Home Decor",
+   "img_uid": "2198950170"
+  },
+  "1230768867": {
+   "title": "Small Happy Sun Pool Sign",
+   "price": "72.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/2108/1675/0/297/il/27423a/3838490638/il_340x270.3838490638_f264.jpg",
+     "alt": "Small Happy Sun Pool Sign"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Small Happy Sun Pool Sign",
+     "price": "72.00"
+    }
+   ],
+   "raw_title": "Small Happy Sun Pool Sign {Indoor/Outdoor}, Spring, Summer, Pool Deck, Limited Stock, Mother's Day, Graduation",
+   "img_uid": "3838490638"
+  },
+  "722563300": {
+   "title": "Split Monogram with Family Name",
+   "price": "62.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1242/987/0/106/il/f0345c/2007800158/il_340x270.2007800158_ff68.jpg",
+     "alt": "Split Monogram with Family Name"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Split Monogram with Family Name",
+     "price": "62.50"
+    }
+   ],
+   "raw_title": "Split Monogram with Family Name Custom Metal Signs, Monogram Wall Decor, Family Last Name Sign, Custom Metal Art, Personalized Wedding Gift",
+   "img_uid": "2007800158"
+  },
+  "200483442": {
+   "title": "Spoon, Fork & Knife Art",
+   "price": "45.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/ded292/642413732/il_340x270.642413732_dz69.jpg",
+     "alt": "Spoon, Fork & Knife Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Spoon, Fork & Knife Art",
+     "price": "45.00"
+    }
+   ],
+   "raw_title": "Kitchen Art - Metal Spoon Fork and Knife",
+   "img_uid": "642413732"
+  },
+  "1385167529": {
+   "title": "Spoon, Fork & Knife Kitchen Art",
+   "price": "28.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Kitchen & Home",
+     "img": "https://i.etsystatic.com/8622503/r/il/ded292/642413732/il_340x270.642413732_dz69.jpg",
+     "alt": "Spoon, Fork & Knife Kitchen Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Spoon, Fork & Knife Kitchen Art",
+     "price": "28.00"
+    }
+   ],
+   "raw_title": "Kitchen Art - Metal Spoon Fork and Knife",
+   "img_uid": "642413732"
+  },
+  "1258716642": {
+   "title": "Sports Medal Holder Display",
+   "price": "65.75",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/607/482/0/220/il/0f646b/5825420209/il_340x270.5825420209_7c3h.jpg",
+     "alt": "Sports Medal Holder Display"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Sports Medal Holder Display",
+     "price": "65.75"
+    }
+   ],
+   "raw_title": "Sports Medal Holder Custom Display - Personalized by Sport and Name",
+   "img_uid": "5825420209"
+  },
+  "1678331470": {
+   "title": "Spring Flower Garden Stake",
+   "price": "75.00",
+   "placements": [
+    {
+     "file": "catalog-2.html",
+     "kind": "pcard",
+     "section": "Yard & Garden",
+     "img": "https://i.etsystatic.com/8622503/r/il/558467/5825347386/il_340x270.5825347386_r2te.jpg",
+     "alt": "Spring Flower Garden Stake"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Spring Flower Garden Stake",
+     "price": "75.00"
+    }
+   ],
+   "raw_title": "Spring Flower Garden Stake, Metal Spring Decor, Yard Stake, Spring Curb Appeal",
+   "img_uid": "5825347386"
+  },
+  "1170820536": {
+   "title": "Sunflower Bow Holder",
+   "price": "65.50",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/1726/1372/206/0/il/ceca52/3890701475/il_340x270.3890701475_p3t6.jpg",
+     "alt": "Sunflower Bow Holder"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Sunflower Bow Holder",
+     "price": "65.50"
+    }
+   ],
+   "raw_title": "Metal Sunflower Bow Holder with Monogram | Custom Hair Bow Organizer for Girls",
+   "img_uid": "3890701475"
+  },
+  "1279550399": {
+   "title": "Sunflower with Monogram",
+   "price": "171.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/da019c/4055437266/il_800x800.4055437266_53qg.jpg",
+     "alt": "Sunflower with Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Sunflower with Monogram",
+     "price": "171.00"
+    }
+   ],
+   "raw_title": "Metal Sunflower with Monogram {Indoor/Outdoor}",
+   "img_uid": "4055437266"
+  },
+  "1693072280": {
+   "title": "Sunny Whimsy Sun Sculpture",
+   "price": "48.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1468/1166/1443/867/il/248c71/5937735569/il_340x270.5937735569_o0bm.jpg",
+     "alt": "Sunny Whimsy Sun Sculpture"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Sunny Whimsy Sun Sculpture",
+     "price": "48.00"
+    }
+   ],
+   "raw_title": "Sunny Whimsy: Metal Sun Wall Sculpture {Indoor/Outdoor} Spring & Summer Pool Deck and Patio Décor",
+   "img_uid": "5937735569"
+  },
+  "1262151930": {
+   "title": "Tree of Life Panel Art",
+   "price": "287.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/888/706/18/0/il/281403/3263898121/il_800x800.3263898121_9j82.jpg",
+     "alt": "Tree of Life Panel Art"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Tree of Life Panel Art",
+     "price": "287.50"
+    }
+   ],
+   "raw_title": "Metal Tree of Life Panel Art // {Indoor/Outdoor}",
+   "img_uid": "3263898121"
+  },
+  "1054581543": {
+   "title": "Tree of Life Wall Art Panel",
+   "price": "287.50",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/888/706/18/0/il/281403/3263898121/il_800x800.3263898121_9j82.jpg",
+     "alt": "Tree of Life Wall Art Panel"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Tree of Life Wall Art Panel",
+     "price": "287.50"
+    }
+   ],
+   "raw_title": "Handcrafted Metal Tree of Life Wall Art Panel – Unique Home Décor for Patio, Living Room, Bedroom, or Office",
+   "img_uid": "3263898121"
+  },
+  "1509073369": {
+   "title": "Tree of Life with Birds, 24 in.",
+   "price": "180.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/b5a179/2210708403/il_800x800.2210708403_q7xb.jpg",
+     "alt": "Tree of Life with Birds, 24 in."
+    },
+    {
+     "file": "index.html",
+     "kind": "feature",
+     "img": "assets/art-tree.jpg",
+     "title": "Tree of Life with Birds"
+    },
+    {
+     "file": "wall-decor.html",
+     "kind": "feature",
+     "img": "assets/art-tree.jpg",
+     "title": "Tree of Life with Birds, 24″"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Tree of Life with Birds, 24 in.",
+     "price": "180.00"
+    }
+   ],
+   "raw_title": "Tree of Life with Birds Metal Sign 24\" {Indoor/Outdoor} Anniversary Gift, Wedding, Bestseller, Home Décor, Spring/Summer",
+   "img_uid": "2210708403"
+  },
+  "1729672694": {
+   "title": "Tree of Life with Birds, Large",
+   "price": "223.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/3000/2384/0/153/il/f52834/4659777979/il_340x270.4659777979_pl3m.jpg",
+     "alt": "Tree of Life with Birds, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Tree of Life with Birds, Large",
+     "price": "223.00"
+    }
+   ],
+   "raw_title": "Metal Tree of Life with Birds Metal Sign LARGE {Indoor/Outdoor}, Wedding Anniversary Housewarming Gift",
+   "img_uid": "4659777979"
+  },
+  "1693151416": {
+   "title": "Tree of Life with Roots",
+   "price": "190.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/c/1500/1191/1500/790/il/a868a2/5895136666/il_800x800.5895136666_7a7h.jpg",
+     "alt": "Tree of Life with Roots"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Tree of Life with Roots",
+     "price": "190.00"
+    }
+   ],
+   "raw_title": "Metal Tree of Life with Roots, Home and Garden Decor, Patio Art",
+   "img_uid": "5895136666"
+  },
+  "893109790": {
+   "title": "Vine Border Monogram, Large",
+   "price": "110.00",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/912461/2718254743/il_340x270.2718254743_j6ce.jpg",
+     "alt": "Vine Border Monogram, Large"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Vine Border Monogram, Large",
+     "price": "110.00"
+    }
+   ],
+   "raw_title": "Custom Metal Monogram with Elegant Vine Border – Personalized Wall/Door Hanger | Indoor/Outdoor Décor | Wedding & Housewarming Gift",
+   "img_uid": "2718254743"
+  },
+  "949615292": {
+   "title": "Wader Rack for Hunters",
+   "price": "225.00",
+   "placements": [
+    {
+     "file": "catalog-3.html",
+     "kind": "pcard",
+     "section": "Hunting & Outdoors",
+     "img": "https://i.etsystatic.com/8622503/c/1133/901/164/0/il/22d8b3/2874858094/il_800x800.2874858094_l98e.jpg",
+     "alt": "Wader Rack for Hunters"
+    },
+    {
+     "file": "wall-decor.html",
+     "kind": "feature",
+     "img": "assets/art-duck.jpg",
+     "title": "Wader Rack for Hunters"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Wader Rack for Hunters",
+     "price": "225.00"
+    }
+   ],
+   "raw_title": "Wader Rack for Hunters, Duck Hunter Gift, Birthday, Anniversary, Gift, Wedding, Valentine's Day, Graduation, Bestseller, Trending",
+   "img_uid": "2874858094"
+  },
+  "1403856218": {
+   "title": "Whale Wall Hook",
+   "price": "59.30",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/4cb87a/809305902/il_340x270.809305902_tq8h.jpg",
+     "alt": "Whale Wall Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Whale Wall Hook",
+     "price": "59.30"
+    }
+   ],
+   "raw_title": "Whale Wall Hook, Metal Hat Hook, Nursery Wall Decor, Nautical Nursery, Children's Room, Baby Gift",
+   "img_uid": "809305902"
+  },
+  "242156553": {
+   "title": "Whale Wall Hook, Original",
+   "price": "59.30",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Wall Decor & Signs",
+     "img": "https://i.etsystatic.com/8622503/r/il/fb2aa1/2193635352/il_340x270.2193635352_1751.jpg",
+     "alt": "Whale Wall Hook, Original"
+    },
+    {
+     "file": "wall-decor.html",
+     "kind": "feature",
+     "img": "assets/art-whale.jpg",
+     "title": "Whale Wall Hook"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "Whale Wall Hook, Original",
+     "price": "59.30"
+    }
+   ],
+   "raw_title": "Whale Wall Hook, Metal Hat Hook, Nursery Wall Decor, Nautical Nursery, Children's Room, Baby Gift",
+   "img_uid": "2193635352"
+  },
+  "1456947126": {
+   "title": "X-Large Single Letter Monogram",
+   "price": "108.00",
+   "raw_title": "X-Large {36\"} Single Letter Metal Monogram Wall/Door Hanger, Personalized Home Décor, Wedding Gift, Mother's Day, Birthday, Hostess Gift",
+   "img_uid": "4907692219",
+   "placements": [
+    {
+     "file": "catalog.html",
+     "kind": "pcard",
+     "section": "Monograms & Name Signs",
+     "img": "https://i.etsystatic.com/8622503/c/852/676/0/158/il/c55f63/4907692219/il_800x800.4907692219_b8iz.jpg",
+     "alt": "X-Large Single Letter Monogram"
+    },
+    {
+     "file": "assets/search-index.js",
+     "kind": "search",
+     "title": "X-Large Single Letter Monogram",
+     "price": "108.00"
+    }
+   ]
+  }
+ }
+}
