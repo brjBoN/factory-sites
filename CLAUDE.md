@@ -34,8 +34,11 @@ This file is the complete operating manual. Read it fully before touching anythi
 1. **Research**: crawl the business's current site (sitemap.xml → full page inventory), directories,
    Etsy/social. Record name, phone, email, address, hours, services, products+prices, socials, trust
    stats (review counts, years in business). Verify facts; never publish invented claims, prices, or hours.
-2. **Concept**: Braden generates 2–3 landing-page concept images in ChatGPT (he is the image-gen
-   courier) OR you design coded concepts. He approves ONE. This gate is mandatory.
+2. **Concept**: generate 2–3 landing-page concept images in-house (`tools/concept_gen.py`,
+   gpt-image-1; OPENAI_API_KEY is a machine env var — never in repo/chat) from a
+   research-grounded brief, save under `concepts/<slug>/`, present to Braden. He approves ONE.
+   This gate is mandatory. Image concepts are the standard: they set a visual bar the coded
+   build must match with minimal revisions — see "Concept fidelity protocol" below.
 3. **Build**: implement the approved concept EXACTLY (see Hard Rules), all pages, then QA.
 4. **Deploy**: git push → verify the Vercel deployment state and the live URL in a real browser.
 5. **Handoff**: write `outreach/<slug>-handoff.md` for whoever runs outreach. Required contents:
@@ -94,6 +97,28 @@ This file is the complete operating manual. Read it fully before touching anythi
    centered (flex column + align-items:center + text-align:center), scroll-locked (body.nav-open
    {overflow:hidden;position:fixed;width:100%} toggled in JS), and close on link tap. Test the open
    menu and the search box at mobile width with screenshots before showing Braden anything.
+
+## Concept fidelity protocol (mastering image → code with minimal revisions)
+
+The generated image sets the bar; Braden's review must find nothing left to fix. Every QT
+revision cause is now a pre-delivery check you run yourself — he is the final gate, not the
+first QA pass.
+
+1. **Brief → prompt**: ground it in research facts; give palette as literal hex, typography as
+   a CLASS ("Times-class serif display caps" — never a font name for the model to mangle), and
+   layout structurally (split hero panels, tracked-caps utility bar, 4-card product strip).
+   Prefer buildable compositions — don't prompt for effects you can't reproduce in CSS.
+2. **Extract ground truth from the approved image BEFORE coding**: sample palette hexes from
+   the pixels (the model drifts from the brief — the pixels win); classify the typeface against
+   Google Fonts specimens (Tinos-not-Playfair cost a rework round); measure panel aspect
+   ratios, gutters, letterspacing, and arrow proportions from the image; crop + background-
+   remove icons/motifs straight from the concept (never redraw — hard rule 3); inpaint
+   baked-in text zones per hard rule 8 before reusing photo/texture regions.
+3. **Parity pass before Braden sees anything**: full-page screenshot at 1920 laid side-by-side
+   with the concept image, then walk the fixed checklist — typography class, full-bleed at
+   1920+, palette hex match, icon fidelity, panel ratios, arrow style, letterspacing/caps,
+   Home-first nav, favicon = logo mark, centering, strip rows on one line. Fix everything
+   visible, then present.
 
 ## Quality Tooling reference implementation
 
