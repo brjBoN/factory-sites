@@ -1,0 +1,10 @@
+# Never let line-ending conversion touch binary assets (a Windows clone with
+# autocrlf=true would otherwise corrupt any PDF/image git misdetects as text).
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.webp binary
+*.woff binary
+*.woff2 binary
