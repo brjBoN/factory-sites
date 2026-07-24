@@ -13,11 +13,23 @@ intel now live in CLAUDE.md business facts. **Blocked on: dedicated Vercel proje
 
 ## Active target
 
-**Sid's Antiques & Gifts** — 112 1st St SE · (229) 985-8300 · 4.7★/42 reviews · 35 years ·
-1905 building. Website sidsantiquesandgifts.com is DEAD (connection reset) and still linked
-from the city's downtown guide. Estate jewelry, furniture, china — gallery-heavy build.
-Next cycle starts here: research crawl (what's recoverable from the dead site via archives),
-concept round, build.
+**Bandwagon Brewing Company** — 33 W Central Ave · 229.785.2771 · est. 2023 · Squarespace site
+(Home/About/FAQs/Menu/Merch/Contact). Founders: Bill Kimmerly (brewmaster, ex-Washington
+State) + Harrison Isaacs (entrepreneur, downtown-revitalization mission). Hours: Mon closed,
+Tue–Thu 4–9, Fri–Sat 12–11, Sun 12:30–6. 16 draft beers + 5-cask rotating CASK ALE program
+(rare for south GA), seltzers, 0.0% craft sodas, beer cocktails, snacks. IG/FB
+@bandwagonbrewing. Brewers Association Independent seal. Brand gold: real vintage olive FJ40
+towing a wooden "Bandwagon Brewing Co." band wagon (their own photo, harvested full-res).
+Concepts generated 2026-07-24 via Higgsfield MCP (nano_banana_pro, ref-conditioned on their
+logo + wagon photo, 2 credits/image): concepts/bandwagon-brewing/ — awaiting Braden's ONE.
+
+## Passed
+
+**Sid's Antiques & Gifts** — passed per Braden 2026-07-24: likely old-school/difficult to
+work with. (Research was completed first: owner Sid Collins, 112-114 1st St SE, 229-985-8300,
+Tue–Fri 10–6 Sat 10–4, 1905 two-story building, "85 feet of antique soda fountain cabinetry,"
+old site was an AntiqueTrail.com template, dead since ~June 2026. Facts archived here if ever
+revisited.)
 
 ## Bench (next rounds)
 
