@@ -191,6 +191,14 @@ h2.sec{font:500 clamp(26px,3.4vw,42px)/1.15 var(--serif);color:var(--navy);margi
 .crow .arr{flex:none;align-self:center}
 @media(max-width:900px){.crows{grid-template-columns:1fr}}
 
+.cat-pager{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:8px 0 10px}
+.cat-pager a{font:600 12.5px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--navy);
+  text-decoration:none;border:1.5px solid var(--navy);padding:11px 20px;background:var(--white)}
+.cat-pager a:hover{color:var(--orange);border-color:var(--orange)}
+.cat-pager a.chip-on{background:var(--navy);color:#fff}
+.pcard{cursor:pointer}
+.pcard .order{margin-top:auto}
+
 /* ---------- gallery ---------- */
 .masonry{columns:3;column-gap:22px}
 .masonry figure{break-inside:avoid;margin-bottom:22px;background:var(--white);border:1px solid var(--rule)}
