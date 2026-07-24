@@ -78,15 +78,23 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
 
 /* ------------------------------------------------------------------- hero */
 .hero { display: grid; grid-template-columns: 44.6% 55.4%; background: var(--paper); }
-@media (min-width: 901px) { .hero { height: clamp(460px, 38.2vw, 620px); } }
+/* Fold-fit: masthead(152) + hero + gap(17) + rail(91) + band2 end exactly at the
+   first viewport bottom on desktop, like the concept canvas. Hero flexes between
+   420-620px; band2 stretches to absorb the remainder. */
+@media (min-width: 901px) {
+  .hero { --hh: clamp(460px, calc(100vh - 590px), 620px); height: var(--hh); }
+  .band2 { min-height: max(0px, calc(100vh - 260px - clamp(460px, calc(100vh - 590px), 620px))); }
+}
 .hero-copy {
   padding: 1.5rem clamp(2rem, 4.2vw, 4.2rem);
   position: relative;
   border-right: 1.5px solid rgba(199, 70, 50, .55);
   display: flex; flex-direction: column; justify-content: center;
 }
-.hero-copy::after {  /* full ornament strip (loops + inner line) cropped from the concept */
-  content: ""; position: absolute; top: 74px; right: 3px; width: 28px; height: 458px;
+.hero-copy::after {  /* full ornament strip (loops + inner line) cropped from the concept;
+                        height tracks the hero so it never overflows shorter folds */
+  content: ""; position: absolute; top: 74px; right: 3px; width: 28px;
+  height: calc(var(--hh, 620px) - 148px);
   background: url("rule-ornament-strip.png") top right / contain no-repeat;
   mix-blend-mode: multiply; z-index: 2;
 }
@@ -96,7 +104,7 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
 }
 .hero h1 {
   font-family: var(--display); font-weight: 600;
-  font-size: clamp(2.8rem, 6.7vw, 6.45rem);
+  font-size: clamp(2.6rem, min(6.7vw, calc((var(--hh, 620px) - 270px) / 3.25)), 6.45rem);
   line-height: .9; letter-spacing: .005em;
   position: relative; z-index: 2;
 }
@@ -119,11 +127,13 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
 .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 
 /* ---------------------------------------------------------- category rail */
-.rail { border-top: 1.5px solid rgba(199,70,50,.55); border-bottom: 1.5px solid rgba(199,70,50,.55); background: var(--paper); }
+.rail { border-bottom: 1.5px solid rgba(199,70,50,.55); background: var(--paper); }
 .rail-in { display: grid; grid-template-columns: 238px repeat(5, minmax(0, 1fr)) 238px; min-height: 91px; }
+/* the top rule starts at the drawing's right edge (concept: the rule never crosses the art) */
+.rail-in > a.cell, .rail-in > .art:last-child { border-top: 1.5px solid rgba(199,70,50,.55); }
 .rail .art { position: relative; overflow: visible; }
 .rail .art img {  /* left streetscape bleeds above the rail like the concept */
-  position: absolute; bottom: 2px; left: 0; height: 148%; width: auto; max-width: none;
+  position: absolute; bottom: 1px; left: 0; height: 160%; width: auto; max-width: none;
   mix-blend-mode: multiply; z-index: 3;
 }
 .rail .art:last-child { overflow: hidden; border-left: 1.5px solid rgba(199,70,50,.55); }
@@ -142,7 +152,10 @@ nav.primary a.order-btn:hover { background: var(--tomato-dark); border-bottom: 0
 .rail a.cell .dia { position: absolute; top: -5.5px; left: -5px; color: var(--tomato); font-size: 9px; line-height: 1; }
 
 /* ------------------------------------------------------------- home bands */
-.band2 { display: grid; grid-template-columns: 44.6% 55.4%; margin-top: 17px; }
+.band2 {
+  display: grid; grid-template-columns: 44.6% 55.4%; margin-top: 17px;
+  border-bottom: 2px solid #B25046;  /* clean terminus for the illustration band */
+}
 .panel-navy {
   background: var(--ink-deep); color: var(--paper-light);
   padding: clamp(1.4rem, 2.4vw, 2.3rem) clamp(2.5rem, 4.5vw, 4.2rem) clamp(1.8rem, 3.2vw, 3rem);

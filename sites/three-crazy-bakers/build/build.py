@@ -112,7 +112,7 @@ def sec_head(txt):
 def rail_html():
     cells = ''.join(f'<a class="cell" href="{href}">{DIA}{label}</a>' for href, label in RAIL)
     return f"""<div class="rail"><div class="rail-in">
-  <div class="art"><img src="assets/heritage-streetscape-left-alpha.png" alt=""></div>
+  <div class="art"><img src="assets/heritage-streetscape-full-alpha.png" alt=""></div>
   {cells}
   <div class="art"><img src="assets/heritage-building-right-alpha.png" alt=""></div>
 </div></div>"""

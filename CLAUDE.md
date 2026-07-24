@@ -134,7 +134,12 @@ first QA pass.
    Chromium is installed for screenshots (position:fixed overlays cause false seams in
    full-page stitched captures — confirm with viewport shots); concept color samples include
    generative grain, so the package's design tokens stay canonical for flat colors while a
-   real grain overlay recreates the sampled look.
+   real grain overlay recreates the sampled look. FOLD-FIT (Braden requirement, TCB round):
+   the landing composition must end its bottom band cleanly at the first-viewport bottom —
+   flex the hero via 100vh-derived custom property, let the band stretch, give it a border
+   terminus, and make decorative overlays (ornament strips) track the hero height so they
+   never bleed at shorter folds. Verify the fold at 1920×1080, ~2000×1132 (4K logical), and
+   2560×1440 — not just at the concept's 1536×1024 canvas size.
 
 ## Quality Tooling reference implementation
 
