@@ -13,7 +13,8 @@ e = lambda s: H.escape(str(s), quote=True)
 FONTS = ('https://fonts.googleapis.com/css2?family=League+Gothic&'
          'family=Courier+Prime:ital,wght@0,400;0,700;1,400&'
          'family=Barlow+Condensed:wght@400;500;600&'
-         'family=Caveat:wght@500&display=swap')
+         'family=Roboto+Condensed:wght@700&'
+         'family=Caveat:wght@500&family=Architects+Daughter&display=swap')
 
 NAV = [('', 'Home'), ('services/', 'Services'), ('about/', 'About'), ('contact/', 'Contact')]
 
@@ -51,17 +52,17 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current=''):
       <img src="{rel}assets/ecs-logo-original.png" alt="">
       <span class="nm">ENVIRONMENTAL<br><span class="l2">CONSTRUCTION SERVICES</span></span>
     </a>
-    <span class="locnote" aria-hidden="true">{e(D.FACTS['location_annotation'])}</span>
+    <span class="locnote" aria-hidden="true"><span class="locline">{e(D.FACTS['location_annotation'])}</span><span class="coords">{e(D.FACTS['location_coords'])}</span></span>
     <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav class="primary" aria-label="Primary">
       {nav}
     </nav>
   </div>
 </header>
+</div>
 <main id="main">
 {body}
 </main>
-</div>
 <footer class="site">
   <div class="foot-in">
     <div>
@@ -134,14 +135,15 @@ atlas = ''.join(f'''
   </a>''' for s in D.SERVICES)
 
 home = f"""
+<div class="wrap">
 <section class="hero">
   <div class="hero-copy">
-    <h1 class="reveal-mask">{e(D.HEADLINE)}</h1>
+    <h1 class="reveal-mask">{''.join(f'<span class="ln">{e(ln)}</span>' for ln in D.HEADLINE_LINES)}</h1>
     <div class="underline draw" aria-hidden="true"></div>
     <p class="sub settle">{e(D.HERO_COPY)}</p>
     <div class="btn-row settle-2">
       <a class="btn fill" href="services/">Explore Services</a>
-      <a class="btn line" href="{D.FACTS['phone_href']}">Call {e(D.FACTS['phone_display'])}</a>
+      <a class="btn line" href="{D.FACTS['phone_href']}">CALL {e(D.FACTS['phone_display'])}</a>
     </div>
   </div>
   <div class="hero-art desktop settle" aria-hidden="true"><img src="assets/hero-excavation-collage.webp" alt=""></div>
@@ -150,10 +152,12 @@ home = f"""
 <div class="pinned">
 {pinned}
 </div>
+</div>
 <div class="torn" aria-hidden="true"></div>
 <div class="rail-band"><div class="rail-links">
 {rail}
 </div></div>
+<div class="wrap">
 <section class="sec" id="atlas">
   {sec_head('the whole kit —', 'Six kinds of groundwork.')}
   <div class="atlas">
@@ -165,10 +169,11 @@ home = f"""
   <p style="max-width:52ch;margin-top:1rem">{e(D.FACTS['family'])} Based at {e(D.FACTS['address'])}.
   The fastest way to talk through a site is a phone call.</p>
   <div class="btn-row" style="margin-top:1.2rem">
-    <a class="btn fill" href="{D.FACTS['phone_href']}">Call {e(D.FACTS['phone_display'])}</a>
+    <a class="btn fill" href="{D.FACTS['phone_href']}">CALL {e(D.FACTS['phone_display'])}</a>
     <a class="btn line" href="{D.FACTS['email_href']}">Email Us</a>
   </div>
 </section>
+</div>
 """
 
 # ------------------------------------------------------------------ services
@@ -199,7 +204,7 @@ def svc_body(s):
       <p>Every property drains, grades, and wears differently. Call or write and tell us
       what the ground is doing — we'll take it from there.</p>
       <div class="btn-row">
-        <a class="btn fill" href="{D.FACTS['phone_href']}">Call {e(D.FACTS['phone_display'])}</a>
+        <a class="btn fill" href="{D.FACTS['phone_href']}">CALL {e(D.FACTS['phone_display'])}</a>
         <a class="btn line" href="{D.FACTS['email_href']}">Email Us</a>
       </div>
     </div>
@@ -220,7 +225,7 @@ about_body = f"""
       <p>Based at {e(D.FACTS['address'])}. The best way to find out whether we're the right
       fit for your project is to call.</p>
       <div class="btn-row">
-        <a class="btn fill" href="{D.FACTS['phone_href']}">Call {e(D.FACTS['phone_display'])}</a>
+        <a class="btn fill" href="{D.FACTS['phone_href']}">CALL {e(D.FACTS['phone_display'])}</a>
         <a class="btn line" href="{D.FACTS['email_href']}">Email Us</a>
       </div>
     </div>
@@ -290,14 +295,15 @@ datause_body = f"""
 """
 
 NAME = D.FACTS['name']
+W = lambda b: f'<div class="wrap">{b}</div>'  # main sits at page level; content re-enters the wrap
 page('', f'{NAME} — Moultrie, GA (Concept)', 'Private field-notes website concept: drainage, land clearing, excavation, site preparation, culverts, and driveways in Moultrie, GA.', home, note='FIELD NOTE 01', current='')
-page('services', f'Services — {NAME} (Concept)', 'Six categories of groundwork: drainage, clearing and excavation, landscaping, seawalls, site prep and culverts, driveways.', services_body, note='FIELD NOTE INDEX', current='services/')
+page('services', f'Services — {NAME} (Concept)', 'Six categories of groundwork: drainage, clearing and excavation, landscaping, seawalls, site prep and culverts, driveways.', W(services_body), note='FIELD NOTE INDEX', current='services/')
 for s in D.SERVICES:
-    page(f'services/{s["slug"]}', f'{s["label"]} — {NAME} (Concept)', s['blurb'], svc_body(s), note=s['note'], current='services/')
-page('about', f'About — {NAME} (Concept)', 'Family-owned and operated groundwork in Moultrie, GA.', about_body, note='FIELD NOTE 08', current='about/')
-page('contact', f'Contact — {NAME} (Concept)', 'Phone, email, and address for Environmental Construction Services.', contact_body, note='FIELD NOTE 09', current='contact/')
-page('accessibility', f'Accessibility — {NAME} (Concept)', 'Accessibility commitments for this private concept.', access_body, note='APPENDIX A')
-page('concept-data-use', f'Concept & Data Use — {NAME} (Concept)', 'What this private concept is, and what it does not collect.', datause_body, note='APPENDIX B')
+    page(f'services/{s["slug"]}', f'{s["label"]} — {NAME} (Concept)', s['blurb'], W(svc_body(s)), note=s['note'], current='services/')
+page('about', f'About — {NAME} (Concept)', 'Family-owned and operated groundwork in Moultrie, GA.', W(about_body), note='FIELD NOTE 08', current='about/')
+page('contact', f'Contact — {NAME} (Concept)', 'Phone, email, and address for Environmental Construction Services.', W(contact_body), note='FIELD NOTE 09', current='contact/')
+page('accessibility', f'Accessibility — {NAME} (Concept)', 'Accessibility commitments for this private concept.', W(access_body), note='APPENDIX A')
+page('concept-data-use', f'Concept & Data Use — {NAME} (Concept)', 'What this private concept is, and what it does not collect.', W(datause_body), note='APPENDIX B')
 
 (OUT / 'robots.txt').write_text('User-agent: *\nDisallow: /\n', encoding='utf-8', newline='\n')
 print('wrote robots.txt')

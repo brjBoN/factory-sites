@@ -33,6 +33,7 @@ This file is the complete operating manual. Read it fully before touching anythi
 | Scrap Now Metal Recycling | sites/scrap-now-metal | factory-sites-bo-n.vercel.app/sites/scrap-now-metal/ | done; needs dedicated Vercel project before outreach |
 | Quality Tooling, LLC | sites/quality-tooling | quality-tooling.vercel.app | done, approved; Etsy auto-sync live; handoff: outreach/quality-tooling-handoff.md |
 | Three Crazy Bakers | sites/three-crazy-bakers | factory-sites-bo-n.vercel.app/sites/three-crazy-bakers/ | done, approved; handoff: outreach/three-crazy-bakers-handoff.md (+.pdf); NEEDS dedicated Vercel project before outreach |
+| Environmental Construction Services LLC | sites/environmental-construction-services | factory-sites-bo-n.vercel.app/sites/environmental-construction-services/ | built from ChatGPT "Field Notes" asset package (concepts/environmental-construction-services/); 5 adversarial parity rounds, all regions FAITHFUL; awaiting Braden review. Package brief FORBIDS public deployment + contacting the business — factory directory only, NO dedicated Vercel project, NO outreach until Braden clears it |
 
 ## The workflow (per prospect)
 
@@ -149,6 +150,22 @@ first QA pass.
    terminus, and make decorative overlays (ornament strips) track the hero height so they
    never bleed at shorter folds. Verify the fold at 1920×1080, ~2000×1132 (4K logical), and
    2560×1440 — not just at the concept's 1536×1024 canvas size.
+   ECS-round additions: (e) a generated concept's painted type is often much NARROWER than the
+   real font at the same cap height — measure both, then transform: scaleX(ratio) with nowrap
+   line spans (and open the reveal-mask's right inset: clip-path inset(0 0 100% 0) silently
+   amputates intentionally-overflowing lines; also never reset transform in the
+   reduced-motion block when the transform is structural); (f) package layout-spec.json
+   geometry is gold — the fold formula and per-band heights can be derived from it directly
+   instead of guessed; (g) package texture assets can be locally flawed (ECS torn-edge strip
+   was straight-edged along its whole left third) — measure the alpha rip-line per column
+   before trusting a tile, and recompose (mirror-tile for wrap continuity + a small
+   tile-periodic vertical sine to break mirror plateaus; plain crossfades leave ghost smears
+   under drop-shadow); (h) full-bleed bands inside a padded/max-width .wrap can't be faked
+   with negative margins reliably — restructure the page so bands are siblings of .wrap, and
+   never use 100vw (scrollbar overflow); (i) icon/thumb donors cropped from package reference
+   cards: detection windows must exclude the donor card's own chrome (a baked-in pin read as
+   "sketch ink" and shipped a phantom pin), level bg→white (percentile 96) and multiply-blend
+   so card grain shows through.
 5. **Revision-loop discipline** (every one of these caused a Braden-visible defect on TCB):
    - **A fix can become next round's bug.** The worst TCB defect (two overlapping courthouse
      drawings) was created by an earlier fix: an audit said "courthouse missing from hero
@@ -199,6 +216,11 @@ harvested listings). Client-side search indexes all products + pages (assets/sea
   (ex-Google Domains → likely Squarespace Domains post-2023) · LIVE MX → their web host:
   domain email probably exists; never touch MX at cutover, and warn them cancelling WP hosting
   could kill email. Menu data transcribed in sites/three-crazy-bakers/build/data.py.
+- **Environmental Construction Services LLC**: 33 Pine Cone Road, Moultrie, GA · (229) 516-0821 ·
+  ecs.outdoorcustoms@gmail.com · family-owned and operated. Facts come ONLY from the asset
+  package's implementation-data.json (verified-facts contract); its copyRestrictions are
+  enforced structurally — restricted content simply doesn't exist in build/data.py. 12-route
+  contract (no /our-process even though the concept paints a 5th nav item — sanctioned deviation).
 
 ## Client launch checklist (domain cutover — SEO-safe)
 

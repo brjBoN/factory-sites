@@ -11,6 +11,15 @@ fidelity protocol). Handoff: three-crazy-bakers-handoff.md + .pdf. Facts + owner
 intel now live in CLAUDE.md business facts. **Blocked on: dedicated Vercel project
 (three-crazy-bakers.vercel.app), then outreach to Maggie & Hart Brown.**
 
+## Built — awaiting Braden review
+
+**Environmental Construction Services LLC** — 33 Pine Cone Road · (229) 516-0821 ·
+ecs.outdoorcustoms@gmail.com · family-owned. Built 2026-07-24 from ChatGPT's "Field Notes"
+asset package (12 routes, verified-facts-only contract). 5 adversarial parity rounds → all
+regions FAITHFUL; fold-fit 0px at 1080/1132/1440; 96/96 overflow checks. Package brief forbids
+public deployment and contacting the business — lives in the private factory directory only,
+no dedicated Vercel project, no outreach unless Braden converts it.
+
 ## Active target
 
 **Bandwagon Brewing Company** — 33 W Central Ave · 229.785.2771 · est. 2023 · Squarespace site

@@ -14,13 +14,15 @@ FACTS = {
     'email_display': 'ecs.outdoorcustoms@gmail.com',
     'email_href': 'mailto:ecs.outdoorcustoms@gmail.com',
     'location_annotation': 'Moultrie, Georgia',
+    # decorative survey coordinates as painted in the approved concept (city
+    # geography, not a business address claim)
+    'location_coords': '31° 11′ 45″ N  83° 46′ 21″ W',
 }
 
 HEADLINE = 'Start with the ground.'
+HEADLINE_LINES = ('Start with', 'the ground.')
 
-HERO_COPY = ('Drainage, land clearing and excavation, landscaping and hardscaping, '
-             'seawalls and retention, site preparation, culverts, and driveways — '
-             'the work that everything else is built on.')
+HERO_COPY = 'Drainage, clearing, excavation, site preparation, and outdoor construction.'
 
 NOTICES = [
     'Private website concept — not the official Environmental Construction Services website.',
@@ -74,10 +76,12 @@ SERVICES = [
 ]
 
 PINNED = [
+    # thumbs are cropped from the package's own pinned-*-reference cards and
+    # background-leveled to white so they multiply-blend into the card paper
     {'label': 'CONTROL WATER', 'aria': 'Explore drainage services',
-     'href': 'services/drainage/', 'asset': 'service-drainage.webp'},
+     'href': 'services/drainage/', 'asset': 'thumb-control-water.png'},
     {'label': 'CLEAR & PREP', 'aria': 'Explore land clearing, excavation, and site preparation services',
-     'href': 'services/land-clearing-excavation/', 'asset': 'service-land-clearing-excavation.webp'},
+     'href': 'services/land-clearing-excavation/', 'asset': 'thumb-clear-prep.png'},
     {'label': 'BUILD ACCESS', 'aria': 'Explore culvert and driveway services',
-     'href': 'services/site-prep-culverts/', 'asset': 'service-driveways.webp'},
+     'href': 'services/site-prep-culverts/', 'asset': 'thumb-build-access.png'},
 ]
