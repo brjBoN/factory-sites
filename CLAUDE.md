@@ -25,6 +25,11 @@ This file is the complete operating manual. Read it fully before touching anythi
   - Creating a new dedicated project: vercel.com/new → import factory-sites → set Project Name to
     the slug → Root Directory = sites/<slug> → preset "Other", no build command → Deploy. (~30s, once per prospect.)
   - OUTREACH RULE: only ever send the dedicated per-prospect domain. Prospects must never see other prospects' work.
+  - ACCESS (verified 2026-07-24): `factory-sites` production is behind Vercel Authentication —
+    anonymous visitors get a 302 to Vercel login (Braden sees it fine when logged in; agents can
+    mint 23h share links via the Vercel MCP `get_access_to_vercel_url`). Dedicated per-prospect
+    projects are open (quality-tooling.vercel.app returns 200) — verify a dedicated project
+    answers 200 anonymously before any outreach link goes out.
 
 ## Prospect status
 
