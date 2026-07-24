@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 32" role="img" aria-label="Tomato red heritage divider">
+  <g fill="none" stroke="#C74632" stroke-width="2">
+    <path d="M0 16H294M346 16H640"/>
+    <path d="M320 3l13 13-13 13-13-13z" fill="#C74632"/>
+    <circle cx="320" cy="16" r="4" fill="#F5ECDD"/>
+  </g>
+</svg>

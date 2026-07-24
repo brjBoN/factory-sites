@@ -1,0 +1,20 @@
+:root {
+  --tcb-ink: #102b4c;
+  --tcb-ink-deep: #0b2341;
+  --tcb-paper: #f5ecdd;
+  --tcb-paper-light: #fbf7ef;
+  --tcb-tomato: #c74632;
+  --tcb-tomato-dark: #a93428;
+  --tcb-muted: #716b62;
+  --tcb-rule: rgba(16, 43, 76, 0.22);
+
+  --tcb-display-font: "Cormorant Garamond", "Iowan Old Style", "Baskerville", serif;
+  --tcb-body-font: "Libre Baskerville", Georgia, serif;
+  --tcb-label-font: "Barlow Condensed", "Arial Narrow", sans-serif;
+
+  --tcb-content-max: 90rem;
+  --tcb-radius-small: 0.1875rem;
+  --tcb-rule-width: 0.125rem;
+  --tcb-shadow-soft: 0 1.25rem 4rem rgba(11, 35, 65, 0.14);
+}
+
