@@ -50,6 +50,11 @@ This file is the complete operating manual. Read it fully before touching anythi
    Edit DNS; A `@` → Vercel's displayed IP, CNAME `www` → cname.vercel-dns.com; registration
    never moves for launch). No trust-stats section — fold any needed rapport facts into the
    contacts/one-liner. Reference example: `outreach/quality-tooling-handoff.md`.
+   **The human deliverable is a PDF**: `python tools/handoff_pdf.py <slug>` renders the .md to
+   `outreach/<slug>-handoff.pdf` styled with the prospect's design tokens (add the slug to
+   TOKENS in the script). The .md stays the source of truth — regenerate the PDF after every
+   edit, and visually QA it by rendering pages to PNG (pypdfium2) before committing.
+   Deps: `pip install reportlab pillow pypdfium2`. The PDF footer marks it internal-only.
 6. Braden (or the outreach person) handles outreach.
 
 ## HARD RULES (each one exists because a violation caused a rework round)

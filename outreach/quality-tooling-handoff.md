@@ -51,8 +51,7 @@ their story — they're proud of the humble-beginnings arc. Timothy runs the CNC
    matching product appears with its price. Their current site can't do this.
 5. **A design that's actually theirs.** Cream/navy/orange identity, serif display type, custom
    iconography — built around their story, not a Wix template. Feels like a brand, not a page.
-6. **Fast everywhere.** Hand-built static pages, QA'd on phone/tablet/desktop. Loads near-
-   instantly on a phone in a shop yard — no Wix bloat.
+6. **Fast everywhere.** Hand-built static pages, QA'd on phone/tablet/desktop. Loads near-instantly on a phone in a shop yard — no Wix bloat.
 7. **Nothing lost.** Every page of their current site exists in the redesign: services, art
    shop, gallery, customer feedback, gift cards, every product category.
 8. **Zero-risk launch.** They keep their domain and their Google ranking — we have a documented
