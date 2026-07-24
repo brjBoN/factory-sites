@@ -112,9 +112,9 @@ def sec_head(txt):
 def rail_html():
     cells = ''.join(f'<a class="cell" href="{href}">{DIA}{label}</a>' for href, label in RAIL)
     return f"""<div class="rail"><div class="rail-in">
-  <div class="art"><img src="assets/heritage-streetscape-left.png" alt=""></div>
+  <div class="art"><img src="assets/heritage-streetscape-left-alpha.png" alt=""></div>
   {cells}
-  <div class="art"><img src="assets/heritage-building-right.png" alt=""></div>
+  <div class="art"><img src="assets/heritage-building-right-alpha.png" alt=""></div>
 </div></div>"""
 
 divider = '<div class="divider"><img src="assets/heritage-divider.svg" alt=""></div>'
@@ -124,11 +124,12 @@ home = f"""
 <section class="hero">
   <div class="hero-copy">
     <h1><span class="l1">ON THE SQUARE.</span><span class="l2">AT THE TABLE.</span></h1>
-    <p class="sub">Bakery treats, lunch, dinner, and take-home casseroles in historic Moultrie.</p>
+    <p class="sub">Bakery treats, lunch, dinner, and<br>take-home casseroles in historic Moultrie.</p>
     <div class="btn-row">
       <a class="btn fill" href="menu.html">VIEW THE MENU</a>
       <a class="btn line" href="directions.html">PLAN A VISIT</a>
     </div>
+    <img class="hero-pencil" src="assets/courthouse-pencil-alpha.png" alt="">
   </div>
   <div class="hero-photo"><img src="assets/hero-menu-spread.webp" alt="Illustrative restaurant menu spread"></div>
 </section>
@@ -147,14 +148,16 @@ home = f"""
     </ul>
   </div>
   <div class="panel-paper">
-    <h2>DOWNTOWN<br>LOCATION</h2>
-    <div class="loc-copy">
-      <p class="addr">{e(D.FACTS['address_short'])}</p>
-      <p>On the Square in historic Moultrie &mdash; a block from the Colquitt County courthouse. Open seven days a week.</p>
-      <p><a class="go" style="font-family:var(--label);font-weight:600;font-size:14px;letter-spacing:.22em;color:var(--tomato);text-decoration:none" href="directions.html">DIRECTIONS &rarr;</a></p>
+    <img class="pencil-l" src="assets/courthouse-band-alpha.png" alt="">
+    <div class="pencil-body">
+      <h2>DOWNTOWN<br>LOCATION</h2>
+      <div class="loc-copy">
+        <p class="addr">{e(D.FACTS['address_short'])}</p>
+        <p>On the Square in historic Moultrie &mdash; a block from the Colquitt County courthouse. Open seven days a week.</p>
+        <p><a class="go" style="font-family:var(--label);font-weight:600;font-size:14px;letter-spacing:.22em;color:var(--tomato);text-decoration:none" href="directions.html">DIRECTIONS &rarr;</a></p>
+      </div>
     </div>
-    <img class="pencil-l" src="assets/courthouse-pencil-reference-crop.png" alt="">
-    <img class="pencil-r" src="assets/tree-pencil-reference-crop.png" alt="">
+    <img class="pencil-r" src="assets/tree-band-alpha.png" alt="">
   </div>
 </section>
 <section class="sec" id="story">

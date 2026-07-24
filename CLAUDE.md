@@ -119,6 +119,22 @@ first QA pass.
    1920+, palette hex match, icon fidelity, panel ratios, arrow style, letterspacing/caps,
    Home-first nav, favicon = logo mark, centering, strip rows on one line. Fix everything
    visible, then present.
+4. **Region-parity verification (the TCB landing-page lesson — geometry is not enough)**:
+   crop element-aligned windows of concept vs build for EVERY distinct region and judge
+   RENDERED APPEARANCE, adversarially, until nothing major remains. The failure classes that
+   got through geometric checks: (a) asset integration — an "RGBA" PNG with baked-in paper
+   background reads as a messy cutout; check real transparency with PIL, fix by edge-trim +
+   alpha-unmix (hard rule 5) + mix-blend-mode multiply, and prefer cropping art straight from
+   the concept canvas at native proportions; (b) component chrome — a broader selector
+   (nav.primary a) silently out-specified the button class and collapsed it; verify computed
+   boxes against concept-measured boxes (measure the concept with PIL color-scans);
+   (c) texture — if a blank patch's luminance stddev is ~0 the paper grain isn't rendering
+   (section backgrounds cover the body tile; use a fixed multiply overlay); (d) ornaments —
+   crop them from the concept, never approximate with CSS shapes. Tools: Playwright headless
+   Chromium is installed for screenshots (position:fixed overlays cause false seams in
+   full-page stitched captures — confirm with viewport shots); concept color samples include
+   generative grain, so the package's design tokens stay canonical for flat colors while a
+   real grain overlay recreates the sampled look.
 
 ## Quality Tooling reference implementation
 
