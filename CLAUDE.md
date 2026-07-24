@@ -28,6 +28,7 @@ This file is the complete operating manual. Read it fully before touching anythi
 |---|---|---|---|
 | Scrap Now Metal Recycling | sites/scrap-now-metal | factory-sites-bo-n.vercel.app/sites/scrap-now-metal/ | done; needs dedicated Vercel project before outreach |
 | Quality Tooling, LLC | sites/quality-tooling | quality-tooling.vercel.app | done, approved; Etsy auto-sync live; handoff: outreach/quality-tooling-handoff.md |
+| Three Crazy Bakers | sites/three-crazy-bakers | factory-sites-bo-n.vercel.app/sites/three-crazy-bakers/ | done, approved; handoff: outreach/three-crazy-bakers-handoff.md (+.pdf); NEEDS dedicated Vercel project before outreach |
 
 ## The workflow (per prospect)
 
@@ -140,6 +141,29 @@ first QA pass.
    terminus, and make decorative overlays (ornament strips) track the hero height so they
    never bleed at shorter folds. Verify the fold at 1920×1080, ~2000×1132 (4K logical), and
    2560×1440 — not just at the concept's 1536×1024 canvas size.
+5. **Revision-loop discipline** (every one of these caused a Braden-visible defect on TCB):
+   - **A fix can become next round's bug.** The worst TCB defect (two overlapping courthouse
+     drawings) was created by an earlier fix: an audit said "courthouse missing from hero
+     corner" and a NEW asset was added, when the finding actually described the streetscape's
+     own tower. Before adding an asset to satisfy a "missing art" finding, zoom the concept
+     region and check whether an existing/recroppable asset already contains it. After every
+     fix round, assert no duplicated motifs programmatically.
+   - **One source of truth per drawing.** When a package crop is inadequate (truncated tower
+     tips, baked backgrounds), re-crop from the concept canvas at native proportions and
+     RETIRE the old asset everywhere — never leave two crops of the same subject in play.
+   - **px sizes frozen at concept scale read wrong at 1920+/4K.** Chrome type (nav, buttons)
+     needs vw-clamps (nav went 15px fixed → clamp(15px, 1.05vw, 21px) after Braden called it
+     too small on 4K). Concept-exact at 1536 is the floor, not the ceiling.
+   - **Grounded art anchors to its section's bottom edge** (object-position: * bottom) so
+     illustrations meet the fold at ANY viewport height — verified by asserting
+     art.bottom == band.bottom, not by looking at one screenshot.
+   - **QA is measured assertions, not eyeballs**: the standing Playwright harness asserts
+     foldDelta ≤ 2px, seam gaps == 0, copy scrollHeight ≤ clientHeight, no duplicate motifs,
+     scrollWidth ≤ viewport, at 1920×1080 / 2000×1132 / 2560×1440 / one tall viewport +
+     390 / 768. Run it after EVERY styling change, not just before delivery.
+   - **Braden's live review outranks the concept.** Apply his deviations (gap removal, section
+     renames) as isolated, clearly-labeled commits so any one is revertible with a single
+     `git revert <sha>`, and note the original values in a CSS comment.
 
 ## Quality Tooling reference implementation
 
@@ -159,6 +183,14 @@ harvested listings). Client-side search indexes all products + pages (assets/sea
 - **Scrap Now Metal Recycling**: Moultrie GA 31788 · (229) 985-1041 · info@scrapnowmetal.com ·
   scrapnowmetal.com. CAUTION: street address (550 Industrial Rd vs 305 Industrial Pkwy) and hours
   conflict across sources; site shows first-party info with "call to confirm" notes.
+- **Three Crazy Bakers**: 102 S Main St, Moultrie, GA 31768 · (229) 985-8809 (no public email) ·
+  Mon–Sat 10–9, Sun 11–8 · est. 1998 by Larry & Donna Grimm + daughter Paige; owners now
+  Maggie & Hart Brown · threecrazybakers.com (WordPress ~2013; menus are JPEG scans) ·
+  IG @threecrazybakers · X @3crazybaker (FB page looks unclaimed — verify) · DoorDash ordering:
+  order.online/business/Three%20Crazy%20Bakers-308079 · DNS on ns-cloud-e*.googledomains.com
+  (ex-Google Domains → likely Squarespace Domains post-2023) · LIVE MX → their web host:
+  domain email probably exists; never touch MX at cutover, and warn them cancelling WP hosting
+  could kill email. Menu data transcribed in sites/three-crazy-bakers/build/data.py.
 
 ## Client launch checklist (domain cutover — SEO-safe)
 

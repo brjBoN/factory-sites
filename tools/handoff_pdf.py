@@ -28,6 +28,9 @@ ROOT = Path(__file__).resolve().parents[1]
 TOKENS = {
     'quality-tooling': {'bg': '#F1EDE4', 'primary': '#1E3A5C', 'accent': '#E05A2B',
                         'serif': 'Times-Roman', 'serif_b': 'Times-Bold'},
+    'three-crazy-bakers': {'bg': '#F5ECDD', 'primary': '#0B2341', 'accent': '#C74632',
+                           'band': '#0B2341',  # navy logo band: their logo is white-on-transparent
+                           'serif': 'Times-Roman', 'serif_b': 'Times-Bold'},
     '_default':        {'bg': '#F2F2F0', 'primary': '#222222', 'accent': '#B4552D',
                         'serif': 'Times-Roman', 'serif_b': 'Times-Bold'},
 }
@@ -159,8 +162,9 @@ def build(slug):
                 w = iw * h / ih
                 logo = Image(str(img_path), width=w, height=h)
                 band = Table([[logo]], colWidths=[W], rowHeights=[h + 18])
+                band_color = HexColor(tok['band']) if 'band' in tok else BG
                 band.setStyle(TableStyle([
-                    ('BACKGROUND', (0, 0), (-1, -1), BG),
+                    ('BACKGROUND', (0, 0), (-1, -1), band_color),
                     ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
                     ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
                     ('LINEBELOW', (0, 0), (-1, -1), 2, ACCENT)]))
