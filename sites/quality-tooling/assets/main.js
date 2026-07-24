@@ -7,6 +7,15 @@
       var open = nav.classList.toggle("open");
       toggle.classList.toggle("open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("nav-open", open);
+    });
+    nav.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
+      });
     });
   }
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
