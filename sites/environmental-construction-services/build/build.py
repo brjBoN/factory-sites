@@ -58,8 +58,8 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current='', kind='inter
 <body data-page="{kind}">
 <script>
 (function(){{var f=function(){{var z=1;
-if(window.matchMedia('(min-width: 901px)').matches){{z=window.innerWidth/1536;
-if(document.body.dataset.page==='home')z=Math.min(z,window.innerHeight/1024);}}
+if(window.matchMedia('(min-width: 901px)').matches){{
+z=Math.min(window.innerWidth/1536,window.innerHeight/1024);}}
 document.documentElement.style.setProperty('--zoom',z);}};
 window.addEventListener('resize',f);f();}})();
 </script>
