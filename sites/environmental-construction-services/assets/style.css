@@ -574,12 +574,8 @@ footer.site a { text-underline-offset: 4px; }
     max-width: 430px; margin: 0 auto;
   }
   .pin-card:nth-child(1), .pin-card:nth-child(3) { transform: rotate(0.35deg); }
-  .pin-card::before {  /* brass pin straddling the card's top edge */
-    display: block; content: ""; position: absolute; top: -15px; left: 50%;
-    transform: translateX(-50%); width: 32px; height: 32px;
-    background: url("brass-pin.png") center / contain no-repeat;
-    filter: drop-shadow(0 3px 3px rgb(23 25 28 / 30%)); z-index: 2;
-  }
+  /* the painted pin is already in each card crop — a CSS pin doubles it */
+  .pin-card::before { display: none; }
   .pin-card img { width: 100%; height: auto; display: block; }
   .m-headline { display: block; width: min(100%, 500px); margin: .4rem 0 .9rem; }
   .atlas, .svc-grid { grid-template-columns: 1fr; }
@@ -603,16 +599,16 @@ footer.site a { text-underline-offset: 4px; }
   /* the painted concept tear, scaled for mobile */
   .torn { height: 34px; background: url("tear-strip.png") center top / auto 100% no-repeat; }
   .torn::before { display: none; }
-  .brand .nm-ink { height: 64px; }
+  .brand .nm-ink { height: 78px; }
 }
 @media (max-width: 640px) {
   .atlas { grid-template-columns: repeat(2, 1fr); }
   .brand img { height: 72px; }
-  .brand .nm-ink { height: 62px; }
+  .brand .nm-ink { height: 72px; }
 }
 @media (max-width: 360px) {
-  .brand img { height: 62px; }
-  .brand .nm-ink { height: 50px; }
+  .brand img { height: 60px; }
+  .brand .nm-ink { height: 56px; }
 }
 @media (max-width: 480px) {
   .atlas { grid-template-columns: 1fr; }
