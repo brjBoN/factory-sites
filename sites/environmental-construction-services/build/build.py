@@ -16,7 +16,7 @@ FONTS = ('https://fonts.googleapis.com/css2?family=League+Gothic&'
          'family=Roboto+Condensed:wght@700&'
          'family=Caveat:wght@500&family=Architects+Daughter&display=swap')
 
-NAV = [('', 'Home'), ('services/', 'Services'), ('about/', 'About'), ('contact/', 'Contact')]
+NAV = [('', 'Home'), ('services/', 'Services'), ('blog/', 'Blog'), ('about/', 'About'), ('contact/', 'Contact')]
 
 
 def page(route, title, desc, body, note='FIELD NOTE 01', current='', kind='interior'):
@@ -105,6 +105,7 @@ window.addEventListener('resize',f);f();}})();
       <h4>Concept Pages</h4>
       <ul>
         <li><a href="{rel}services/">Services</a></li>
+        <li><a href="{rel}blog/">Blog</a></li>
         <li><a href="{rel}about/">About</a></li>
         <li><a href="{rel}contact/">Contact</a></li>
         <li><a href="{rel}accessibility/">Accessibility</a></li>
@@ -332,6 +333,81 @@ contact_body = f"""
 </section>
 """
 
+# --------------------------------------------------------------------- blog
+import blog_data as B
+
+def post_body_html(post):
+    parts = []
+    for i, (tag, txt) in enumerate(post['body']):
+        if tag in ('h2', 'h3'):
+            if parts and parts[-1].endswith('</li>'):
+                parts.append('</ul>')
+            parts.append(f'<h2>{e(txt)}</h2>')
+        elif tag == 'li':
+            if not parts or not parts[-1].endswith('</li>'):
+                parts.append('<ul>')
+            parts.append(f'<li>{e(txt)}</li>')
+        elif tag == 'kick':
+            if parts and parts[-1].endswith('</li>'):
+                parts.append('</ul>')
+            parts.append(f'<p class="kicker">{e(txt)}</p>')
+        else:
+            if parts and parts[-1].endswith('</li>'):
+                parts.append('</ul>')
+            cls = ' class="lead"' if not any(p.startswith('<p') for p in parts) else (
+                ' class="kicker"' if len(txt) < 60 and txt.endswith(':') else '')
+            parts.append(f'<p{cls}>{e(txt)}</p>')
+    if parts and parts[-1].endswith('</li>'):
+        parts.append('</ul>')
+    return '\n'.join(parts)
+
+def fmt_date(d):
+    try:
+        y, m, dd = d.split('-')
+        months = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July',
+                  'August', 'September', 'October', 'November', 'December']
+        return f'{months[int(m)]} {int(dd)}, {y}'
+    except Exception:
+        return d
+
+def excerpt(t, n=210):
+    if len(t) <= n:
+        return t
+    return t[:n].rsplit(' ', 1)[0].rstrip(',;:') + ' …'
+
+blog_cards = ''.join(f'''
+  <a class="log-card" href="../post/{p['slug']}/">
+    <span class="meta">Log {i:02d} — {e(fmt_date(p['date']))}</span>
+    <h3>{e(p['title'])}</h3>
+    <p>{e(excerpt(p['desc']))}</p>
+    <span class="go">Read the entry &#8594;</span>
+  </a>''' for i, p in enumerate(B.POSTS, 1))
+
+blog_body = f"""
+<section class="sec">
+  {sec_head('the field log —', 'Blog.')}
+  <p style="max-width:60ch;margin-top:1rem">Notes from the ground — every entry below is
+  reproduced from Environmental Construction Services' own blog.</p>
+  <div class="log-list">
+{blog_cards}
+  </div>
+</section>
+"""
+
+def post_page_body(p):
+    return f"""
+<section class="sec">
+  <p class="crumbs"><a href="../../blog/">Blog</a> / Field log</p>
+  <article class="post">
+    <p class="meta">{e(fmt_date(p['date']))} — Environmental Construction Services</p>
+    {sec_head('field log —', p['title'])}
+    {post_body_html(p)}
+    <p class="post-src">Reproduced from Environmental Construction Services' public blog
+    (environmentalconstructions.com). Part of this private website concept.</p>
+  </article>
+</section>
+"""
+
 # -------------------------------------------------------------- accessibility
 access_body = """
 <section class="sec">
@@ -378,6 +454,10 @@ page('', f'{NAME} — Moultrie, GA (Concept)', 'Private field-notes website conc
 page('services', f'Services — {NAME} (Concept)', 'Six categories of groundwork: drainage, clearing and excavation, landscaping, seawalls, site prep and culverts, driveways.', W(services_body), note='FIELD NOTE INDEX', current='services/')
 for s in D.SERVICES:
     page(f'services/{s["slug"]}', f'{s["label"]} — {NAME} (Concept)', s['blurb'], W(svc_body(s)), note=s['note'], current='services/')
+page('blog', f'Blog — {NAME} (Concept)', 'Field log: drainage, grading, clearing, and land management notes from Environmental Construction Services.', W(blog_body), note='FIELD LOG', current='blog/')
+for i, p in enumerate(B.POSTS, 1):
+    page(f'post/{p["slug"]}', f'{p["title"]} — {NAME} (Concept)', p['desc'][:150],
+         W(post_page_body(p)), note=f'LOG {i:02d}', current='blog/')
 page('about', f'About — {NAME} (Concept)', 'Family-owned and operated groundwork in Moultrie, GA.', W(about_body), note='FIELD NOTE 08', current='about/')
 page('contact', f'Contact — {NAME} (Concept)', 'Phone, email, and address for Environmental Construction Services.', W(contact_body), note='FIELD NOTE 09', current='contact/')
 page('accessibility', f'Accessibility — {NAME} (Concept)', 'Accessibility commitments for this private concept.', W(access_body), note='APPENDIX A')

@@ -342,6 +342,44 @@ h2.display {
 .crumbs { font-family: var(--ui); letter-spacing: .14em; font-size: 14px; text-transform: uppercase; margin-bottom: 1rem; }
 .crumbs a { color: var(--red-text); }
 
+/* ------------------------------------------------------------------- blog */
+.log-list { display: grid; gap: clamp(1.1rem, 2.4vw, 1.8rem); margin-top: 2rem; max-width: 880px; }
+.log-card {
+  display: block; text-decoration: none;
+  background: var(--paper-aged) url("paper-grain.png"); background-size: 560px;
+  border: 1px solid var(--rule); border-radius: 2px; box-shadow: var(--shadow-paper);
+  padding: clamp(1.1rem, 2.4vw, 1.7rem) clamp(1.2rem, 2.6vw, 2rem);
+  transition: transform var(--m-std) var(--ease-draw), box-shadow var(--m-std);
+  position: relative;
+}
+.log-card:hover { transform: translateY(-4px); box-shadow: 0 1.1rem 1.8rem rgb(23 25 28 / 22%); }
+.log-card .meta {
+  font-family: var(--body); font-size: 12px; letter-spacing: .14em; color: var(--red-text);
+  text-transform: uppercase;
+}
+.log-card h3 {
+  font-family: var(--display); text-transform: uppercase; letter-spacing: .02em;
+  font-size: clamp(24px, 2.4vw, 34px); line-height: 1.02; margin: .45rem 0 .5rem; color: var(--ink);
+}
+.log-card p { font-size: 14px; color: #3c3a34; max-width: 72ch; }
+.log-card .go { font-family: var(--ui); font-weight: 600; letter-spacing: .2em; font-size: 12px; color: var(--red-text); text-transform: uppercase; margin-top: .7rem; display: inline-block; }
+
+article.post { max-width: 74ch; margin-top: 1.4rem; }
+article.post .meta { font-family: var(--body); font-size: 13px; letter-spacing: .14em; color: var(--red-text); text-transform: uppercase; }
+article.post h2 {
+  font-family: var(--display); text-transform: uppercase; letter-spacing: .02em;
+  font-size: clamp(24px, 2.3vw, 32px); line-height: 1.05; margin: 2rem 0 .6rem;
+}
+article.post p { margin: .9rem 0; }
+article.post p.lead { font-size: 17px; }
+article.post ul { margin: .6rem 0 1rem 1.4rem; }
+article.post li { margin: .35rem 0; }
+article.post .kicker { font-family: var(--ui); font-weight: 600; letter-spacing: .08em; }
+.post-src {
+  margin-top: 2.2rem; padding-top: 1rem; border-top: 1px dashed rgb(23 25 28 / 30%);
+  font-size: 12px; color: #6b675c; font-family: var(--body);
+}
+
 /* fact table (contact) */
 .fact-card {
   background: var(--paper-aged) url("paper-grain.png"); background-size: 560px;
@@ -440,7 +478,7 @@ footer.site a { text-underline-offset: 4px; }
   }
   .logo-live { position: absolute; left: 16px; top: 27px; display: block; }
   .logo-live img { height: 98px; width: auto; }
-  .stage-nav { position: absolute; top: 54px; right: 56px; display: flex; gap: 46px; margin-left: 0; }
+  .stage-nav { position: absolute; top: 54px; right: 56px; display: flex; gap: 34px; margin-left: 0; }
   .stage-nav a { font-size: 30px; letter-spacing: .01em; }
   .stage-cta { position: absolute; left: 66px; top: 655px; margin-top: 0; gap: 17px; }
   .stage-cta .btn.fill { padding: 12px 20px; }
