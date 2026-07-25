@@ -299,9 +299,61 @@ footer li { margin: .4rem 0; font-family: var(--label); font-size: 16px; letter-
 }
 
 /* ------------------------------------------------------------- responsive */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .mast-in {
+    min-height: 122px;
+    padding: 0 28px;
+    gap: 1.25rem;
+  }
+  .mast .logo img { height: 86px; }
+  nav.primary { gap: clamp(.7rem, 1.15vw, 1.1rem); }
+  nav.primary a {
+    font-size: clamp(13px, 1vw, 15px);
+    letter-spacing: .18em;
+  }
+  nav.primary a.order-btn {
+    font-size: 14px;
+    letter-spacing: .22em;
+    padding: 14px clamp(22px, 1.8vw, 32px);
+  }
+}
 @media (max-width: 1200px) {
-  .mast-in { min-height: 116px; }
-  nav.primary { gap: 1.4rem; }
+  .mast-in {
+    min-height: 108px;
+    padding: 0 28px;
+  }
+  .mast .logo img { height: 76px; }
+  nav.primary {
+    display: none;
+    position: fixed;
+    inset: 0;
+    min-height: 100dvh;
+    padding: clamp(4.5rem, 10vh, 7rem) 1.5rem 2rem;
+    overflow-y: auto;
+    background: var(--ink-deep);
+    z-index: 60;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: clamp(.75rem, 2.5vh, 1.6rem);
+  }
+  body.nav-open nav.primary { display: flex; }
+  body.nav-open { overflow: hidden; }
+  nav.primary a { font-size: clamp(17px, 2.4vh, 20px); }
+  nav.primary a.order-btn {
+    width: min(100%, 320px);
+    padding: 14px 24px;
+    text-align: center;
+  }
+  .nav-toggle {
+    display: block;
+    z-index: 70;
+    position: relative;
+  }
+  body.nav-open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  body.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
   .rail-in { grid-template-columns: repeat(5, 1fr); }
   .rail .art { display: none; }
 }
@@ -327,19 +379,6 @@ footer li { margin: .4rem 0; font-family: var(--label); font-size: 16px; letter-
   .gal { grid-template-columns: repeat(2, 1fr); }
   .rail-in { grid-template-columns: repeat(5, minmax(0,1fr)); min-height: 72px; }
   .rail a.cell { font-size: 15px; letter-spacing: .12em; min-width: 0; overflow: hidden; }
-  nav.primary {
-    display: none;
-    position: fixed; inset: 0; background: var(--ink-deep); z-index: 60;
-    flex-direction: column; justify-content: center; align-items: center; text-align: center;
-    gap: 1.6rem;
-  }
-  body.nav-open nav.primary { display: flex; }
-  body.nav-open { overflow: hidden; position: fixed; width: 100%; }
-  nav.primary a { font-size: 20px; }
-  .nav-toggle { display: block; z-index: 70; position: relative; }
-  body.nav-open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-  body.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
-  body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 }
 @media (max-width: 640px) {
   :root { --gutter: 20px; }
