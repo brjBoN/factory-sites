@@ -603,16 +603,16 @@ footer.site a { text-underline-offset: 4px; }
   /* the painted concept tear, scaled for mobile */
   .torn { height: 34px; background: url("tear-strip.png") center top / auto 100% no-repeat; }
   .torn::before { display: none; }
-  .brand .nm-ink { height: 78px; }
+  .brand .nm-ink { height: 64px; }
 }
 @media (max-width: 640px) {
   .atlas { grid-template-columns: repeat(2, 1fr); }
   .brand img { height: 72px; }
-  .brand .nm-ink { height: 72px; }
+  .brand .nm-ink { height: 62px; }
 }
 @media (max-width: 360px) {
-  .brand img { height: 60px; }
-  .brand .nm-ink { height: 56px; }
+  .brand img { height: 62px; }
+  .brand .nm-ink { height: 50px; }
 }
 @media (max-width: 480px) {
   .atlas { grid-template-columns: 1fr; }
