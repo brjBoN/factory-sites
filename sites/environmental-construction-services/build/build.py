@@ -220,7 +220,7 @@ home = f"""
     </div>
   </div>
   <div class="hero-art desktop settle" aria-hidden="true"><img src="assets/hero-excavation-collage.webp" alt=""></div>
-  <div class="hero-art mobile settle" aria-hidden="true"><img src="assets/hero-excavation-collage-mobile.webp" alt=""></div>
+  <div class="hero-art mobile settle" aria-hidden="true"><img src="assets/hero-collage-mobile-sheet.png" alt=""></div>
 </section>
 <div class="pinned">
 {pinned}

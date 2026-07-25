@@ -480,7 +480,7 @@ footer.site a { text-underline-offset: 4px; }
 
 /* ------------------------------------------------------------ responsive */
 @media (max-width: 1200px) {
-  .brand img { height: 54px; }
+  .brand img { height: 82px; }
   .locnote { display: none; }
 }
 @media (max-width: 900px) {
@@ -493,10 +493,19 @@ footer.site a { text-underline-offset: 4px; }
   .pin-card .thumb { width: 128px; }
   .page { padding-left: 4px; }
   .hero { grid-template-columns: 1fr; }
-  .hero .btn-row { flex-wrap: wrap; width: auto; }
+  .hero .btn-row { flex-wrap: wrap; width: auto; justify-content: center; }
   .hero-art.desktop { display: none; }
-  .hero-art.mobile { display: block; max-width: 560px; margin: .5rem auto 0; }
-  .hero-copy { max-width: none; padding-left: 0; }
+  /* the leveled collage multiplies straight into the page paper — no sheet, no box */
+  .hero-art.mobile { display: block; max-width: 620px; margin: .2rem auto 0; }
+  .hero-art.mobile img { mix-blend-mode: multiply; }
+  .hero-copy { max-width: none; padding-left: 0; text-align: center; }
+  .m-headline { margin-left: auto; margin-right: auto; }
+  .hero .sub { margin-left: auto; margin-right: auto; }
+  /* mobile reads centered (TCB rule): headings, rules, copy blocks, CTA rows */
+  .sec .eyebrow, .sec h2.display { text-align: center; }
+  .sec .rule-red { margin-left: auto; margin-right: auto; }
+  .sec > p, .sec .btn-row { margin-left: auto; margin-right: auto; justify-content: center; text-align: center; }
+  .atlas .cap { justify-content: center; gap: 14px; }
   .pinned { grid-template-columns: 1fr; gap: 1.1rem; padding-top: 1.2rem; max-width: none; }
   /* mobile cards are painted concept crops — kill the DOM card chrome */
   .pin-card, .pin-card:nth-child(1), .pin-card:nth-child(2), .pin-card:nth-child(3) {
@@ -527,7 +536,8 @@ footer.site a { text-underline-offset: 4px; }
 }
 @media (max-width: 640px) {
   .atlas { grid-template-columns: repeat(2, 1fr); }
-  .brand .nm-ink { height: 40px; }
+  .brand img { height: 72px; }
+  .brand .nm-ink { height: 42px; }
 }
 @media (max-width: 480px) {
   .atlas { grid-template-columns: 1fr; }
