@@ -27,7 +27,8 @@ HERO_COPY = 'Drainage, clearing, excavation, site preparation, and outdoor const
 
 NOTICES = [
     'Private website concept — not the official Environmental Construction Services website.',
-    'Illustrative concept imagery — not photographs of completed ECS projects.',
+    'Landing-page illustrations are concept art; project photographs are Environmental '
+    'Construction Services’ own, from their public website and posts.',
     'This concept does not accept quote requests, inquiries, files, payments, or customer information.',
 ]
 
@@ -35,42 +36,42 @@ SERVICES = [
     {
         'slug': 'drainage',
         'label': 'Drainage',
-        'asset': 'service-drainage.webp',
+        'asset': 'photo-drainage.jpg',
         'note': 'FIELD NOTE 02',
         'blurb': 'Standing water, washouts, and soggy ground all start as a drainage problem. This is the category of work that moves water where it belongs.',
     },
     {
         'slug': 'land-clearing-excavation',
         'label': 'Land Clearing & Excavation',
-        'asset': 'service-land-clearing-excavation.webp',
+        'asset': 'photo-land-clearing-excavation.jpg',
         'note': 'FIELD NOTE 03',
         'blurb': 'Overgrowth out, grades cut, ground opened. Clearing and excavation take a site from raw to ready.',
     },
     {
         'slug': 'landscaping-hardscaping',
         'label': 'Landscaping & Hardscaping',
-        'asset': 'service-landscaping-hardscaping.webp',
+        'asset': 'photo-landscaping-hardscaping.jpg',
         'note': 'FIELD NOTE 04',
         'blurb': 'The finished layer — plantings, stonework, and the outdoor spaces people actually use.',
     },
     {
         'slug': 'seawalls-retention-waterproofing',
         'label': 'Seawalls, Retention & Waterproofing',
-        'asset': 'service-seawalls-retention-waterproofing.webp',
+        'asset': 'photo-seawalls-retention-waterproofing.jpg',
         'note': 'FIELD NOTE 05',
         'blurb': 'Where land meets water, the edge has to hold. Seawalls, retention, and waterproofing are that edge.',
     },
     {
         'slug': 'site-prep-culverts',
         'label': 'Site Preparation & Culverts',
-        'asset': 'service-site-prep-culverts.webp',
+        'asset': 'photo-site-prep-culverts.jpg',
         'note': 'FIELD NOTE 06',
         'blurb': 'Before anything goes vertical, the pad, the pipe, and the path have to be right.',
     },
     {
         'slug': 'driveways',
         'label': 'Driveways',
-        'asset': 'service-driveways.webp',
+        'asset': 'photo-driveways.jpg',
         'note': 'FIELD NOTE 07',
         'blurb': 'The way in and the way home — built to take traffic and weather, season after season.',
     },

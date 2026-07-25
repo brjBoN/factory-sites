@@ -34,7 +34,7 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current='', kind='inter
 <div class="stage-pos d-only">
  <div class="stage">
   <header class="board-header" style="background-image:url('{rel}assets/header-strip.png')">
-    <a class="logo-live" href="{rel}" aria-label="Environmental Construction Services — home"><img src="{rel}assets/ecs-logo-original.png" alt=""></a>
+    <a class="logo-live" href="{rel}" aria-label="Environmental Construction Services — home"><img src="{rel}assets/ecs-logo-plated.png" alt=""></a>
     <nav class="primary stage-nav" aria-label="Primary">{nav}</nav>
   </header>
  </div>
@@ -70,7 +70,7 @@ window.addEventListener('resize',f);f();}})();
 <header class="site">
   <div class="head-in">
     <a class="brand" href="{rel}">
-      <img src="{rel}assets/ecs-logo-original.png" alt="">
+      <img src="{rel}assets/ecs-logo-plated.png" alt="">
       <span class="nm">ENVIRONMENTAL<br><span class="l2">CONSTRUCTION SERVICES</span></span>
     </a>
     <span class="locnote" aria-hidden="true"><span class="locline">{e(D.FACTS['location_annotation'])}</span><span class="coords">{e(D.FACTS['location_coords'])}</span></span>
@@ -192,7 +192,7 @@ home = f"""
   <section class="board">
     <h1 class="sr-only">{e(D.HEADLINE)}</h1>
     <p class="sr-only">{e(D.HERO_COPY)} {e(D.FACTS['family'])} Based in Moultrie, Georgia.</p>
-    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-original.png" alt=""></a>
+    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-plated.png" alt=""></a>
     <nav class="primary stage-nav" aria-label="Primary">
       <a href="./" aria-current="page">Home</a><a href="services/">Services</a><a href="about/">About</a><a href="contact/">Contact</a>
     </nav>
@@ -254,10 +254,10 @@ home = f"""
 services_body = f"""
 <section class="sec">
   {sec_head('field note index —', 'Services.')}
-  <p style="max-width:56ch;margin-top:1rem">Six categories of ground work. Every illustration is
-  concept art — talk to us about what your site actually needs.</p>
+  <p style="max-width:56ch;margin-top:1rem">Six categories of ground work, shown in photographs
+  of Environmental Construction Services' own projects.</p>
   <div class="atlas">
-{atlas.replace('href="services/', 'href="')}
+{atlas.replace('href="services/', 'href="').replace('src="assets/', 'src="../assets/')}
   </div>
 </section>
 """
@@ -270,8 +270,8 @@ def svc_body(s):
   {sec_head(s['note'].lower() + ' —', s['label'] + '.')}
   <div class="svc-grid">
     <figure class="svc-art">
-      <img src="../../assets/{s['asset']}" alt="Illustrative concept sketch for {e(s['label'].lower())} — not a photograph of completed ECS work">
-      <figcaption>Illustrative concept sketch — not completed ECS work.</figcaption>
+      <img src="../../assets/{s['asset']}" alt="Environmental Construction Services {e(s['label'].lower())} project photo">
+      <figcaption>Photo: Environmental Construction Services — from their public site.</figcaption>
     </figure>
     <div class="svc-copy">
       <p>{e(s['blurb'])}</p>
@@ -304,8 +304,8 @@ about_body = f"""
       </div>
     </div>
     <figure class="svc-art">
-      <img src="../assets/service-land-clearing-excavation.webp" alt="Illustrative excavation concept sketch — not a photograph of completed ECS work">
-      <figcaption>Illustrative concept sketch — not completed ECS work.</figcaption>
+      <img src="../assets/photo-about-family.jpg" alt="The family behind Environmental Construction Services">
+      <figcaption>Photo: Environmental Construction Services — from their public site.</figcaption>
     </figure>
   </div>
 </section>
@@ -359,8 +359,10 @@ datause_body = f"""
     <p>This page collects nothing. There are no forms, no analytics, no cookies, no quote
     intake, no payments, no accounts, and no uploads. Fonts are loaded from Google Fonts,
     which receives standard technical request data when the page loads.</p>
-    <p>{e(D.NOTICES[1])} The graphite drawings are generated concept art in a field-notes
-    style, created to demonstrate a design direction.</p>
+    <p>{e(D.NOTICES[1])} The landing page's graphite drawings are generated concept art in a
+    field-notes style, created to demonstrate a design direction; the project photographs on
+    the service and about pages come from Environmental Construction Services' own public
+    website and were not altered beyond cropping and resizing.</p>
     <p>The concept is marked noindex/nofollow and its robots.txt asks crawlers to stay out.</p>
     <p>To reach the real business: <a href="{D.FACTS['phone_href']}">{e(D.FACTS['phone_display'])}</a>
     or <a href="{D.FACTS['email_href']}">{e(D.FACTS['email_display'])}</a>.</p>
