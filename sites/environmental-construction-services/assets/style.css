@@ -495,25 +495,41 @@ footer.site a { text-underline-offset: 4px; }
   .hero { grid-template-columns: 1fr; }
   .hero .btn-row { flex-wrap: wrap; width: auto; justify-content: center; }
   .hero-art.desktop { display: none; }
-  /* the leveled collage multiplies straight into the page paper — no sheet, no box.
-     multiply sits on the CONTAINER: the settle animation gives it a stacking
+  /* first screen = headline beside the drawing, like the desktop composition.
+     multiply sits on the art CONTAINER: the settle animation gives it a stacking
      context, which would otherwise trap the img's blend against nothing. */
-  .hero-art.mobile { display: block; max-width: 620px; margin: .2rem auto 0; mix-blend-mode: multiply; }
-  .hero-copy { max-width: none; padding-left: 0; text-align: center; }
-  .m-headline { margin-left: auto; margin-right: auto; }
-  .hero .sub { margin-left: auto; margin-right: auto; }
+  .m-hero-top {
+    display: grid; grid-template-columns: 54% 46%; align-items: center;
+    gap: 8px; margin-top: .4rem;
+  }
+  .m-hero-top .m-headline { width: 100%; margin: 0; }
+  .hero-art.mobile {
+    display: block; mix-blend-mode: multiply;
+    margin-right: calc(8px - var(--gutter));  /* drawing bleeds toward the page edge */
+  }
+  /* z-index/position would create a stacking context and trap the art's blend */
+  .hero-copy { max-width: none; padding-left: 0; text-align: center; position: static; z-index: auto; }
+  .hero .sub { margin-left: auto; margin-right: auto; margin-top: 1.1rem; }
   /* mobile reads centered (TCB rule): headings, rules, copy blocks, CTA rows */
   .sec .eyebrow, .sec h2.display { text-align: center; }
   .sec .rule-red { margin-left: auto; margin-right: auto; }
   .sec > p, .sec .btn-row { margin-left: auto; margin-right: auto; justify-content: center; text-align: center; }
   .atlas .cap { justify-content: center; gap: 14px; }
   .pinned { grid-template-columns: 1fr; gap: 1.1rem; padding-top: 1.2rem; max-width: none; }
-  /* mobile cards are painted concept crops — kill the DOM card chrome */
-  .pin-card, .pin-card:nth-child(1), .pin-card:nth-child(2), .pin-card:nth-child(3) {
+  /* mobile cards: clean painted faces pinned to the page */
+  .pin-card, .pin-card:nth-child(2) {
     background: none; border: 0; box-shadow: none; height: auto; padding: 0;
-    transform: none; display: block;
+    display: block; position: relative; transform: rotate(-0.4deg);
+    filter: drop-shadow(0 6px 9px rgb(23 25 28 / 20%));
+    max-width: 430px; margin: 0 auto;
   }
-  .pin-card::before { display: none; }
+  .pin-card:nth-child(1), .pin-card:nth-child(3) { transform: rotate(0.35deg); }
+  .pin-card::before {  /* brass pin straddling the card's top edge */
+    display: block; content: ""; position: absolute; top: -15px; left: 50%;
+    transform: translateX(-50%); width: 32px; height: 32px;
+    background: url("brass-pin.png") center / contain no-repeat;
+    filter: drop-shadow(0 3px 3px rgb(23 25 28 / 30%)); z-index: 2;
+  }
   .pin-card img { width: 100%; height: auto; display: block; }
   .m-headline { display: block; width: min(100%, 500px); margin: .4rem 0 .9rem; }
   .atlas, .svc-grid { grid-template-columns: 1fr; }
@@ -532,13 +548,21 @@ footer.site a { text-underline-offset: 4px; }
   body.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
   body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
   .nav-toggle { display: block; }
-  .rail-links { justify-content: flex-start; gap: 2px 18px; padding-top: 8px; padding-bottom: 8px; }
+  .rail-links { justify-content: center; text-align: center; gap: 2px 20px; padding-top: 10px; padding-bottom: 10px; }
   .rail-links a + a::before { display: none; }
+  /* the painted concept tear, scaled for mobile */
+  .torn { height: 34px; background: url("tear-strip.png") center top / auto 100% no-repeat; }
+  .torn::before { display: none; }
+  .brand .nm-ink { height: 64px; }
 }
 @media (max-width: 640px) {
   .atlas { grid-template-columns: repeat(2, 1fr); }
   .brand img { height: 72px; }
-  .brand .nm-ink { height: 42px; }
+  .brand .nm-ink { height: 62px; }
+}
+@media (max-width: 360px) {
+  .brand img { height: 62px; }
+  .brand .nm-ink { height: 50px; }
 }
 @media (max-width: 480px) {
   .atlas { grid-template-columns: 1fr; }

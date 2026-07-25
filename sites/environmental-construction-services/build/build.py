@@ -212,7 +212,10 @@ home = f"""
 <section class="hero">
   <div class="hero-copy">
     <h1 class="sr-only">{e(D.HEADLINE)}</h1>
-    <img class="m-headline settle" src="assets/mobile-headline.png" alt="" aria-hidden="true">
+    <div class="m-hero-top">
+      <img class="m-headline settle" src="assets/mobile-headline.png" alt="" aria-hidden="true">
+      <div class="hero-art mobile settle" aria-hidden="true"><img src="assets/hero-collage-mobile-sheet.png" alt=""></div>
+    </div>
     <p class="sub settle">{e(D.HERO_COPY)}</p>
     <div class="btn-row settle-2">
       <a class="btn fill" href="services/">{e(D.CTA_LABEL)}</a>
@@ -220,7 +223,6 @@ home = f"""
     </div>
   </div>
   <div class="hero-art desktop settle" aria-hidden="true"><img src="assets/hero-excavation-collage.webp" alt=""></div>
-  <div class="hero-art mobile settle" aria-hidden="true"><img src="assets/hero-collage-mobile-sheet.png" alt=""></div>
 </section>
 <div class="pinned">
 {pinned}
