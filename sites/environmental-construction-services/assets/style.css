@@ -479,8 +479,8 @@ footer.site a { text-underline-offset: 4px; }
   .stage .wrap { max-width: none; }
 
   .board {
-    height: 901px; position: relative;
-    background: url("bg-landing-card-bottoms-integrated.png") 0 0 / 1448px 901px no-repeat;
+    height: 885px; position: relative;
+    background: url("bg-landing-card-bottoms-flush.png") 0 0 / 1448px 885px no-repeat;
   }
   .board-header {
     height: 172px; position: relative;
@@ -494,7 +494,7 @@ footer.site a { text-underline-offset: 4px; }
   .stage-cta .btn.fill { padding: 12px 20px; }
   .card-hit {
     position: absolute; display: block; opacity: 0;
-    background-image: url("bg-landing-card-bottoms-integrated.png"); background-size: 1448px 901px;
+    background-image: url("bg-landing-card-bottoms-flush.png"); background-size: 1448px 885px;
     transition: opacity var(--m-std), transform var(--m-std) var(--ease-draw), filter var(--m-std);
   }
   .card-hit:hover, .card-hit:focus-visible {
@@ -503,8 +503,8 @@ footer.site a { text-underline-offset: 4px; }
   }
 
   .torn2 {
-    height: calc(39px * var(--zoom)); position: relative; z-index: 6;
-    background: url("tear-strip-clean.png") center top / auto 100% no-repeat;
+    height: calc(55px * var(--zoom)); position: relative; z-index: 6;
+    background: url("tear-strip-clean.png") center bottom / auto calc(39px * var(--zoom)) no-repeat;
   }
   .rail2 {
     height: calc(84px * var(--zoom)); position: relative; z-index: 6;
