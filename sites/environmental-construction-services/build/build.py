@@ -163,11 +163,11 @@ atlas = ''.join(f'''
 # whose background clones the same canvas region (pixel-aligned by construction)
 # and only shows on hover, so parity at rest is exact
 CARDS_LIVE = [
-    ('services/drainage/', 'Explore drainage services', 62, 745, 404, 141),
+    ('services/drainage/', 'Explore drainage services', 62, 745, 406, 125),
     ('services/land-clearing-excavation/',
-     'Explore land clearing, excavation, and site preparation services', 475, 738, 415, 144),
+     'Explore land clearing, excavation, and site preparation services', 490, 738, 368, 132),
     ('services/site-prep-culverts/',
-     'Explore culvert and driveway services', 897, 749, 405, 131),
+     'Explore culvert and driveway services', 881, 749, 372, 121),
 ]
 cards_live = ''.join(f'''
     <a class="card-hit" style="left:{x}px;top:{y}px;width:{w}px;height:{h}px;background-position:-{x}px -{y}px" href="{href}" aria-label="{e(aria)}"></a>'''
