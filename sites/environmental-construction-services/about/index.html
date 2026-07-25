@@ -14,11 +14,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@400;500;600&family=Roboto+Condensed:wght@700&family=Caveat:wght@500&family=Architects+Daughter&display=swap">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
-<body>
+<body data-page="interior">
+<script>
+(function(){var f=function(){var z=1;
+if(window.matchMedia('(min-width: 901px)').matches){z=window.innerWidth/1536;
+if(document.body.dataset.page==='home')z=Math.min(z,window.innerHeight/1024);}
+document.documentElement.style.setProperty('--zoom',z);};
+window.addEventListener('resize',f);f();})();
+</script>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="ledger" aria-hidden="true"><span>FIELD NOTE 08</span></div>
+<div class="ledger" aria-hidden="true"><img class="ledbrad" src="../assets/brad-brass.png" alt=""><span>FIELD NOTE 08</span></div>
 <div class="page">
-<div class="wrap">
+<div class="wrap m-only">
 <header class="site">
   <div class="head-in">
     <a class="brand" href="../">
@@ -33,8 +40,16 @@
   </div>
 </header>
 </div>
+<div class="stage-pos d-only">
+ <div class="stage">
+  <header class="board-header" style="background-image:url('../assets/header-strip.png')">
+    <a class="logo-live" href="../" aria-label="Environmental Construction Services — home"><img src="../assets/ecs-logo-original.png" alt=""></a>
+    <nav class="primary stage-nav" aria-label="Primary"><a href="../">Home</a><a href="../services/">Services</a><a href="../about/" aria-current="page">About</a><a href="../contact/">Contact</a></nav>
+  </header>
+ </div>
+</div>
 <main id="main">
-<div class="wrap">
+<div class="stage-pos"><div class="stage"><div class="wrap">
 <section class="sec">
   <p class="eyebrow">field note —</p><h2 class="display">About.</h2><div class="rule-red"></div>
   <div class="svc-grid">
@@ -56,9 +71,10 @@
     </figure>
   </div>
 </section>
-</div>
+</div></div></div>
 </main>
 <footer class="site">
+<div class="stage-pos"><div class="stage">
   <div class="foot-in">
     <div>
       <h4>Environmental Construction Services</h4>
@@ -88,6 +104,7 @@
   <div class="notices">
     <p>Private website concept — not the official Environmental Construction Services website.</p>    <p>Illustrative concept imagery — not photographs of completed ECS projects.</p>    <p>This concept does not accept quote requests, inquiries, files, payments, or customer information.</p>
   </div>
+</div></div>
 </footer>
 </div>
 <script src="../assets/main.js"></script>

@@ -395,6 +395,89 @@ footer.site a { text-underline-offset: 4px; }
   .pin-card, .atlas a { transition: none; }
 }
 
+/* ----------------------------------------------------- stage (concept canvas)
+   The desktop landing IS the processed concept canvas; live HTML (logo, nav,
+   CTAs, cards, rail hitboxes) overlays it at concept-pixel coordinates.
+   Everything scales together: --zoom = vw/1536, capped by vh/1024 on home so
+   the composition always ends at the first-viewport bottom. Set inline in
+   <head> before paint; CSS fallback is 1. */
+:root { --zoom: 1; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+.d-only { display: none; }
+
+@media (min-width: 901px) {
+  .d-only { display: block; }
+  .m-only { display: none; }
+  .page { padding-left: 0; }
+  .ledger { width: calc(88px * var(--zoom)); border-right: 0; }
+  .ledger::after {  /* the concept's own fine stitch margin, tiled */
+    width: calc(26px * var(--zoom)); right: 0; background:
+      url("ledger-stitch.png") 0 0 / 100% auto repeat-y;
+  }
+  .ledger .lednote, .ledger .ledbrad { position: absolute; }
+  .ledger .lednote { left: calc(15px * var(--zoom)); top: calc(35px * var(--zoom)); width: calc(43px * var(--zoom)); }
+  .ledger .ledbrad { left: calc(17px * var(--zoom)); top: calc(39px * var(--zoom)); width: calc(40px * var(--zoom)); }
+  .ledger span { display: none; }  /* the painted FIELD NOTE 01 replaces the webfont note */
+  .ledger::before { display: none; }  /* brad now placed per-page above */
+
+  .stage-pos {
+    width: calc(1448px * var(--zoom));
+    margin-left: max(calc(88px * var(--zoom)), calc((100vw - 1448px * var(--zoom)) / 2));
+  }
+  .stage { width: 1448px; zoom: var(--zoom); }
+  .stage .wrap { max-width: none; }
+
+  .board {
+    height: 885px; position: relative;
+    background: url("bg-landing.png") 0 0 / 100% 100% no-repeat;
+  }
+  .board-header {
+    height: 172px; position: relative;
+    background-size: 100% 100%; background-repeat: no-repeat;
+  }
+  .logo-live { position: absolute; left: 16px; top: 27px; display: block; }
+  .logo-live img { height: 98px; width: auto; }
+  .stage-nav { position: absolute; top: 54px; right: 56px; display: flex; gap: 46px; margin-left: 0; }
+  .stage-nav a { font-size: 30px; letter-spacing: .01em; }
+  .stage-cta { position: absolute; left: 66px; top: 655px; margin-top: 0; gap: 17px; }
+  .stage-cta .btn.fill { padding: 12px 20px; }
+  .card-hit {
+    position: absolute; display: block; opacity: 0;
+    background-image: url("bg-landing.png"); background-size: 1448px 885px;
+    transition: opacity var(--m-std), transform var(--m-std) var(--ease-draw), filter var(--m-std);
+  }
+  .card-hit:hover, .card-hit:focus-visible {
+    opacity: 1; transform: scale(1.03) translateY(-4px);
+    filter: drop-shadow(0 12px 14px rgb(23 25 28 / 24%));
+  }
+
+  .torn2 {
+    height: calc(55px * var(--zoom)); position: relative; z-index: 6;
+    background: url("tear-strip.png") center top / auto 100% no-repeat;
+  }
+  .rail2 {
+    height: calc(84px * var(--zoom)); position: relative; z-index: 6;
+    background:
+      url("rail-strip.png") center top / auto 100% no-repeat,
+      url("paper-grain.png") 0 0 / 560px,
+      #dcccab;
+    background-blend-mode: normal, multiply, normal;
+  }
+  .rail-hit { display: block; position: relative; width: calc(1536px * var(--zoom)); height: 100%; margin: 0 auto; }
+  .rail-hit a { position: absolute; top: 0; bottom: 0; }
+  .rail-hit a:hover::after, .rail-hit a:focus-visible::after {
+    content: ""; position: absolute; left: 6%; right: 6%; bottom: 24%;
+    height: calc(3px * var(--zoom)); background: var(--red-text); opacity: .65;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card-hit { transition: none; }
+  .card-hit:hover, .card-hit:focus-visible { transform: none; }
+}
+
 /* ------------------------------------------------------------ responsive */
 @media (max-width: 1200px) {
   .brand img { height: 54px; }

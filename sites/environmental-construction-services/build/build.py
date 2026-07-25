@@ -19,12 +19,26 @@ FONTS = ('https://fonts.googleapis.com/css2?family=League+Gothic&'
 NAV = [('', 'Home'), ('services/', 'Services'), ('about/', 'About'), ('contact/', 'Contact')]
 
 
-def page(route, title, desc, body, note='FIELD NOTE 01', current=''):
+def page(route, title, desc, body, note='FIELD NOTE 01', current='', kind='interior'):
     depth = 0 if route == '' else route.rstrip('/').count('/') + 1
     rel = '../' * depth
     nav = ''.join(
         f'<a href="{rel}{href}"{" aria-current=\"page\"" if href == current else ""}>{label}</a>'
         for href, label in NAV)
+    # painted brad+FIELD NOTE 01 on home; brad alone on interior pages
+    ledger_art = (f'<img class="lednote" src="{rel}assets/fieldnote-01.png" alt="">'
+                  if kind == 'home' else
+                  f'<img class="ledbrad" src="{rel}assets/brad-brass.png" alt="">')
+    # desktop header for interior pages: painted concept strip + live logo/nav
+    board_header = '' if kind == 'home' else f"""
+<div class="stage-pos d-only">
+ <div class="stage">
+  <header class="board-header" style="background-image:url('{rel}assets/header-strip.png')">
+    <a class="logo-live" href="{rel}" aria-label="Environmental Construction Services — home"><img src="{rel}assets/ecs-logo-original.png" alt=""></a>
+    <nav class="primary stage-nav" aria-label="Primary">{nav}</nav>
+  </header>
+ </div>
+</div>"""
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,11 +55,18 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current=''):
 <link rel="stylesheet" href="{FONTS}">
 <link rel="stylesheet" href="{rel}assets/style.css">
 </head>
-<body>
+<body data-page="{kind}">
+<script>
+(function(){{var f=function(){{var z=1;
+if(window.matchMedia('(min-width: 901px)').matches){{z=window.innerWidth/1536;
+if(document.body.dataset.page==='home')z=Math.min(z,window.innerHeight/1024);}}
+document.documentElement.style.setProperty('--zoom',z);}};
+window.addEventListener('resize',f);f();}})();
+</script>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="ledger" aria-hidden="true"><span>{e(note)}</span></div>
+<div class="ledger" aria-hidden="true">{ledger_art}<span>{e(note)}</span></div>
 <div class="page">
-<div class="wrap">
+<div class="wrap m-only">
 <header class="site">
   <div class="head-in">
     <a class="brand" href="{rel}">
@@ -59,11 +80,12 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current=''):
     </nav>
   </div>
 </header>
-</div>
+</div>{board_header}
 <main id="main">
 {body}
 </main>
 <footer class="site">
+<div class="stage-pos"><div class="stage">
   <div class="foot-in">
     <div>
       <h4>Environmental Construction Services</h4>
@@ -93,6 +115,7 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current=''):
   <div class="notices">
 {''.join(f'    <p>{e(n)}</p>' for n in D.NOTICES)}
   </div>
+</div></div>
 </footer>
 </div>
 <script src="{rel}assets/main.js"></script>
@@ -134,7 +157,57 @@ atlas = ''.join(f'''
     <span class="cap"><h3>{e(s['label'])}</h3><span class="fn">{e(s['note'])}</span></span>
   </a>''' for s in D.SERVICES)
 
+# live overlays sit at concept-canvas coordinates (minus the 88px ledger strip)
+# the painted cards stay untouched in the canvas; each gets an invisible hitbox
+# whose background clones the same canvas region (pixel-aligned by construction)
+# and only shows on hover, so parity at rest is exact
+CARDS_LIVE = [
+    ('services/drainage/', 'Explore drainage services', 62, 745, 404, 141),
+    ('services/land-clearing-excavation/',
+     'Explore land clearing, excavation, and site preparation services', 475, 742, 415, 144),
+    ('services/site-prep-culverts/',
+     'Explore culvert and driveway services', 897, 755, 405, 131),
+]
+cards_live = ''.join(f'''
+    <a class="card-hit" style="left:{x}px;top:{y}px;width:{w}px;height:{h}px;background-position:-{x}px -{y}px" href="{href}" aria-label="{e(aria)}"></a>'''
+                     for href, aria, x, y, w, h in CARDS_LIVE)
+
+# rail hitboxes: label ink spans measured from the concept rail strip (of 1536)
+RAIL_HITS = [
+    ('Drainage', 'services/drainage/', 74, 209),
+    ('Land Clearing', 'services/land-clearing-excavation/', 314, 513),
+    ('Culverts', 'services/site-prep-culverts/', 612, 745),
+    ('Driveways', 'services/driveways/', 841, 984),
+    ('Hardscaping', 'services/landscaping-hardscaping/', 1086, 1254),
+    ('Seawalls', 'services/seawalls-retention-waterproofing/', 1275, 1478),
+]
+rail_hits = ''.join(
+    f'<a href="{href}" style="left:{x0/15.36:.2f}%;width:{(x1-x0)/15.36:.2f}%">'
+    f'<span class="sr-only">{e(lbl)}</span></a>'
+    for lbl, href, x0, x1 in RAIL_HITS)
+
 home = f"""
+<div class="stage-pos d-only">
+ <div class="stage">
+  <section class="board">
+    <h1 class="sr-only">{e(D.HEADLINE)}</h1>
+    <p class="sr-only">{e(D.HERO_COPY)} {e(D.FACTS['family'])} Based in Moultrie, Georgia.</p>
+    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-original.png" alt=""></a>
+    <nav class="primary stage-nav" aria-label="Primary">
+      <a href="./" aria-current="page">Home</a><a href="services/">Services</a><a href="about/">About</a><a href="contact/">Contact</a>
+    </nav>
+    <div class="btn-row stage-cta settle-2">
+      <a class="btn fill" href="services/">{e(D.CTA_LABEL)}</a>
+      <a class="btn line" href="{D.FACTS['phone_href']}">CALL {e(D.FACTS['phone_display'])}</a>
+    </div>{cards_live}
+  </section>
+ </div>
+</div>
+<div class="torn2 d-only" aria-hidden="true"></div>
+<div class="rail2 d-only">
+  <nav class="rail-hit" aria-label="Service index">{rail_hits}</nav>
+</div>
+<div class="m-only">
 <div class="wrap">
 <section class="hero">
   <div class="hero-copy">
@@ -142,7 +215,7 @@ home = f"""
     <div class="underline draw" aria-hidden="true"></div>
     <p class="sub settle">{e(D.HERO_COPY)}</p>
     <div class="btn-row settle-2">
-      <a class="btn fill" href="services/">Explore Services</a>
+      <a class="btn fill" href="services/">{e(D.CTA_LABEL)}</a>
       <a class="btn line" href="{D.FACTS['phone_href']}">CALL {e(D.FACTS['phone_display'])}</a>
     </div>
   </div>
@@ -157,7 +230,8 @@ home = f"""
 <div class="rail-band"><div class="rail-links">
 {rail}
 </div></div>
-<div class="wrap">
+</div>
+<div class="stage-pos"><div class="stage"><div class="wrap">
 <section class="sec" id="atlas">
   {sec_head('the whole kit —', 'Six kinds of groundwork.')}
   <div class="atlas">
@@ -173,7 +247,7 @@ home = f"""
     <a class="btn line" href="{D.FACTS['email_href']}">Email Us</a>
   </div>
 </section>
-</div>
+</div></div></div>
 """
 
 # ------------------------------------------------------------------ services
@@ -295,8 +369,8 @@ datause_body = f"""
 """
 
 NAME = D.FACTS['name']
-W = lambda b: f'<div class="wrap">{b}</div>'  # main sits at page level; content re-enters the wrap
-page('', f'{NAME} — Moultrie, GA (Concept)', 'Private field-notes website concept: drainage, land clearing, excavation, site preparation, culverts, and driveways in Moultrie, GA.', home, note='FIELD NOTE 01', current='')
+W = lambda b: f'<div class="stage-pos"><div class="stage"><div class="wrap">{b}</div></div></div>'
+page('', f'{NAME} — Moultrie, GA (Concept)', 'Private field-notes website concept: drainage, land clearing, excavation, site preparation, culverts, and driveways in Moultrie, GA.', home, note='FIELD NOTE 01', current='', kind='home')
 page('services', f'Services — {NAME} (Concept)', 'Six categories of groundwork: drainage, clearing and excavation, landscaping, seawalls, site prep and culverts, driveways.', W(services_body), note='FIELD NOTE INDEX', current='services/')
 for s in D.SERVICES:
     page(f'services/{s["slug"]}', f'{s["label"]} — {NAME} (Concept)', s['blurb'], W(svc_body(s)), note=s['note'], current='services/')

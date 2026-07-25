@@ -21,6 +21,7 @@ FACTS = {
 
 HEADLINE = 'Start with the ground.'
 HEADLINE_LINES = ('Start with', 'the ground.')
+CTA_LABEL = 'Explore the Work'  # exact painted label in the approved concept
 
 HERO_COPY = 'Drainage, clearing, excavation, site preparation, and outdoor construction.'
 

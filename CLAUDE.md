@@ -38,7 +38,7 @@ This file is the complete operating manual. Read it fully before touching anythi
 | Scrap Now Metal Recycling | sites/scrap-now-metal | factory-sites-bo-n.vercel.app/sites/scrap-now-metal/ | done; needs dedicated Vercel project before outreach |
 | Quality Tooling, LLC | sites/quality-tooling | quality-tooling.vercel.app | done, approved; Etsy auto-sync live; handoff: outreach/quality-tooling-handoff.md |
 | Three Crazy Bakers | sites/three-crazy-bakers | factory-sites-bo-n.vercel.app/sites/three-crazy-bakers/ | done, approved; handoff: outreach/three-crazy-bakers-handoff.md (+.pdf); NEEDS dedicated Vercel project before outreach |
-| Environmental Construction Services LLC | sites/environmental-construction-services | factory-sites-bo-n.vercel.app/sites/environmental-construction-services/ | built from ChatGPT "Field Notes" asset package (concepts/environmental-construction-services/); 5 adversarial parity rounds, all regions FAITHFUL; awaiting Braden review. Package brief FORBIDS public deployment + contacting the business — factory directory only, NO dedicated Vercel project, NO outreach until Braden clears it |
+| Environmental Construction Services LLC | sites/environmental-construction-services | factory-sites-bo-n.vercel.app/sites/environmental-construction-services/ | built from ChatGPT "Field Notes" asset package; REBUILT canvas-first per Braden ("include the entire drawing; photoshop it") — landing = processed concept canvas + live overlays, stage-zoom scaling, judged FAITHFUL; awaiting Braden re-review. Package brief FORBIDS public deployment + contacting the business — factory directory only, NO dedicated Vercel project, NO outreach until Braden clears it |
 
 ## The workflow (per prospect)
 
@@ -171,6 +171,24 @@ first QA pass.
    cards: detection windows must exclude the donor card's own chrome (a baked-in pin read as
    "sketch ink" and shipped a phantom pin), level bg→white (percentile 96) and multiply-blend
    so card grain shows through.
+   CANVAS-FIRST INTEGRATION (Braden directive, ECS round 2 — "include the ENTIRE drawing;
+   photoshop it, don't convert annotations to fonts"): when the concept is a full-page
+   composition, DOM-recomposing it loses the drawing. Instead ship the concept canvas itself
+   as the page: (a) inpaint ONLY the zones that must be live HTML (nav, CTAs) — fill with
+   HIGH-PASS grain + local tone; a raw "clean" patch can carry a low-frequency pressed
+   watermark that mirror-tiling turns into phantom objects (chased a ghost "tape" through
+   three rounds — always high-pass the tile); (b) painted annotations/tear/headline stay
+   pixels; live text only where interaction/reading requires (sr-only h1 + real nav/buttons
+   keep a11y); (c) stage-zoom: fixed 1536px stage, CSS zoom var set inline pre-paint to
+   min(vw/1536, vh/1024) on home (fold-exact ≥3:2 aspects, poster-grows with resolution) and
+   vw/1536 on interior pages; full-bleed bands (tear/rail) live OUTSIDE the stage with
+   mirror-extended strips + height calc(px*zoom); (d) interactive zones painted in the canvas
+   (cards) get INVISIBLE HITBOX CLONES — <a> with the same canvas as background at negative
+   offset, opacity 0 → 1 + scale(1.03) on hover: pixel-perfect at rest (band diff 1.85), zero
+   asset-registration risk (overlaying re-rendered card assets caused ghost edges + a
+   displaced red-streak fragment through two judge rounds); (e) never trust judge coordinate
+   estimates over your own pixel measurements when two judges contradict each other —
+   measure, then choose the architecture that makes the error class impossible.
 5. **Revision-loop discipline** (every one of these caused a Braden-visible defect on TCB):
    - **A fix can become next round's bug.** The worst TCB defect (two overlapping courthouse
      drawings) was created by an earlier fix: an audit said "courthouse missing from hero

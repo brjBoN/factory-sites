@@ -14,11 +14,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@400;500;600&family=Roboto+Condensed:wght@700&family=Caveat:wght@500&family=Architects+Daughter&display=swap">
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body data-page="home">
+<script>
+(function(){var f=function(){var z=1;
+if(window.matchMedia('(min-width: 901px)').matches){z=window.innerWidth/1536;
+if(document.body.dataset.page==='home')z=Math.min(z,window.innerHeight/1024);}
+document.documentElement.style.setProperty('--zoom',z);};
+window.addEventListener('resize',f);f();})();
+</script>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="ledger" aria-hidden="true"><span>FIELD NOTE 01</span></div>
+<div class="ledger" aria-hidden="true"><img class="lednote" src="assets/fieldnote-01.png" alt=""><span>FIELD NOTE 01</span></div>
 <div class="page">
-<div class="wrap">
+<div class="wrap m-only">
 <header class="site">
   <div class="head-in">
     <a class="brand" href="">
@@ -35,6 +42,30 @@
 </div>
 <main id="main">
 
+<div class="stage-pos d-only">
+ <div class="stage">
+  <section class="board">
+    <h1 class="sr-only">Start with the ground.</h1>
+    <p class="sr-only">Drainage, clearing, excavation, site preparation, and outdoor construction. Family-owned and operated. Based in Moultrie, Georgia.</p>
+    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-original.png" alt=""></a>
+    <nav class="primary stage-nav" aria-label="Primary">
+      <a href="./" aria-current="page">Home</a><a href="services/">Services</a><a href="about/">About</a><a href="contact/">Contact</a>
+    </nav>
+    <div class="btn-row stage-cta settle-2">
+      <a class="btn fill" href="services/">Explore the Work</a>
+      <a class="btn line" href="tel:+12295160821">CALL (229) 516-0821</a>
+    </div>
+    <a class="card-hit" style="left:62px;top:745px;width:404px;height:141px;background-position:-62px -745px" href="services/drainage/" aria-label="Explore drainage services"></a>
+    <a class="card-hit" style="left:475px;top:742px;width:415px;height:144px;background-position:-475px -742px" href="services/land-clearing-excavation/" aria-label="Explore land clearing, excavation, and site preparation services"></a>
+    <a class="card-hit" style="left:897px;top:755px;width:405px;height:131px;background-position:-897px -755px" href="services/site-prep-culverts/" aria-label="Explore culvert and driveway services"></a>
+  </section>
+ </div>
+</div>
+<div class="torn2 d-only" aria-hidden="true"></div>
+<div class="rail2 d-only">
+  <nav class="rail-hit" aria-label="Service index"><a href="services/drainage/" style="left:4.82%;width:8.79%"><span class="sr-only">Drainage</span></a><a href="services/land-clearing-excavation/" style="left:20.44%;width:12.96%"><span class="sr-only">Land Clearing</span></a><a href="services/site-prep-culverts/" style="left:39.84%;width:8.66%"><span class="sr-only">Culverts</span></a><a href="services/driveways/" style="left:54.75%;width:9.31%"><span class="sr-only">Driveways</span></a><a href="services/landscaping-hardscaping/" style="left:70.70%;width:10.94%"><span class="sr-only">Hardscaping</span></a><a href="services/seawalls-retention-waterproofing/" style="left:83.01%;width:13.22%"><span class="sr-only">Seawalls</span></a></nav>
+</div>
+<div class="m-only">
 <div class="wrap">
 <section class="hero">
   <div class="hero-copy">
@@ -42,7 +73,7 @@
     <div class="underline draw" aria-hidden="true"></div>
     <p class="sub settle">Drainage, clearing, excavation, site preparation, and outdoor construction.</p>
     <div class="btn-row settle-2">
-      <a class="btn fill" href="services/">Explore Services</a>
+      <a class="btn fill" href="services/">Explore the Work</a>
       <a class="btn line" href="tel:+12295160821">CALL (229) 516-0821</a>
     </div>
   </div>
@@ -69,7 +100,8 @@
 <div class="rail-band"><div class="rail-links">
 <a href="services/drainage/">Drainage</a><a href="services/land-clearing-excavation/">Land Clearing</a><a href="services/site-prep-culverts/">Culverts</a><a href="services/driveways/">Driveways</a><a href="services/landscaping-hardscaping/">Hardscaping</a><a href="services/seawalls-retention-waterproofing/">Seawalls</a>
 </div></div>
-<div class="wrap">
+</div>
+<div class="stage-pos"><div class="stage"><div class="wrap">
 <section class="sec" id="atlas">
   <p class="eyebrow">the whole kit —</p><h2 class="display">Six kinds of groundwork.</h2><div class="rule-red"></div>
   <div class="atlas">
@@ -109,10 +141,11 @@
     <a class="btn line" href="mailto:ecs.outdoorcustoms@gmail.com">Email Us</a>
   </div>
 </section>
-</div>
+</div></div></div>
 
 </main>
 <footer class="site">
+<div class="stage-pos"><div class="stage">
   <div class="foot-in">
     <div>
       <h4>Environmental Construction Services</h4>
@@ -142,6 +175,7 @@
   <div class="notices">
     <p>Private website concept — not the official Environmental Construction Services website.</p>    <p>Illustrative concept imagery — not photographs of completed ECS projects.</p>    <p>This concept does not accept quote requests, inquiries, files, payments, or customer information.</p>
   </div>
+</div></div>
 </footer>
 </div>
 <script src="assets/main.js"></script>
