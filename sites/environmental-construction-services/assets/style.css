@@ -517,13 +517,13 @@ footer.site a { text-underline-offset: 4px; }
   .rail-hit { display: block; position: relative; width: calc(1536px * var(--zoom)); height: 100%; margin: 0 auto; }
   .rail-hit a { position: absolute; top: 0; bottom: 0; }
   .rail-hit a:hover::after, .rail-hit a:focus-visible::after {
-    content: ""; position: absolute; left: 6%; right: 6%; bottom: 24%;
+    content: ""; position: absolute; left: 6%; right: 6%;
+    top: calc(40px * var(--zoom)); bottom: auto;
     height: calc(3px * var(--zoom)); background: var(--red-text); opacity: .65;
   }
   .rail-hit a:last-child:hover::after,
   .rail-hit a:last-child:focus-visible::after {
     left: 40%; right: 5%;
-    top: calc(40px * var(--zoom)); bottom: auto;
   }
 }
 @media (prefers-reduced-motion: reduce) {
