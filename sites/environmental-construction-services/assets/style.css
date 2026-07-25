@@ -504,7 +504,13 @@ footer.site a { text-underline-offset: 4px; }
 
   .torn2 {
     height: calc(55px * var(--zoom)); position: relative; z-index: 6;
-    background: url("tear-strip-clean.png") center bottom / auto calc(39px * var(--zoom)) no-repeat;
+    /* The cleaned tear is 39px tall inside the original 55px slot. Continue
+       textured paper through the exposed 16px instead of showing a flat band. */
+    background:
+      url("tear-strip-clean.png") center bottom / auto calc(39px * var(--zoom)) no-repeat,
+      linear-gradient(rgb(255 255 255 / 35%), rgb(255 255 255 / 35%)),
+      url("rail-paper-extension.png") center / 120% auto no-repeat,
+      #e8ddca;
   }
   .rail2 {
     /* Overlap the transparent tear by one pixel so fractional stage scaling
