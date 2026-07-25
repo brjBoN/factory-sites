@@ -480,7 +480,7 @@ footer.site a { text-underline-offset: 4px; }
 
   .board {
     height: 885px; position: relative;
-    background: url("bg-landing.png") 0 0 / 100% 100% no-repeat;
+    background: url("bg-landing-card-bottoms-fixed.png") 0 0 / 100% 100% no-repeat;
   }
   .board-header {
     height: 172px; position: relative;
@@ -494,7 +494,7 @@ footer.site a { text-underline-offset: 4px; }
   .stage-cta .btn.fill { padding: 12px 20px; }
   .card-hit {
     position: absolute; display: block; opacity: 0;
-    background-image: url("bg-landing.png"); background-size: 1448px 885px;
+    background-image: url("bg-landing-card-bottoms-fixed.png"); background-size: 1448px 885px;
     transition: opacity var(--m-std), transform var(--m-std) var(--ease-draw), filter var(--m-std);
   }
   .card-hit:hover, .card-hit:focus-visible {
