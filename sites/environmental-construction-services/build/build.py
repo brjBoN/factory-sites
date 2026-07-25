@@ -338,8 +338,14 @@ import blog_data as B
 
 def post_body_html(post):
     parts = []
-    for i, (tag, txt) in enumerate(post['body']):
-        if tag in ('h2', 'h3'):
+    for i, el in enumerate(post['body']):
+        tag, txt = el[0], el[1]
+        if tag == 'img':
+            if parts and parts[-1].endswith('</li>'):
+                parts.append('</ul>')
+            alt = el[2] if len(el) > 2 and el[2] else post['title']
+            parts.append(f'<figure class="post-img"><img src="../../assets/{txt}" alt="{e(alt)}" loading="lazy"></figure>')
+        elif tag in ('h2', 'h3'):
             if parts and parts[-1].endswith('</li>'):
                 parts.append('</ul>')
             parts.append(f'<h2>{e(txt)}</h2>')
@@ -375,12 +381,19 @@ def excerpt(t, n=210):
         return t
     return t[:n].rsplit(' ', 1)[0].rstrip(',;:') + ' …'
 
+def card_thumb(p):
+    if not p.get('cover'):
+        return ''
+    return f'<span class="log-thumb"><img src="../assets/{p["cover"]}" alt="" loading="lazy"></span>'
+
 blog_cards = ''.join(f'''
-  <a class="log-card" href="../post/{p['slug']}/">
+  <a class="log-card{" has-thumb" if p.get("cover") else ""}" href="../post/{p['slug']}/">
+    {card_thumb(p)}<span class="log-body">
     <span class="meta">Log {i:02d} — {e(fmt_date(p['date']))}</span>
     <h3>{e(p['title'])}</h3>
     <p>{e(excerpt(p['desc']))}</p>
     <span class="go">Read the entry &#8594;</span>
+    </span>
   </a>''' for i, p in enumerate(B.POSTS, 1))
 
 blog_body = f"""
@@ -401,6 +414,7 @@ def post_page_body(p):
   <article class="post">
     <p class="meta">{e(fmt_date(p['date']))} — Environmental Construction Services</p>
     {sec_head('field log —', p['title'])}
+    {f'<figure class="post-img cover"><img src="../../assets/{p["cover"]}" alt="{e(p["title"])}"></figure>' if p.get('cover') else ''}
     {post_body_html(p)}
     <p class="post-src">Reproduced from Environmental Construction Services' public blog
     (environmentalconstructions.com). Part of this private website concept.</p>

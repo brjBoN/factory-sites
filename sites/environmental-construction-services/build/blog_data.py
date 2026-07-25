@@ -1,7 +1,6 @@
 """ECS blog corpus — transcribed verbatim from environmentalconstructions.com
-(their public Wix blog, harvested 2026-07-24 via real-browser extraction).
-Their words, not ours; the -1 duplicate slug of the drainage-installation
-post is intentionally omitted."""
+(their public Wix blog, harvested 2026-07-24 via real-browser extraction),
+including each post's own images. The -1 duplicate slug is omitted."""
 
 POSTS = [
  {
@@ -9,9 +8,11 @@ POSTS = [
   'title': '7 Common Drainage Problems Causing Water Accumulation in South Georgia Yards',
   'date': '2026-07-16',
   'desc': 'Water pooling in your yard after rain can be frustrating and damaging. In South Georgia, where heavy rains and clay soils are common, drainage issues often lead to standing water that harms lawns, plants, and even your home’s foundation. Understanding why your yard holds water is the first step to fixing the problem and protecting your property.This post explores seven common drainage problems in South Georgia yards. Each section explains the cause, how it affects your yard, and practical steps ',
+  'cover': 'blog-img-03.jpg',
   'body': [
    ('p', 'Water pooling in your yard after rain can be frustrating and damaging. In South Georgia, where heavy rains and clay soils are common, drainage issues often lead to standing water that harms lawns, plants, and even your home’s foundation. Understanding why your yard holds water is the first step to fixing the problem and protecting your property.'),
    ('p', 'This post explores seven common drainage problems in South Georgia yards. Each section explains the cause, how it affects your yard, and practical steps to improve drainage.'),
+   ('img', 'blog-img-03.jpg', 'Eye-level view of a South Georgia yard with standing water near the foundation of a house'),
    ('h2', '1. Clay Soil and Poor Absorption'),
    ('p', 'South Georgia soils often contain a high percentage of clay. Clay particles are very small and pack tightly together, which slows water absorption. When it rains, water sits on the surface or just below it because the soil cannot soak it up quickly.'),
    ('p', 'How this causes water accumulation:'),
@@ -93,8 +94,10 @@ POSTS = [
   'title': 'Understanding Why Your Yard Stays Wet: Surface Water and Groundwater Issues Explained',
   'date': '2026-06-15',
   'desc': 'A wet yard can be more than just an inconvenience. It can damage your landscaping, create unsafe conditions, and even harm your home’s foundation. If you notice standing water in your yard after rain or persistent sogginess, understanding the difference between surface water and groundwater problems is key to finding the right solution. This post explains why your yard stays wet and how effective drainage systems can help.What Causes a Wet Yard?Yard flooding and standing water in yard areas usua',
+  'cover': 'blog-img-01.jpg',
   'body': [
    ('p', 'A wet yard can be more than just an inconvenience. It can damage your landscaping, create unsafe conditions, and even harm your home’s foundation. If you notice standing water in your yard after rain or persistent sogginess, understanding the difference between surface water and groundwater problems is key to finding the right solution. This post explains why your yard stays wet and how effective drainage systems can help.'),
+   ('img', 'blog-img-02.jpg', 'Eye-level view of a soggy residential yard with puddles and wet soil'),
    ('h2', 'What Causes a Wet Yard?'),
    ('p', 'Yard flooding and standing water in yard areas usually come from two main sources: surface water and groundwater. Each requires different drainage solutions for yard problems.'),
    ('li', 'Surface water comes from rain or storm water that flows over the ground. It pools in low spots or where the soil cannot absorb it fast enough.'),
@@ -163,6 +166,7 @@ POSTS = [
   'title': 'Expert Site Grading Benefits: Why Hiring Professionals Matters',
   'date': '2026-02-22',
   'desc': 'When preparing land for construction or landscaping, proper site grading is essential. It shapes the land to ensure water flows away from buildings, prevents erosion, and creates a stable foundation. We understand the importance of this step and want to share why hiring expert site grading contractors is a wise choice. Their skills and experience bring many benefits that can save time, money, and stress.Understanding Expert Site Grading BenefitsSite grading is more than just moving dirt around. ',
+  'cover': 'blog-img-08.jpg',
   'body': [
    ('p', 'When preparing land for construction or landscaping, proper site grading is essential. It shapes the land to ensure water flows away from buildings, prevents erosion, and creates a stable foundation. We understand the importance of this step and want to share why hiring expert site grading contractors is a wise choice. Their skills and experience bring many benefits that can save time, money, and stress.'),
    ('h2', 'Understanding Expert Site Grading Benefits'),
@@ -174,6 +178,7 @@ POSTS = [
    ('li', 'Enhanced Aesthetics: Grading can create smooth, attractive contours that improve the overall look of your property.'),
    ('li', 'Compliance with Regulations: Professionals ensure grading meets local codes and permits, avoiding costly fines or delays.'),
    ('p', 'By trusting experts, we gain peace of mind knowing the job is done right the first time.'),
+   ('img', 'blog-img-08.jpg', 'Eye-level view of a freshly graded residential yard with smooth soil contours'),
    ('h2', 'How Much Does It Cost to Have Land Graded?'),
    ('p', 'Cost is often a concern when considering site grading. Several factors influence the price, including:'),
    ('li', 'Size of the Area: Larger sites require more work and equipment.'),
@@ -183,6 +188,7 @@ POSTS = [
    ('kick', 'Project Complexity: Additional tasks like erosion control or drainage installation affect pricing.'),
    ('p', 'On average, land grading can range from $1,000 to $5,000 or more. However, investing in expert services often saves money in the long run by preventing drainage problems and structural damage.'),
    ('p', 'We recommend obtaining detailed quotes from reputable contractors and discussing your project goals clearly. This approach helps avoid surprises and ensures you get the best value.'),
+   ('img', 'blog-img-12.jpg', 'High angle view of heavy machinery grading a commercial site'),
    ('h2', 'Practical Tips for Choosing the Right Contractor'),
    ('p', 'Selecting the right professional is crucial. Here are some practical tips to guide the process:'),
    ('li', 'Check Credentials: Verify licenses, insurance, and certifications.'),
@@ -209,8 +215,10 @@ POSTS = [
   'title': 'The Importance of Demolition in Urban Renewal and Site Preparation',
   'date': '2026-01-28',
   'desc': 'Demolition plays a crucial role in shaping the future of our cities and communities. Removing old, unsafe, or unsightly buildings clears the way for new construction, revitalizes neighborhoods, and ensures public safety. Companies like ECS provide quick and affordable demolition services, including site preparation for any new build. This post explores why demolition matters, how it supports urban renewal, and what makes professional demolition essential for successful construction projects.Why ',
+  'cover': 'blog-img-11.jpg',
   'body': [
    ('p', 'Demolition plays a crucial role in shaping the future of our cities and communities. Removing old, unsafe, or unsightly buildings clears the way for new construction, revitalizes neighborhoods, and ensures public safety. Companies like ECS provide quick and affordable demolition services, including site preparation for any new build. This post explores why demolition matters, how it supports urban renewal, and what makes professional demolition essential for successful construction projects.'),
+   ('img', 'blog-img-04.jpg', 'Eye-level view of a demolition site with heavy machinery tearing down an old building'),
    ('h2', 'Why Demolition Is Essential for Urban Renewal'),
    ('p', 'Urban renewal involves transforming aging or deteriorated areas into vibrant, functional spaces. Demolition is often the first step in this process. Here’s why it matters:'),
    ('kick', 'Removing Unsafe Structures'),
@@ -299,12 +307,14 @@ POSTS = [
   'slug': 'the-essential-role-of-quality-drainage-and-land-management-in-effective-property-maintenance',
   'title': 'The Essential Role of Quality Drainage and Land Management in Effective Property Maintenance',
   'date': '2026-01-15',
-  'desc': 'Proper property maintenance goes beyond simple upkeep. It requires a strategic approach to managing water flow, vegetation, and land features to protect the land and enhance its value. Quality drainage and land management are critical components that prevent costly damage, improve usability, and maintain the health of your property. ECS offers a comprehensive range of services to meet these needs, including drainage solutions, forestry mulching, land clearing, fence row and pond cleanup, and more.',
+  'desc': 'Proper property maintenance goes beyond simple upkeep. It requires a strategic approach to managing water flow, vegetation, and land features to protect the land and enhance its value. Quality drainage and land management are critical components that prevent costly damage, improve usability, and maintain the health of your property. ECS offers a comprehensive range of services to meet these needs, including drainage solutions, forestry mulching, land clearing, fence row and pond cleanup, and mor',
+  'cover': 'blog-img-09.jpg',
   'body': [
    ('p', 'Proper property maintenance goes beyond simple upkeep. It requires a strategic approach to managing water flow, vegetation, and land features to protect the land and enhance its value. Quality drainage and land management are critical components that prevent costly damage, improve usability, and maintain the health of your property. ECS offers a comprehensive range of services to meet these needs, including drainage solutions, forestry mulching, land clearing, fence row and pond cleanup, and more.'),
    ('p', 'Understanding why these elements matter can help property owners make informed decisions and avoid common pitfalls.'),
+   ('img', 'blog-img-10.jpg', 'Eye-level view of a well-maintained drainage ditch alongside a rural property'),
    ('h2', 'Why Quality Drainage Matters'),
-   ('p', "Water is essential for life, but uncontrolled water can cause serious problems on your property. Poor drainage leads to soil erosion, flooding, foundation damage, and even loss of usable land. Here's why investing in quality drainage solutions is crucial:"),
+   ('p', 'Water is essential for life, but uncontrolled water can cause serious problems on your property. Poor drainage leads to soil erosion, flooding, foundation damage, and even loss of usable land. Here’s why investing in quality drainage solutions is crucial:'),
    ('kick', 'Prevents Soil Erosion'),
    ('p', 'Water running unchecked can wash away topsoil, which is vital for plant growth and land stability. Proper drainage channels water safely away, preserving the soil structure.'),
    ('kick', 'Protects Structures and Foundations'),
@@ -313,7 +323,7 @@ POSTS = [
    ('p', 'Well-designed drainage helps manage heavy rainfall and runoff, preventing flooding that can damage property and disrupt daily life.'),
    ('kick', 'Improves Land Usability'),
    ('p', 'Waterlogged land is difficult to use for farming, recreation, or construction. Effective drainage keeps land dry and accessible.'),
-   ('p', "ECS specializes in creating drainage systems tailored to your property's unique needs, ensuring water flows where it should without causing harm."),
+   ('p', 'ECS specializes in creating drainage systems tailored to your property’s unique needs, ensuring water flows where it should without causing harm.'),
    ('h2', 'The Importance of Land Management'),
    ('p', 'Land management involves maintaining and improving the natural features of your property to support its health and productivity. This includes controlling vegetation, managing soil quality, and maintaining natural water flow. Good land management offers several benefits:'),
    ('kick', 'Enhances Soil Health'),
@@ -358,8 +368,10 @@ POSTS = [
   'title': 'Transform Your Land into an Oasis with Eco-Friendly Clearing and Management Solutions',
   'date': '2026-01-06',
   'desc': 'Clearing and managing land can feel overwhelming when nature has taken over with thick brush, unwanted trees, and uneven terrain. Whether you want to build your dream home, create the perfect hunting ground, or design an outdoor patio to enjoy peaceful mornings, the right land management approach makes all the difference. Using environmentally friendly methods like forestry mulching, combined with expert drainage solutions and land leveling, you can transform your property into a beautiful, func',
+  'cover': 'blog-img-05.jpg',
   'body': [
    ('p', 'Clearing and managing land can feel overwhelming when nature has taken over with thick brush, unwanted trees, and uneven terrain. Whether you want to build your dream home, create the perfect hunting ground, or design an outdoor patio to enjoy peaceful mornings, the right land management approach makes all the difference. Using environmentally friendly methods like forestry mulching, combined with expert drainage solutions and land leveling, you can transform your property into a beautiful, functional space without harming the environment.'),
+   ('img', 'blog-img-05.jpg', 'Eye-level view of a freshly cleared lot with green trees surrounding the area'),
    ('h2', 'Why Choose Eco-Friendly Land Clearing'),
    ('p', 'Traditional land clearing often involves heavy machinery that strips the land bare, leaving soil exposed and vulnerable to erosion. Chemicals and burning can harm local wildlife and plants. Eco-friendly clearing methods, such as forestry mulching, offer a sustainable alternative. Forestry mulching grinds trees, brush, and stumps into mulch on-site, which enriches the soil and prevents erosion. This method reduces waste and disturbance to the land, preserving the natural ecosystem while preparing your property for development.'),
    ('h2', 'Benefits of Forestry Mulching'),
@@ -413,6 +425,7 @@ POSTS = [
   'title': 'Essential Drainage Solutions: The Essentials of Drainage System Installation',
   'date': '2025-12-08',
   'desc': 'Proper drainage is vital for maintaining the health and safety of any property. Water that pools or flows improperly can cause damage to foundations, landscaping, and even indoor spaces. We want to share clear, practical information about essential drainage solutions and how to approach drainage system installation effectively. This knowledge will help you protect your property and avoid costly repairs.Understanding Essential Drainage SolutionsDrainage solutions are designed to manage water flow',
+  'cover': 'blog-img-07.jpg',
   'body': [
    ('p', 'Proper drainage is vital for maintaining the health and safety of any property. Water that pools or flows improperly can cause damage to foundations, landscaping, and even indoor spaces. We want to share clear, practical information about essential drainage solutions and how to approach drainage system installation effectively. This knowledge will help you protect your property and avoid costly repairs.'),
    ('h2', 'Understanding Essential Drainage Solutions'),
@@ -423,6 +436,7 @@ POSTS = [
    ('li', 'Channel drains: Long, narrow drains that capture surface water along driveways or walkways.'),
    ('kick', 'Sump pumps: Devices that pump water out from basements or low-lying areas.'),
    ('p', 'Choosing the right solution depends on your property’s layout, soil type, and typical weather conditions. For example, if your yard has heavy clay soil, a French drain might be necessary to improve water absorption and prevent pooling.'),
+   ('img', 'blog-img-07.jpg', 'Eye-level view of a gravel-filled trench with a perforated pipe for drainage'),
    ('h2', 'Planning Your Drainage System Installation'),
    ('p', 'Planning is the first step toward a successful drainage system. We recommend starting with a thorough assessment of your property. Look for areas where water tends to collect or flow excessively. Note any signs of damage such as soil erosion, foundation cracks, or mold growth indoors.'),
    ('p', 'Next, consider the following:'),
@@ -432,6 +446,7 @@ POSTS = [
    ('kick', 'Existing drainage: Identify if current systems are working or need upgrades.'),
    ('p', 'Once you have this information, you can decide which drainage solutions fit best. We often suggest combining multiple methods for comprehensive protection. For example, surface drains can handle rainwater runoff, while French drains manage groundwater.'),
    ('p', 'If you prefer professional help, scheduling a drainage system installation with experienced contractors ensures the job is done correctly and efficiently.'),
+   ('img', 'blog-img-06.jpg', 'High angle view of a residential yard with newly installed channel drains'),
    ('h2', 'How much does a new drainage system cost?'),
    ('p', 'Cost is a common concern when considering drainage improvements. The price varies widely based on the system type, property size, and complexity of the installation.'),
    ('p', 'Here are some general cost factors:'),
@@ -470,6 +485,7 @@ POSTS = [
   'title': 'Transforming Your Residential Lot into a Valuable Usable Space in Moultrie',
   'date': '2025-12-02',
   'desc': 'Turning a residential lot into a practical, attractive space can significantly increase its value and enhance your daily living experience. If you own property in Moultrie or nearby communities, making thoughtful improvements can protect your investment and open up new possibilities for enjoyment or future development. This post explores how smart planning and targeted changes can transform your lot into a more useful and appealing area.Understanding Your Lot’s PotentialEvery residential lot has',
+  'cover': '',
   'body': [
    ('p', 'Turning a residential lot into a practical, attractive space can significantly increase its value and enhance your daily living experience. If you own property in Moultrie or nearby communities, making thoughtful improvements can protect your investment and open up new possibilities for enjoyment or future development. This post explores how smart planning and targeted changes can transform your lot into a more useful and appealing area.'),
    ('h2', 'Understanding Your Lot’s Potential'),
