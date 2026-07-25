@@ -195,7 +195,7 @@ home = f"""
     <p class="sr-only">{e(D.HERO_COPY)} {e(D.FACTS['family'])} Based in Moultrie, Georgia.</p>
     <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-plated.png" alt=""></a>
     <nav class="primary stage-nav" aria-label="Primary">
-      <a href="./" aria-current="page">Home</a><a href="services/">Services</a><a href="about/">About</a><a href="contact/">Contact</a>
+      {''.join(f'<a href="{href or "./"}"{" aria-current=\"page\"" if href == "" else ""}>{label}</a>' for href, label in NAV)}
     </nav>
     <div class="btn-row stage-cta settle-2">
       <a class="btn fill" href="services/">{e(D.CTA_LABEL)}</a>
