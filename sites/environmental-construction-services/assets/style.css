@@ -511,14 +511,27 @@ footer.site a { text-underline-offset: 4px; }
        cannot expose the light page background as a hairline seam. The added
        height keeps the combined tear + rail footprint unchanged. */
     height: calc(84px * var(--zoom) + 1px); margin-top: -1px;
-    position: relative; z-index: 6;
+    position: relative; z-index: 6; overflow: hidden;
+    /* The menu artwork is width-capped. Continue its paper texture behind it
+       so ultrawide screens do not reveal flat-color blocks at either side. */
     background:
       url("rail-strip.png") center top / auto 100% no-repeat,
-      url("paper-grain.png") 0 0 / 560px,
-      #dcccab;
-    background-blend-mode: normal, multiply, normal;
+      url("rail-paper-extension.png") center / 120% auto no-repeat,
+      #e8ddca;
+    background-blend-mode: normal;
   }
-  .rail-hit { display: block; position: relative; width: calc(1536px * var(--zoom)); height: 100%; margin: 0 auto; }
+  .rail2::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 50%;
+    width: calc(1536px * var(--zoom));
+    transform: translateX(-50%);
+    pointer-events: none;
+    background:
+      linear-gradient(to right, #d6c5a5, transparent 12px) left / 12px 100% no-repeat,
+      linear-gradient(to left, #d6c5a5, transparent 12px) right / 12px 100% no-repeat;
+  }
+  .rail-hit { display: block; position: relative; z-index: 1; width: calc(1536px * var(--zoom)); height: 100%; margin: 0 auto; }
   .rail-hit a { position: absolute; top: 0; bottom: 0; }
   .rail-hit a:hover::after, .rail-hit a:focus-visible::after {
     content: ""; position: absolute; left: 6%; right: 6%;
