@@ -504,20 +504,7 @@ footer.site a { text-underline-offset: 4px; }
 
   .torn2 {
     height: calc(55px * var(--zoom)); position: relative; z-index: 6;
-    background:
-      url("paper-grain.png") 0 0 / calc(560px * var(--zoom)),
-      #e8ddca;
-    background-blend-mode: multiply, normal;
-  }
-  .torn2::before {
-    content: ""; position: absolute;
-    top: calc(-12px * var(--zoom)); left: 0; right: 0;
-    height: calc(56px * var(--zoom));
-    background:
-      url("torn-paper-edge.png") repeat-x top left /
-      calc(1032px * var(--zoom)) calc(56px * var(--zoom));
-    filter: drop-shadow(0 calc(4px * var(--zoom)) calc(4px * var(--zoom)) rgb(23 25 28 / 24%));
-    pointer-events: none;
+    background: url("tear-strip.png") center top / auto 100% no-repeat;
   }
   .rail2 {
     height: calc(84px * var(--zoom)); position: relative; z-index: 6;
