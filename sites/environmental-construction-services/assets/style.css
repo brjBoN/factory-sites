@@ -58,9 +58,12 @@ a { color: inherit; }
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 
-/* left ledger: vertical field-note annotation + rule */
+/* left ledger: vertical field-note annotation + rule.
+   Absolute (body is relative), NOT fixed — it belongs to the paper and must
+   scroll with it, not chase the reader down the page. */
+body { position: relative; }
 .ledger {
-  position: fixed; left: 0; top: 0; bottom: 0; width: var(--ledger);
+  position: absolute; left: 0; top: 0; bottom: 0; width: var(--ledger);
   border-right: 1px solid var(--rule); pointer-events: none; z-index: 5;
 }
 .ledger::after {  /* red dashed survey ticks along the rule */
