@@ -495,9 +495,10 @@ footer.site a { text-underline-offset: 4px; }
   .hero { grid-template-columns: 1fr; }
   .hero .btn-row { flex-wrap: wrap; width: auto; justify-content: center; }
   .hero-art.desktop { display: none; }
-  /* the leveled collage multiplies straight into the page paper — no sheet, no box */
-  .hero-art.mobile { display: block; max-width: 620px; margin: .2rem auto 0; }
-  .hero-art.mobile img { mix-blend-mode: multiply; }
+  /* the leveled collage multiplies straight into the page paper — no sheet, no box.
+     multiply sits on the CONTAINER: the settle animation gives it a stacking
+     context, which would otherwise trap the img's blend against nothing. */
+  .hero-art.mobile { display: block; max-width: 620px; margin: .2rem auto 0; mix-blend-mode: multiply; }
   .hero-copy { max-width: none; padding-left: 0; text-align: center; }
   .m-headline { margin-left: auto; margin-right: auto; }
   .hero .sub { margin-left: auto; margin-right: auto; }

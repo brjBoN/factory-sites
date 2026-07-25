@@ -189,6 +189,15 @@ first QA pass.
    displaced red-streak fragment through two judge rounds); (e) never trust judge coordinate
    estimates over your own pixel measurements when two judges contradict each other —
    measure, then choose the architecture that makes the error class impossible.
+   Mobile corollary (ECS round 5-6 — "you must seamlessly integrate the central graphic… you
+   don't seem to be very good at learning"): the no-boxed-art rule applies to EVERY viewport
+   and EVERY page from the start, not just the judged desktop canvas — level the art's paper
+   field (masked-normalized blur + divide) and multiply it into the page; a parent with
+   animated opacity/transform creates a stacking context that traps a child img's
+   mix-blend-mode (blend renders against nothing → white box) — put multiply on the container.
+   Mobile centering is a STANDING Braden rule (TCB + ECS): hero stack, section heads, rules,
+   copy blocks, CTA rows. Vercel deploys never flip the GitHub commit-status API — poll the
+   Vercel MCP list_deployments, not gh commits/status (two probes hung on this).
 5. **Revision-loop discipline** (every one of these caused a Braden-visible defect on TCB):
    - **A fix can become next round's bug.** The worst TCB defect (two overlapping courthouse
      drawings) was created by an earlier fix: an audit said "courthouse missing from hero
