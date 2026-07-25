@@ -244,6 +244,14 @@ harvested listings). Client-side search indexes all products + pages (assets/sea
   package's implementation-data.json (verified-facts contract); its copyRestrictions are
   enforced structurally — restricted content simply doesn't exist in build/data.py. 12-route
   contract (no /our-process even though the concept paints a 5th nav item — sanctioned deviation).
+  Live site: environmentalconstructions.com (Wix, active blog last touched 2026-07). Their media
+  mix on wixstatic: genuine jobsite photos (fcc2cd_ IDs, iPhone-res) + AI-generated 1344×768 blog
+  art + Wix stock (11062b_) — only the genuine photos are used in our concept (7 curated:
+  drainage tank install, burn-pile clearing, sod, french-drain trench crop from their promo
+  collage, tank/pipe placement, driveway pour, family portrait). Their circular logo's Wix PNG
+  has the white ring band REMOVED by background removal (text floats transparent — reads
+  "erased" on any textured bg); use assets/ecs-logo-plated.png (solid disk restored). Braden
+  rule for ECS: AI illustrations allowed ONLY in the landing header; everything else real photos.
 
 ## Client launch checklist (domain cutover — SEO-safe)
 
