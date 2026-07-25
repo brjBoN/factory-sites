@@ -507,7 +507,11 @@ footer.site a { text-underline-offset: 4px; }
     background: url("tear-strip-clean.png") center bottom / auto calc(39px * var(--zoom)) no-repeat;
   }
   .rail2 {
-    height: calc(84px * var(--zoom)); position: relative; z-index: 6;
+    /* Overlap the transparent tear by one pixel so fractional stage scaling
+       cannot expose the light page background as a hairline seam. The added
+       height keeps the combined tear + rail footprint unchanged. */
+    height: calc(84px * var(--zoom) + 1px); margin-top: -1px;
+    position: relative; z-index: 6;
     background:
       url("rail-strip.png") center top / auto 100% no-repeat,
       url("paper-grain.png") 0 0 / 560px,
