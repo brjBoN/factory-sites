@@ -101,12 +101,8 @@ header.site::after {  /* faint vertical drafting-grid line between annotation an
   padding-bottom: 14px;
 }
 .brand { display: flex; align-items: center; gap: 16px; text-decoration: none; position: relative; }
-.brand::before {  /* pencil construction box around the logo block */
-  content: ""; position: absolute; inset: -13px -18px -9px -12px;
-  border: 1px solid rgb(23 25 28 / 13%); pointer-events: none;
-  transform: rotate(-0.15deg);
-}
 .brand img { height: 88px; width: auto; }  /* contain, never crop */
+.brand .nm-ink { height: 48px; width: auto; }  /* painted wordmark, not a font */
 .brand .nm {
   font-family: "Roboto Condensed", var(--ui); font-weight: 700; font-size: 18px; line-height: 1.3;
   letter-spacing: .01em;
@@ -501,7 +497,15 @@ footer.site a { text-underline-offset: 4px; }
   .hero-art.desktop { display: none; }
   .hero-art.mobile { display: block; max-width: 560px; margin: .5rem auto 0; }
   .hero-copy { max-width: none; padding-left: 0; }
-  .pinned { grid-template-columns: 1fr; gap: 1.6rem; padding-top: 1.4rem; }
+  .pinned { grid-template-columns: 1fr; gap: 1.1rem; padding-top: 1.2rem; max-width: none; }
+  /* mobile cards are painted concept crops — kill the DOM card chrome */
+  .pin-card, .pin-card:nth-child(1), .pin-card:nth-child(2), .pin-card:nth-child(3) {
+    background: none; border: 0; box-shadow: none; height: auto; padding: 0;
+    transform: none; display: block;
+  }
+  .pin-card::before { display: none; }
+  .pin-card img { width: 100%; height: auto; display: block; }
+  .m-headline { display: block; width: min(100%, 500px); margin: .4rem 0 .9rem; }
   .atlas, .svc-grid { grid-template-columns: 1fr; }
   .foot-in { grid-template-columns: 1fr; gap: 1.4rem; }
   nav.primary {
@@ -523,8 +527,7 @@ footer.site a { text-underline-offset: 4px; }
 }
 @media (max-width: 640px) {
   .atlas { grid-template-columns: repeat(2, 1fr); }
-  .brand .nm { font-size: 13px; }
-  .hero h1 { font-size: clamp(4.4rem, 20vw, 6.4rem); }
+  .brand .nm-ink { height: 40px; }
 }
 @media (max-width: 480px) {
   .atlas { grid-template-columns: 1fr; }

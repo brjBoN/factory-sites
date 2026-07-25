@@ -71,7 +71,7 @@ window.addEventListener('resize',f);f();}})();
   <div class="head-in">
     <a class="brand" href="{rel}">
       <img src="{rel}assets/ecs-logo-plated.png" alt="">
-      <span class="nm">ENVIRONMENTAL<br><span class="l2">CONSTRUCTION SERVICES</span></span>
+      <img class="nm-ink" src="{rel}assets/wordmark-ink.png" alt="Environmental Construction Services">
     </a>
     <span class="locnote" aria-hidden="true"><span class="locline">{e(D.FACTS['location_annotation'])}</span><span class="coords">{e(D.FACTS['location_coords'])}</span></span>
     <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -134,11 +134,11 @@ def sec_head(eyebrow, title):
 
 
 # --------------------------------------------------------------------- home
+# painted concept cards (canvas crops incl. pin + tape), stacked full-width
 pinned = ''.join(f'''
   <a class="pin-card" href="{p['href']}" aria-label="{e(p['aria'])}">
-    <span class="thumb"><img src="assets/{p['asset']}" alt="" aria-hidden="true"></span>
-    <span class="lbl">{e(p['label'])}</span>
-  </a>''' for p in D.PINNED)
+    <img src="assets/mobile-card-{i}.png" alt="" aria-hidden="true">
+  </a>''' for i, p in enumerate(D.PINNED, 1))
 
 # concept rail: exact labels and order from the approved reference
 RAIL_LINKS = [
@@ -164,9 +164,9 @@ atlas = ''.join(f'''
 CARDS_LIVE = [
     ('services/drainage/', 'Explore drainage services', 62, 745, 404, 141),
     ('services/land-clearing-excavation/',
-     'Explore land clearing, excavation, and site preparation services', 475, 742, 415, 144),
+     'Explore land clearing, excavation, and site preparation services', 475, 738, 415, 144),
     ('services/site-prep-culverts/',
-     'Explore culvert and driveway services', 897, 755, 405, 131),
+     'Explore culvert and driveway services', 897, 749, 405, 131),
 ]
 cards_live = ''.join(f'''
     <a class="card-hit" style="left:{x}px;top:{y}px;width:{w}px;height:{h}px;background-position:-{x}px -{y}px" href="{href}" aria-label="{e(aria)}"></a>'''
@@ -211,8 +211,8 @@ home = f"""
 <div class="wrap">
 <section class="hero">
   <div class="hero-copy">
-    <h1 class="reveal-mask">{''.join(f'<span class="ln">{e(ln)}</span>' for ln in D.HEADLINE_LINES)}</h1>
-    <div class="underline draw" aria-hidden="true"></div>
+    <h1 class="sr-only">{e(D.HEADLINE)}</h1>
+    <img class="m-headline settle" src="assets/mobile-headline.png" alt="" aria-hidden="true">
     <p class="sub settle">{e(D.HERO_COPY)}</p>
     <div class="btn-row settle-2">
       <a class="btn fill" href="services/">{e(D.CTA_LABEL)}</a>
