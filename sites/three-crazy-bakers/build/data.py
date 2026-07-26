@@ -33,7 +33,7 @@ PRICE_NOTE = ('Prices and selections are from our posted menus — call '
 BREAKFAST = {
     'title': 'Breakfast',
     'items': [
-        ('Quiche Plate', '7.25', 'Dependent on availability: Ham & Cheese, Bacon & Tomato, Spinach & Swiss or Crazy (bacon, spinach, tomato, onion, cheese). Served with fresh fruit and a warm mini-muffin.'),
+        ('Quiche Plate', '7.25', 'Dependent on availability: Ham & Cheese, Bacon & Tomato, Spinach & Swiss or Crazy (bacon, spinach, tomato, onion, cheese). Served with a fresh fruit and a warm mini-muffin.'),
         ('Quiche Slice', '3.00', ''),
         ('Sausage & Cheese Roll', '1.50', ''),
         ('Cinnamon Roll', '1.25', ''),
