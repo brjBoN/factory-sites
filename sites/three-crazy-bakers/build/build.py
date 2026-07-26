@@ -19,15 +19,32 @@ FONTS = ('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;6
 NAV = [('index.html', 'HOME'), ('menu.html', 'MENU'), ('dinner-casseroles.html', 'TAKE & BAKE'),
        ('catering.html', 'CATERING'), ('index.html#story', 'OUR STORY'), ('directions.html', 'VISIT')]
 
-RAIL = [('menu.html#bakery', 'BAKERY'), ('menu.html', 'LUNCH'), ('dinner-specials.html', 'DINNER'),
+RAIL = [('menu.html#bakery', 'BAKERY'), ('menu.html#lunch', 'LUNCH'), ('menu.html#dinner', 'DINNER'),
         ('dinner-casseroles.html', 'CASSEROLES'), ('catering.html', 'CATERING')]
 
 DIA = '<span class="dia">&#9670;</span>'
 
 def page(fname, title, desc, body, current=''):
-    nav = ''.join(
-        f'<a href="{href}"{" class=\"current\"" if href == current else ""}>{label}</a>'
-        for href, label in NAV)
+    nav_parts = []
+    for href, label in NAV:
+        if href == 'menu.html':
+            current_class = ' class="current"' if current == href else ''
+            current_attr = ' aria-current="page"' if fname == href else ''
+            nav_parts.append(
+                '<div class="nav-menu">'
+                f'<a href="{href}"{current_class}{current_attr} aria-haspopup="true">'
+                f'{label}<span class="nav-caret" aria-hidden="true">&#9662;</span></a>'
+                '<div class="nav-submenu" role="group" aria-label="Menu sections">'
+                '<a href="menu.html#breakfast">BREAKFAST</a>'
+                '<a href="menu.html#lunch">LUNCH</a>'
+                '<a href="menu.html#dinner">DINNER</a>'
+                '</div></div>'
+            )
+        else:
+            current_class = ' class="current"' if href == current else ''
+            current_attr = ' aria-current="page"' if href == current else ''
+            nav_parts.append(f'<a href="{href}"{current_class}{current_attr}>{label}</a>')
+    nav = ''.join(nav_parts)
     doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,9 +93,9 @@ def page(fname, title, desc, body, current=''):
     <div>
       <h4>EXPLORE</h4>
       <ul>
-        <li><a href="menu.html">Lunch Menu</a></li>
-        <li><a href="dinner-specials.html">Dinner Menu</a></li>
-        <li><a href="breakfast.html">Breakfast</a></li>
+        <li><a href="menu.html#breakfast">Breakfast Menu</a></li>
+        <li><a href="menu.html#lunch">Lunch Menu</a></li>
+        <li><a href="menu.html#dinner">Dinner Menu</a></li>
         <li><a href="dinner-casseroles.html">Take &amp; Bake Casseroles</a></li>
         <li><a href="catering.html">Catering</a></li>
         <li><a href="pics.html">Gallery</a></li>
@@ -105,8 +122,10 @@ def menu_items(items):
             + (f'<p>{e(desc)}</p>' if desc else '') + '</div>')
     return '\n'.join(out)
 
-def sec_head(txt):
-    return (f'<div class="menu-sec-head"><h2>{e(txt)}</h2>'
+def sec_head(txt, level=2):
+    if level not in (2, 3):
+        raise ValueError('Menu section headings must use h2 or h3')
+    return (f'<div class="menu-sec-head"><h{level}>{e(txt)}</h{level}>'
             f'<div class="rulewrap"><span>&#9670;</span></div></div>')
 
 def rail_html():
@@ -138,9 +157,9 @@ home = f"""
     <h2>OUR MENUS</h2>
     <hr class="ded">
     <ul class="index-links">
-      <li><a href="breakfast.html">BREAKFAST</a></li>
-      <li><a href="menu.html">LUNCH &mdash; SERVED ALL DAY</a></li>
-      <li><a href="dinner-specials.html">DINNER OPTIONS</a></li>
+      <li><a href="menu.html#breakfast">BREAKFAST</a></li>
+      <li><a href="menu.html#lunch">LUNCH &mdash; SERVED ALL DAY</a></li>
+      <li><a href="menu.html#dinner">DINNER OPTIONS</a></li>
       <li><a href="menu.html#bakery">BAKERY CASE</a></li>
       <li><a href="dinner-casseroles.html">TAKE &amp; BAKE CASSEROLES</a></li>
       <li><a href="catering.html">CATERING</a></li>
@@ -182,7 +201,7 @@ home = f"""
       <div class="tile"><div class="ph"><img src="assets/bakery-cake.jpg" alt="A layer cake from the bakery case"></div>
         <div class="tx"><h3>The Bakery Case</h3><p>Cinnamon rolls, brownies, lemon squares and key lime pie &mdash; baked from scratch every day.</p><a class="go" href="menu.html#bakery">SEE BAKERY FAVORITES</a></div></div>
       <div class="tile"><div class="ph"><img src="assets/quiche-plate.jpg" alt="Quiche plate with fresh fruit"></div>
-        <div class="tx"><h3>Lunch &amp; Dinner</h3><p>Famous roll-ups, burgers, salads and quiche all day &mdash; steaks, seafood pasta and shrimp &amp; grits at supper.</p><a class="go" href="menu.html">VIEW THE MENUS</a></div></div>
+        <div class="tx"><h3>Lunch &amp; Dinner</h3><p>Famous roll-ups, burgers, salads and quiche all day &mdash; steaks, seafood pasta and shrimp &amp; grits at supper.</p><a class="go" href="menu.html#lunch">VIEW THE MENUS</a></div></div>
       <div class="tile"><div class="ph"><img src="assets/food-2015-b.jpg" alt="A take-and-bake casserole"></div>
         <div class="tx"><h3>Take &amp; Bake</h3><p>Ten family-size casseroles made daily &mdash; order by 2pm, pick up by 3pm, dinner solved.</p><a class="go" href="dinner-casseroles.html">SEE THIS WEEK&rsquo;S CASSEROLES</a></div></div>
     </div>
@@ -193,31 +212,70 @@ home = f"""
 # --------------------------------------------------------------------- menu
 menu = f"""
 <div class="page-head">
-  <p class="eyebrow">Served all day</p>
-  <h1>Lunch Options</h1>
-  <p class="lede">Our famous roll-ups, burgers &amp; sandwiches, salads, quiche and soups &mdash; served all day, dine in or to-go.</p>
-  <p class="menu-note">{e(D.ROLLUPS_NOTE)}</p>
+  <p class="eyebrow">Morning through evening</p>
+  <h1>All Menus</h1>
+  <p class="lede">Explore breakfast, lunch and dinner at Three Crazy Bakers.</p>
+  <nav class="menu-jump" aria-label="Jump to a menu">
+    <a href="#breakfast">Breakfast</a>
+    <a href="#lunch">Lunch</a>
+    <a href="#dinner">Dinner</a>
+  </nav>
 </div>
-<section class="sec" style="padding-top:1.5rem">
+<section class="sec full-menu-section breakfast-section" id="breakfast" aria-labelledby="breakfast-heading">
   <div class="wrap">
-    {sec_head('Roll Ups')}
+    <div class="menu-section-intro">
+      <p class="eyebrow">Morning</p>
+      <h2 id="breakfast-heading">Breakfast</h2>
+      <p class="lede">Quiche plates, sausage &amp; cheese rolls, cinnamon rolls and morning beverages.</p>
+    </div>
+    {sec_head('Breakfast Plates & Pastries', 3)}
+    <div class="menu-cols">{menu_items(D.BREAKFAST['items'])}</div>
+    {sec_head('Beverages', 3)}
+    <div class="menu-cols">{menu_items([(n, p, '') for n, p in D.BREAKFAST['beverages']])}</div>
+    <p class="fineprint">{e(D.PRICE_NOTE)}</p>
+  </div>
+</section>
+<section class="sec full-menu-section lunch-section" id="lunch" aria-labelledby="lunch-heading">
+  <div class="wrap">
+    <div class="menu-section-intro">
+      <p class="eyebrow">Served all day</p>
+      <h2 id="lunch-heading">Lunch</h2>
+      <p class="lede">Our famous roll-ups, burgers &amp; sandwiches, salads, quiche and soups &mdash; dine in or take it to go.</p>
+    </div>
+    <p class="menu-note">{e(D.ROLLUPS_NOTE)}</p>
+    {sec_head('Roll Ups', 3)}
     <div class="menu-cols">{menu_items(D.ROLLUPS)}</div>
-    {sec_head('Burgers & Sandwiches')}
+    {sec_head('Burgers & Sandwiches', 3)}
     <div class="menu-cols">{menu_items(D.BURGERS)}</div>
-    {sec_head('Salads')}
+    {sec_head('Salads', 3)}
     <div class="menu-cols">{menu_items(D.SALADS)}</div>
     <p class="menu-note">{e(D.DRESSINGS)}</p>
-    {sec_head('Quiche')}
+    {sec_head('Quiche', 3)}
     <p class="menu-note">{e(D.QUICHE['varieties'])}</p>
     <div class="menu-cols">{menu_items(D.QUICHE['items'])}</div>
-    {sec_head('Soup')}
+    {sec_head('Soup', 3)}
     <div class="menu-cols">{menu_items([(n, p, '') for n, p in D.SOUP])}</div>
-    {sec_head('A La Carte')}
+    {sec_head('A La Carte', 3)}
     <div class="menu-cols">{menu_items([(n, p, '') for n, p in D.A_LA_CARTE])}</div>
     <p class="menu-note">{e(D.LITTLE_BAKERS)}</p>
     <div id="bakery"></div>
-    {sec_head('The Bakery Case')}
+    {sec_head('The Bakery Case', 3)}
     <p class="menu-note">Cinnamon rolls, sausage rolls, brownies, lemon squares, cookies, key lime pie and whole pies &mdash; fresh from the oven daily. Selection varies; call {e(D.FACTS['phone'])} for today&rsquo;s case.</p>
+    <p class="fineprint">{e(D.PRICE_NOTE)}</p>
+    <p class="fineprint">{e(D.DISCLAIMER)}</p>
+  </div>
+</section>
+<section class="sec full-menu-section dinner-section" id="dinner" aria-labelledby="dinner-heading">
+  <div class="wrap">
+    <div class="menu-section-intro">
+      <p class="eyebrow">Evenings</p>
+      <h2 id="dinner-heading">Dinner</h2>
+      <p class="lede">{e(D.DINNER['entree_note'])}</p>
+    </div>
+    {sec_head('Starters', 3)}
+    <div class="menu-cols">{menu_items(D.DINNER['starters'])}</div>
+    {sec_head('Entrées', 3)}
+    <div class="menu-cols">{menu_items(D.DINNER['entrees'])}</div>
     <p class="fineprint">{e(D.PRICE_NOTE)}</p>
     <p class="fineprint">{e(D.DISCLAIMER)}</p>
   </div>
@@ -357,9 +415,9 @@ privacy = f"""
 """
 
 page('index.html', 'Three Crazy Bakers — On the Square in Moultrie, GA', 'Bakery treats, lunch, dinner, and take-home casseroles on the Square in historic Moultrie, Georgia. Est. 1998.', home, current='index.html')
-page('menu.html', 'Lunch Menu — Three Crazy Bakers, Moultrie GA', 'Roll-ups, burgers, salads, quiche and soups — served all day at Three Crazy Bakers in Moultrie.', menu, current='menu.html')
-page('breakfast.html', 'Breakfast — Three Crazy Bakers, Moultrie GA', 'Quiche plates, sausage rolls and cinnamon rolls at Three Crazy Bakers in Moultrie.', breakfast)
-page('dinner-specials.html', 'Dinner Menu — Three Crazy Bakers, Moultrie GA', 'Steaks, seafood pasta, shrimp & grits and more — dinner at Three Crazy Bakers in Moultrie.', dinner)
+page('menu.html', 'Breakfast, Lunch & Dinner Menus — Three Crazy Bakers, Moultrie GA', 'Browse every breakfast, lunch and dinner item from Three Crazy Bakers in Moultrie on one complete menu page.', menu, current='menu.html')
+page('breakfast.html', 'Breakfast — Three Crazy Bakers, Moultrie GA', 'Quiche plates, sausage rolls and cinnamon rolls at Three Crazy Bakers in Moultrie.', breakfast, current='menu.html')
+page('dinner-specials.html', 'Dinner Menu — Three Crazy Bakers, Moultrie GA', 'Steaks, seafood pasta, shrimp & grits and more — dinner at Three Crazy Bakers in Moultrie.', dinner, current='menu.html')
 page('dinner-casseroles.html', 'Take & Bake Casseroles — Three Crazy Bakers', 'Family-size take-and-bake dinner casseroles made daily at Three Crazy Bakers in Moultrie.', casseroles, current='dinner-casseroles.html')
 page('catering.html', 'Catering — Three Crazy Bakers, Moultrie GA', 'Breakfast, lunch and dinner catering for business events in Moultrie from Three Crazy Bakers.', catering, current='catering.html')
 page('pics.html', 'Gallery — Three Crazy Bakers, Moultrie GA', 'Photos from Three Crazy Bakers on the Square in Moultrie.', pics)
