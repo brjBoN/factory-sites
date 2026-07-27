@@ -19,24 +19,50 @@ FONTS = ('https://fonts.googleapis.com/css2?family=League+Gothic&'
 NAV = [('', 'Home'), ('services/', 'Services'), ('blog/', 'Blog'), ('about/', 'About'), ('contact/', 'Contact')]
 
 
-def page(route, title, desc, body, note='FIELD NOTE 01', current='', kind='interior'):
+def page(route, title, desc, body, note='FIELD NOTE 01', current=None, kind='interior'):
     depth = 0 if route == '' else route.rstrip('/').count('/') + 1
     rel = '../' * depth
+    exact_nav_href = f"{route.rstrip('/')}/" if route else ''
+
+    def nav_current(href):
+        if href != current:
+            return ''
+        value = 'page' if href == exact_nav_href else 'location'
+        return f' aria-current="{value}"'
+
     nav = ''.join(
-        f'<a href="{rel}{href}"{" aria-current=\"page\"" if href == current else ""}>{label}</a>'
+        f'<a href="{rel}{href}"{nav_current(href)}>{label}</a>'
         for href, label in NAV)
     # painted brad+FIELD NOTE 01 on home; brad alone on interior pages
     ledger_art = (f'<img class="lednote" src="{rel}assets/fieldnote-01.png" alt="">'
                   if kind == 'home' else
                   f'<img class="ledbrad" src="{rel}assets/brad-brass.png" alt="">')
-    # desktop header for interior pages: painted concept strip + live logo/nav
-    board_header = '' if kind == 'home' else f"""
+    # Keep repeated desktop navigation outside the main landmark so the skip
+    # link bypasses it on every route, including the concept-canvas homepage.
+    if kind == 'home':
+        board_header = f"""
+<div class="stage-pos d-only home-header-overlay">
+ <div class="stage home-header-stage">
+    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-plated.png" alt=""></a>
+    <span class="desktop-locnote" aria-hidden="true">
+      <span class="desktop-locline">{e(D.FACTS['location_annotation'])}</span>
+      <span class="desktop-coords">{e(D.FACTS['location_coords'])}</span>
+    </span>
+    <nav class="primary stage-nav" aria-label="Desktop primary navigation">{nav}</nav>
+ </div>
+</div>"""
+    else:
+        board_header = f"""
 <div class="stage-pos d-only">
  <div class="stage">
-  <header class="board-header" style="background-image:url('{rel}assets/header-strip.png')">
+  <div class="board-header" style="background-image:url('{rel}assets/header-strip.png')">
     <a class="logo-live" href="{rel}" aria-label="Environmental Construction Services — home"><img src="{rel}assets/ecs-logo-plated.png" alt=""></a>
-    <nav class="primary stage-nav" aria-label="Primary">{nav}</nav>
-  </header>
+    <span class="desktop-locnote" aria-hidden="true">
+      <span class="desktop-locline">{e(D.FACTS['location_annotation'])}</span>
+      <span class="desktop-coords">{e(D.FACTS['location_coords'])}</span>
+    </span>
+    <nav class="primary stage-nav" aria-label="Desktop primary navigation">{nav}</nav>
+  </div>
  </div>
 </div>"""
     doc = f"""<!DOCTYPE html>
@@ -58,8 +84,8 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current='', kind='inter
 <body data-page="{kind}">
 <script>
 (function(){{var f=function(){{var z=1;
-if(window.matchMedia('(min-width: 901px)').matches){{
-z=Math.min(window.innerWidth/1536,window.innerHeight/1024);}}
+if(window.matchMedia('(min-width: 1101px)').matches){{
+z=Math.min(1,window.innerWidth/1536);}}
 document.documentElement.style.setProperty('--zoom',z);}};
 window.addEventListener('resize',f);f();}})();
 </script>
@@ -74,35 +100,35 @@ window.addEventListener('resize',f);f();}})();
       <img class="nm-ink" src="{rel}assets/wordmark-ink.png" alt="Environmental Construction Services">
     </a>
     <span class="locnote" aria-hidden="true"><span class="locline">{e(D.FACTS['location_annotation'])}</span><span class="coords">{e(D.FACTS['location_coords'])}</span></span>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="primary" aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation-mobile" aria-label="Open menu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+    <nav class="primary" id="primary-navigation-mobile" aria-label="Mobile primary navigation">
       {nav}
     </nav>
   </div>
 </header>
 </div>{board_header}
-<main id="main">
+<main id="main" tabindex="-1">
 {body}
 </main>
 <footer class="site">
 <div class="stage-pos"><div class="stage">
   <div class="foot-in">
     <div>
-      <h4>Environmental Construction Services</h4>
+      <h2>Environmental Construction Services</h2>
       <ul>
         <li>{e(D.FACTS['family'])}</li>
         <li>{e(D.FACTS['address'])}</li>
       </ul>
     </div>
     <div>
-      <h4>Reach Us</h4>
+      <h2>Reach Us</h2>
       <ul>
         <li><a href="{D.FACTS['phone_href']}">{e(D.FACTS['phone_display'])}</a></li>
         <li><a href="{D.FACTS['email_href']}">{e(D.FACTS['email_display'])}</a></li>
       </ul>
     </div>
     <div>
-      <h4>Concept Pages</h4>
+      <h2>Concept Pages</h2>
       <ul>
         <li><a href="{rel}services/">Services</a></li>
         <li><a href="{rel}blog/">Blog</a></li>
@@ -129,17 +155,20 @@ window.addEventListener('resize',f);f();}})();
     print('wrote', route or '/')
 
 
-def sec_head(eyebrow, title):
+def sec_head(eyebrow, title, level=2):
+    if level not in (1, 2):
+        raise ValueError('section heading level must be 1 or 2')
     return (f'<p class="eyebrow">{e(eyebrow)}</p>'
-            f'<h2 class="display">{e(title)}</h2><div class="rule-red"></div>')
+            f'<h{level} class="display">{e(title)}</h{level}><div class="rule-red" aria-hidden="true"></div>')
 
 
 # --------------------------------------------------------------------- home
-# painted concept cards (canvas crops incl. pin + tape), stacked full-width
+# Live-text paper cards, stacked full-width on the responsive home layout.
 pinned = ''.join(f'''
   <a class="pin-card" href="{p['href']}" aria-label="{e(p['aria'])}">
-    <img src="assets/mobile-card-{i}.png" alt="" aria-hidden="true">
-  </a>''' for i, p in enumerate(D.PINNED, 1))
+    <span class="thumb" aria-hidden="true"><img src="assets/{p['asset']}" alt=""></span>
+    <span class="lbl">{e(p['label'])}</span>
+  </a>''' for p in D.PINNED)
 
 # concept rail: exact labels and order from the approved reference
 RAIL_LINKS = [
@@ -155,48 +184,44 @@ rail = ''.join(f'<a href="{href}">{e(lbl)}</a>' for lbl, href in RAIL_LINKS)
 atlas = ''.join(f'''
   <a href="services/{s['slug']}/">
     <span class="art"><img src="assets/{s['asset']}" alt="" aria-hidden="true"></span>
-    <span class="cap"><h3>{e(s['label'])}</h3><span class="fn">{e(s['note'])}</span></span>
+    <div class="cap"><h3>{e(s['label'])}</h3><span class="fn">{e(s['note'])}</span></div>
   </a>''' for s in D.SERVICES)
 
-# live overlays sit at concept-canvas coordinates (minus the 88px ledger strip)
-# the painted cards stay untouched in the canvas; each gets an invisible hitbox
-# whose background clones the same canvas region (pixel-aligned by construction)
-# and only shows on hover, so parity at rest is exact
+# Live card links sit at the concept-canvas coordinates. Each real-text label
+# covers the rasterized label in the underlying art while retaining its card.
 CARDS_LIVE = [
-    ('services/drainage/', 'Explore drainage services', 62, 745, 406, 125),
+    ('services/drainage/', 'CONTROL WATER', 'CONTROL WATER — explore drainage services', 62, 745, 406, 125),
     ('services/land-clearing-excavation/',
-     'Explore land clearing, excavation, and site preparation services', 490, 738, 368, 132),
+     'CLEAR & PREP', 'CLEAR & PREP — explore land clearing, excavation, and site preparation services', 490, 738, 368, 132),
     ('services/site-prep-culverts/',
-     'Explore culvert and driveway services', 881, 749, 372, 121),
+     'BUILD ACCESS', 'BUILD ACCESS — explore culvert and driveway services', 881, 749, 372, 121),
 ]
 cards_live = ''.join(f'''
-    <a class="card-hit" style="left:{x}px;top:{y}px;width:{w}px;height:{h}px;background-position:-{x}px -{y}px" href="{href}" aria-label="{e(aria)}"></a>'''
-                     for href, aria, x, y, w, h in CARDS_LIVE)
+    <a class="card-hit" style="left:{x/14.48:.3f}%;top:{y/8.85:.3f}%;width:{w/14.48:.3f}%;height:{h/8.85:.3f}%" href="{href}" aria-label="{e(aria)}"><span class="card-label" aria-hidden="true">{e(label)}</span></a>'''
+                     for href, label, aria, x, y, w, h in CARDS_LIVE)
 
-# rail hitboxes: label ink spans measured from the concept rail strip (of 1536)
+# The desktop rail uses live text rather than rasterized labels.
 RAIL_HITS = [
-    ('Drainage', 'services/drainage/', 74, 209),
-    ('Land Clearing', 'services/land-clearing-excavation/', 314, 513),
-    ('Culverts', 'services/site-prep-culverts/', 612, 745),
-    ('Driveways', 'services/driveways/', 841, 984),
-    ('Hardscaping', 'services/landscaping-hardscaping/', 1086, 1254),
-    ('Seawalls', 'services/seawalls-retention-waterproofing/', 1275, 1478),
+    ('Drainage', 'services/drainage/'),
+    ('Land Clearing', 'services/land-clearing-excavation/'),
+    ('Culverts', 'services/site-prep-culverts/'),
+    ('Driveways', 'services/driveways/'),
+    ('Hardscaping', 'services/landscaping-hardscaping/'),
+    ('Seawalls', 'services/seawalls-retention-waterproofing/'),
 ]
 rail_hits = ''.join(
-    f'<a href="{href}" style="left:{x0/15.36:.2f}%;width:{(x1-x0)/15.36:.2f}%">'
-    f'<span class="sr-only">{e(lbl)}</span></a>'
-    for lbl, href, x0, x1 in RAIL_HITS)
+    f'<a href="{href}">{e(lbl)}</a>'
+    for lbl, href in RAIL_HITS)
 
 home = f"""
 <div class="stage-pos d-only">
  <div class="stage">
   <section class="board">
-    <h1 class="sr-only">{e(D.HEADLINE)}</h1>
-    <p class="sr-only">{e(D.HERO_COPY)} {e(D.FACTS['family'])} Based in Moultrie, Georgia.</p>
-    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-plated.png" alt=""></a>
-    <nav class="primary stage-nav" aria-label="Primary">
-      {''.join(f'<a href="{href or "./"}"{" aria-current=\"page\"" if href == "" else ""}>{label}</a>' for href, label in NAV)}
-    </nav>
+    <div class="desktop-copy">
+      <h1><span>Start with</span><span>the ground.</span></h1>
+      <span class="desktop-underline" aria-hidden="true"></span>
+      <p>{e(D.HERO_COPY)}</p>
+    </div>
     <div class="btn-row stage-cta settle-2">
       <a class="btn fill" href="services/">{e(D.CTA_LABEL)}</a>
       <a class="btn line" href="{D.FACTS['phone_href']}">CALL {e(D.FACTS['phone_display'])}</a>
@@ -207,14 +232,14 @@ home = f"""
 <div class="torn2 d-only" aria-hidden="true"></div>
 <div class="rail2 d-only">
   <nav class="rail-hit" aria-label="Service index">{rail_hits}</nav>
+  <span class="rail-notice" aria-hidden="true">Private website concept</span>
 </div>
 <div class="m-only">
 <div class="wrap">
 <section class="hero">
   <div class="hero-copy">
-    <h1 class="sr-only">{e(D.HEADLINE)}</h1>
     <div class="m-hero-top">
-      <img class="m-headline settle" src="assets/mobile-headline.png" alt="" aria-hidden="true">
+      <h1 class="m-headline settle"><span>Start with</span><span>the ground.</span></h1>
       <div class="hero-art mobile settle" aria-hidden="true"><img src="assets/hero-collage-mobile-sheet.png" alt=""></div>
     </div>
     <p class="sub settle">{e(D.HERO_COPY)}</p>
@@ -256,11 +281,11 @@ home = f"""
 # ------------------------------------------------------------------ services
 services_body = f"""
 <section class="sec">
-  {sec_head('field note index —', 'Services.')}
+  {sec_head('field note index —', 'Services.', level=1)}
   <p style="max-width:56ch;margin-top:1rem">Six categories of ground work, shown in photographs
   of Environmental Construction Services' own projects.</p>
   <div class="atlas">
-{atlas.replace('href="services/', 'href="').replace('src="assets/', 'src="../assets/')}
+{atlas.replace('href="services/', 'href="').replace('src="assets/', 'src="../assets/').replace('<h3>', '<h2>').replace('</h3>', '</h2>')}
   </div>
 </section>
 """
@@ -269,11 +294,11 @@ services_body = f"""
 def svc_body(s):
     return f"""
 <section class="sec">
-  <p class="crumbs"><a href="../">Services</a> / {e(s['label'])}</p>
-  {sec_head(s['note'].lower() + ' —', s['label'] + '.')}
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Services</a></li><li aria-current="page">{e(s['label'])}</li></ol></nav>
+  {sec_head(s['note'].lower() + ' —', s['label'] + '.', level=1)}
   <div class="svc-grid">
     <figure class="svc-art">
-      <img src="../../assets/{s['asset']}" alt="Environmental Construction Services {e(s['label'].lower())} project photo">
+      <img src="../../assets/{s['asset']}" alt="{e(s['alt'])}">
       <figcaption>Photo: Environmental Construction Services — from their public site.</figcaption>
     </figure>
     <div class="svc-copy">
@@ -292,7 +317,7 @@ def svc_body(s):
 # -------------------------------------------------------------------- about
 about_body = f"""
 <section class="sec">
-  {sec_head('field note —', 'About.')}
+  {sec_head('field note —', 'About.', level=1)}
   <div class="svc-grid">
     <div class="svc-copy">
       <p><strong>{e(D.FACTS['family'])}</strong></p>
@@ -317,7 +342,7 @@ about_body = f"""
 # ------------------------------------------------------------------- contact
 contact_body = f"""
 <section class="sec">
-  {sec_head('field note —', 'Contact.')}
+  {sec_head('field note —', 'Contact.', level=1)}
   <p style="max-width:56ch;margin:1rem 0 1.6rem">This concept site doesn't take forms or
   collect anything — reach Environmental Construction Services directly:</p>
   <dl class="fact-card">
@@ -386,19 +411,35 @@ def card_thumb(p):
         return ''
     return f'<span class="log-thumb"><img src="../assets/{p["cover"]}" alt="" loading="lazy"></span>'
 
+COVER_ALTS = {
+    'blog-img-01.jpg': 'Standing water pooled beside a wet residential walkway',
+    'blog-img-09.jpg': 'A grass-lined drainage channel carrying water between homes',
+    'blog-img-11.jpg': 'Excavators working beside a partially demolished building',
+}
+
+def cover_alt(p):
+    cover = p.get('cover')
+    if not cover:
+        return ''
+    # When the same photograph appears later with a full description, keep the
+    # editorial cover decorative so screen readers do not hear it twice.
+    if any(el[0] == 'img' and el[1] == cover for el in p['body']):
+        return ''
+    return COVER_ALTS.get(cover, '')
+
 blog_cards = ''.join(f'''
   <a class="log-card{" has-thumb" if p.get("cover") else ""}" href="../post/{p['slug']}/">
-    {card_thumb(p)}<span class="log-body">
+    {card_thumb(p)}<div class="log-body">
     <span class="meta">Log {i:02d} — {e(fmt_date(p['date']))}</span>
-    <h3>{e(p['title'])}</h3>
+    <h2>{e(p['title'])}</h2>
     <p>{e(excerpt(p['desc']))}</p>
     <span class="go">Read the entry &#8594;</span>
-    </span>
+    </div>
   </a>''' for i, p in enumerate(B.POSTS, 1))
 
 blog_body = f"""
 <section class="sec">
-  {sec_head('the field log —', 'Blog.')}
+  {sec_head('the field log —', 'Blog.', level=1)}
   <p style="max-width:60ch;margin-top:1rem">Notes from the ground — every entry below is
   reproduced from Environmental Construction Services' own blog.</p>
   <div class="log-list">
@@ -410,11 +451,11 @@ blog_body = f"""
 def post_page_body(p):
     return f"""
 <section class="sec">
-  <p class="crumbs"><a href="../../blog/">Blog</a> / Field log</p>
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../blog/">Blog</a></li><li aria-current="page">Field log</li></ol></nav>
   <article class="post">
     <p class="meta">{e(fmt_date(p['date']))} — Environmental Construction Services</p>
-    {sec_head('field log —', p['title'])}
-    {f'<figure class="post-img cover"><img src="../../assets/{p["cover"]}" alt="{e(p["title"])}"></figure>' if p.get('cover') else ''}
+    {sec_head('field log —', p['title'], level=1)}
+    {f'<figure class="post-img cover"><img src="../../assets/{p["cover"]}" alt="{e(cover_alt(p))}"></figure>' if p.get('cover') else ''}
     {post_body_html(p)}
     <p class="post-src">Reproduced from Environmental Construction Services' public blog
     (environmentalconstructions.com). Part of this private website concept.</p>
@@ -426,17 +467,20 @@ def post_page_body(p):
 access_body = """
 <section class="sec">
   <p class="eyebrow">the fine print —</p>
-  <h2 class="display">Accessibility.</h2><div class="rule-red"></div>
+  <h1 class="display">Accessibility.</h1><div class="rule-red" aria-hidden="true"></div>
   <div class="svc-copy" style="max-width:60ch;margin-top:1rem">
-    <p>This concept is built to be usable by everyone: semantic landmarks and headings, a skip
-    link, keyboard-operable navigation and menu, visible focus states, touch targets of at
-    least 44 pixels, and text contrast that holds up over the paper textures.</p>
+    <p><strong>WCAG 2.2 Level AA is the ongoing accessibility target for this concept.</strong>
+    We continue reviewing its structure, navigation, focus indicators, text contrast,
+    responsive behavior, and controls as the site changes.</p>
+    <p><strong>Last reviewed:</strong> July 27, 2026.</p>
     <p>Animations respect your system's reduced-motion setting — with it enabled, drawing
     effects, parallax, and reveals are replaced with immediate content.</p>
-    <p>Decorative illustrations are hidden from assistive technology; meaningful images carry
-    descriptions that make clear they are illustrative concept art.</p>
-    <p>If something on this concept doesn't work well for you, we want to fix it in the next
-    revision.</p>
+    <p>Except for the business logo, page text is rendered as real text so it can be resized
+    and adapted. Decorative illustrations are hidden from assistive technology; meaningful
+    project photographs include descriptions.</p>
+    <p>If something on this concept doesn't work well for you, call
+    <a href="tel:+12295160821">(229) 516-0821</a> or email
+    <a href="mailto:ecs.outdoorcustoms@gmail.com">ecs.outdoorcustoms@gmail.com</a>.</p>
   </div>
 </section>
 """
@@ -445,7 +489,7 @@ access_body = """
 datause_body = f"""
 <section class="sec">
   <p class="eyebrow">the fine print —</p>
-  <h2 class="display">Concept &amp; Data Use.</h2><div class="rule-red"></div>
+  <h1 class="display">Concept &amp; Data Use.</h1><div class="rule-red" aria-hidden="true"></div>
   <div class="svc-copy" style="max-width:60ch;margin-top:1rem">
     <p><strong>{e(D.NOTICES[0])}</strong></p>
     <p>This page collects nothing. There are no forms, no analytics, no cookies, no quote

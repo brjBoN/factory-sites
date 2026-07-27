@@ -17,8 +17,8 @@
 <body data-page="interior">
 <script>
 (function(){var f=function(){var z=1;
-if(window.matchMedia('(min-width: 901px)').matches){
-z=Math.min(window.innerWidth/1536,window.innerHeight/1024);}
+if(window.matchMedia('(min-width: 1101px)').matches){
+z=Math.min(1,window.innerWidth/1536);}
 document.documentElement.style.setProperty('--zoom',z);};
 window.addEventListener('resize',f);f();})();
 </script>
@@ -33,29 +33,33 @@ window.addEventListener('resize',f);f();})();
       <img class="nm-ink" src="../../assets/wordmark-ink.png" alt="Environmental Construction Services">
     </a>
     <span class="locnote" aria-hidden="true"><span class="locline">Moultrie, Georgia</span><span class="coords">31° 11′ 45″ N  83° 46′ 21″ W</span></span>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="primary" aria-label="Primary">
-      <a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation-mobile" aria-label="Open menu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+    <nav class="primary" id="primary-navigation-mobile" aria-label="Mobile primary navigation">
+      <a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="location">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a>
     </nav>
   </div>
 </header>
 </div>
 <div class="stage-pos d-only">
  <div class="stage">
-  <header class="board-header" style="background-image:url('../../assets/header-strip.png')">
+  <div class="board-header" style="background-image:url('../../assets/header-strip.png')">
     <a class="logo-live" href="../../" aria-label="Environmental Construction Services — home"><img src="../../assets/ecs-logo-plated.png" alt=""></a>
-    <nav class="primary stage-nav" aria-label="Primary"><a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a></nav>
-  </header>
+    <span class="desktop-locnote" aria-hidden="true">
+      <span class="desktop-locline">Moultrie, Georgia</span>
+      <span class="desktop-coords">31° 11′ 45″ N  83° 46′ 21″ W</span>
+    </span>
+    <nav class="primary stage-nav" aria-label="Desktop primary navigation"><a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="location">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a></nav>
+  </div>
  </div>
 </div>
-<main id="main">
+<main id="main" tabindex="-1">
 <div class="stage-pos"><div class="stage"><div class="wrap">
 <section class="sec">
-  <p class="crumbs"><a href="../../blog/">Blog</a> / Field log</p>
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../blog/">Blog</a></li><li aria-current="page">Field log</li></ol></nav>
   <article class="post">
     <p class="meta">January 15, 2026 — Environmental Construction Services</p>
-    <p class="eyebrow">field log —</p><h2 class="display">The Essential Role of Quality Drainage and Land Management in Effective Property Maintenance</h2><div class="rule-red"></div>
-    <figure class="post-img cover"><img src="../../assets/blog-img-09.jpg" alt="The Essential Role of Quality Drainage and Land Management in Effective Property Maintenance"></figure>
+    <p class="eyebrow">field log —</p><h1 class="display">The Essential Role of Quality Drainage and Land Management in Effective Property Maintenance</h1><div class="rule-red" aria-hidden="true"></div>
+    <figure class="post-img cover"><img src="../../assets/blog-img-09.jpg" alt="A grass-lined drainage channel carrying water between homes"></figure>
     <p class="lead">Proper property maintenance goes beyond simple upkeep. It requires a strategic approach to managing water flow, vegetation, and land features to protect the land and enhance its value. Quality drainage and land management are critical components that prevent costly damage, improve usability, and maintain the health of your property. ECS offers a comprehensive range of services to meet these needs, including drainage solutions, forestry mulching, land clearing, fence row and pond cleanup, and more.</p>
 <p>Understanding why these elements matter can help property owners make informed decisions and avoid common pitfalls.</p>
 <figure class="post-img"><img src="../../assets/blog-img-10.jpg" alt="Eye-level view of a well-maintained drainage ditch alongside a rural property" loading="lazy"></figure>
@@ -117,21 +121,21 @@ window.addEventListener('resize',f);f();})();
 <div class="stage-pos"><div class="stage">
   <div class="foot-in">
     <div>
-      <h4>Environmental Construction Services</h4>
+      <h2>Environmental Construction Services</h2>
       <ul>
         <li>Family-owned and operated.</li>
         <li>33 Pine Cone Road, Moultrie, GA</li>
       </ul>
     </div>
     <div>
-      <h4>Reach Us</h4>
+      <h2>Reach Us</h2>
       <ul>
         <li><a href="tel:+12295160821">(229) 516-0821</a></li>
         <li><a href="mailto:ecs.outdoorcustoms@gmail.com">ecs.outdoorcustoms@gmail.com</a></li>
       </ul>
     </div>
     <div>
-      <h4>Concept Pages</h4>
+      <h2>Concept Pages</h2>
       <ul>
         <li><a href="../../services/">Services</a></li>
         <li><a href="../../blog/">Blog</a></li>

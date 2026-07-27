@@ -17,8 +17,8 @@
 <body data-page="home">
 <script>
 (function(){var f=function(){var z=1;
-if(window.matchMedia('(min-width: 901px)').matches){
-z=Math.min(window.innerWidth/1536,window.innerHeight/1024);}
+if(window.matchMedia('(min-width: 1101px)').matches){
+z=Math.min(1,window.innerWidth/1536);}
 document.documentElement.style.setProperty('--zoom',z);};
 window.addEventListener('resize',f);f();})();
 </script>
@@ -33,45 +33,54 @@ window.addEventListener('resize',f);f();})();
       <img class="nm-ink" src="assets/wordmark-ink.png" alt="Environmental Construction Services">
     </a>
     <span class="locnote" aria-hidden="true"><span class="locline">Moultrie, Georgia</span><span class="coords">31° 11′ 45″ N  83° 46′ 21″ W</span></span>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="primary" aria-label="Primary">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation-mobile" aria-label="Open menu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+    <nav class="primary" id="primary-navigation-mobile" aria-label="Mobile primary navigation">
       <a href="" aria-current="page">Home</a><a href="services/">Services</a><a href="blog/">Blog</a><a href="about/">About</a><a href="contact/">Contact</a>
     </nav>
   </div>
 </header>
 </div>
-<main id="main">
+<div class="stage-pos d-only home-header-overlay">
+ <div class="stage home-header-stage">
+    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-plated.png" alt=""></a>
+    <span class="desktop-locnote" aria-hidden="true">
+      <span class="desktop-locline">Moultrie, Georgia</span>
+      <span class="desktop-coords">31° 11′ 45″ N  83° 46′ 21″ W</span>
+    </span>
+    <nav class="primary stage-nav" aria-label="Desktop primary navigation"><a href="" aria-current="page">Home</a><a href="services/">Services</a><a href="blog/">Blog</a><a href="about/">About</a><a href="contact/">Contact</a></nav>
+ </div>
+</div>
+<main id="main" tabindex="-1">
 
 <div class="stage-pos d-only">
  <div class="stage">
   <section class="board">
-    <h1 class="sr-only">Start with the ground.</h1>
-    <p class="sr-only">Drainage, clearing, excavation, site preparation, and outdoor construction. Family-owned and operated. Based in Moultrie, Georgia.</p>
-    <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-plated.png" alt=""></a>
-    <nav class="primary stage-nav" aria-label="Primary">
-      <a href="./" aria-current="page">Home</a><a href="services/">Services</a><a href="blog/">Blog</a><a href="about/">About</a><a href="contact/">Contact</a>
-    </nav>
+    <div class="desktop-copy">
+      <h1><span>Start with</span><span>the ground.</span></h1>
+      <span class="desktop-underline" aria-hidden="true"></span>
+      <p>Drainage, clearing, excavation, site preparation, and outdoor construction.</p>
+    </div>
     <div class="btn-row stage-cta settle-2">
       <a class="btn fill" href="services/">Explore the Work</a>
       <a class="btn line" href="tel:+12295160821">CALL (229) 516-0821</a>
     </div>
-    <a class="card-hit" style="left:62px;top:745px;width:406px;height:125px;background-position:-62px -745px" href="services/drainage/" aria-label="Explore drainage services"></a>
-    <a class="card-hit" style="left:490px;top:738px;width:368px;height:132px;background-position:-490px -738px" href="services/land-clearing-excavation/" aria-label="Explore land clearing, excavation, and site preparation services"></a>
-    <a class="card-hit" style="left:881px;top:749px;width:372px;height:121px;background-position:-881px -749px" href="services/site-prep-culverts/" aria-label="Explore culvert and driveway services"></a>
+    <a class="card-hit" style="left:4.282%;top:84.181%;width:28.039%;height:14.124%" href="services/drainage/" aria-label="CONTROL WATER — explore drainage services"><span class="card-label" aria-hidden="true">CONTROL WATER</span></a>
+    <a class="card-hit" style="left:33.840%;top:83.390%;width:25.414%;height:14.915%" href="services/land-clearing-excavation/" aria-label="CLEAR &amp; PREP — explore land clearing, excavation, and site preparation services"><span class="card-label" aria-hidden="true">CLEAR &amp; PREP</span></a>
+    <a class="card-hit" style="left:60.843%;top:84.633%;width:25.691%;height:13.672%" href="services/site-prep-culverts/" aria-label="BUILD ACCESS — explore culvert and driveway services"><span class="card-label" aria-hidden="true">BUILD ACCESS</span></a>
   </section>
  </div>
 </div>
 <div class="torn2 d-only" aria-hidden="true"></div>
 <div class="rail2 d-only">
-  <nav class="rail-hit" aria-label="Service index"><a href="services/drainage/" style="left:4.82%;width:8.79%"><span class="sr-only">Drainage</span></a><a href="services/land-clearing-excavation/" style="left:20.44%;width:12.96%"><span class="sr-only">Land Clearing</span></a><a href="services/site-prep-culverts/" style="left:39.84%;width:8.66%"><span class="sr-only">Culverts</span></a><a href="services/driveways/" style="left:54.75%;width:9.31%"><span class="sr-only">Driveways</span></a><a href="services/landscaping-hardscaping/" style="left:70.70%;width:10.94%"><span class="sr-only">Hardscaping</span></a><a href="services/seawalls-retention-waterproofing/" style="left:83.01%;width:13.22%"><span class="sr-only">Seawalls</span></a></nav>
+  <nav class="rail-hit" aria-label="Service index"><a href="services/drainage/">Drainage</a><a href="services/land-clearing-excavation/">Land Clearing</a><a href="services/site-prep-culverts/">Culverts</a><a href="services/driveways/">Driveways</a><a href="services/landscaping-hardscaping/">Hardscaping</a><a href="services/seawalls-retention-waterproofing/">Seawalls</a></nav>
+  <span class="rail-notice" aria-hidden="true">Private website concept</span>
 </div>
 <div class="m-only">
 <div class="wrap">
 <section class="hero">
   <div class="hero-copy">
-    <h1 class="sr-only">Start with the ground.</h1>
     <div class="m-hero-top">
-      <img class="m-headline settle" src="assets/mobile-headline.png" alt="" aria-hidden="true">
+      <h1 class="m-headline settle"><span>Start with</span><span>the ground.</span></h1>
       <div class="hero-art mobile settle" aria-hidden="true"><img src="assets/hero-collage-mobile-sheet.png" alt=""></div>
     </div>
     <p class="sub settle">Drainage, clearing, excavation, site preparation, and outdoor construction.</p>
@@ -84,14 +93,17 @@ window.addEventListener('resize',f);f();})();
 </section>
 <div class="pinned">
 
-  <a class="pin-card" href="services/drainage/" aria-label="Explore drainage services">
-    <img src="assets/mobile-card-1.png" alt="" aria-hidden="true">
+  <a class="pin-card" href="services/drainage/" aria-label="CONTROL WATER — explore drainage services">
+    <span class="thumb" aria-hidden="true"><img src="assets/thumb-control-water.png" alt=""></span>
+    <span class="lbl">CONTROL WATER</span>
   </a>
-  <a class="pin-card" href="services/land-clearing-excavation/" aria-label="Explore land clearing, excavation, and site preparation services">
-    <img src="assets/mobile-card-2.png" alt="" aria-hidden="true">
+  <a class="pin-card" href="services/land-clearing-excavation/" aria-label="CLEAR &amp; PREP — explore land clearing, excavation, and site preparation services">
+    <span class="thumb" aria-hidden="true"><img src="assets/thumb-clear-prep.png" alt=""></span>
+    <span class="lbl">CLEAR &amp; PREP</span>
   </a>
-  <a class="pin-card" href="services/site-prep-culverts/" aria-label="Explore culvert and driveway services">
-    <img src="assets/mobile-card-3.png" alt="" aria-hidden="true">
+  <a class="pin-card" href="services/site-prep-culverts/" aria-label="BUILD ACCESS — explore culvert and driveway services">
+    <span class="thumb" aria-hidden="true"><img src="assets/thumb-build-access.png" alt=""></span>
+    <span class="lbl">BUILD ACCESS</span>
   </a>
 </div>
 </div>
@@ -102,37 +114,37 @@ window.addEventListener('resize',f);f();})();
 </div>
 <div class="stage-pos"><div class="stage"><div class="wrap">
 <section class="sec" id="atlas">
-  <p class="eyebrow">the whole kit —</p><h2 class="display">Six kinds of groundwork.</h2><div class="rule-red"></div>
+  <p class="eyebrow">the whole kit —</p><h2 class="display">Six kinds of groundwork.</h2><div class="rule-red" aria-hidden="true"></div>
   <div class="atlas">
 
   <a href="services/drainage/">
     <span class="art"><img src="assets/photo-drainage.jpg" alt="" aria-hidden="true"></span>
-    <span class="cap"><h3>Drainage</h3><span class="fn">FIELD NOTE 02</span></span>
+    <div class="cap"><h3>Drainage</h3><span class="fn">FIELD NOTE 02</span></div>
   </a>
   <a href="services/land-clearing-excavation/">
     <span class="art"><img src="assets/photo-land-clearing-excavation.jpg" alt="" aria-hidden="true"></span>
-    <span class="cap"><h3>Land Clearing &amp; Excavation</h3><span class="fn">FIELD NOTE 03</span></span>
+    <div class="cap"><h3>Land Clearing &amp; Excavation</h3><span class="fn">FIELD NOTE 03</span></div>
   </a>
   <a href="services/landscaping-hardscaping/">
     <span class="art"><img src="assets/photo-landscaping-hardscaping.jpg" alt="" aria-hidden="true"></span>
-    <span class="cap"><h3>Landscaping &amp; Hardscaping</h3><span class="fn">FIELD NOTE 04</span></span>
+    <div class="cap"><h3>Landscaping &amp; Hardscaping</h3><span class="fn">FIELD NOTE 04</span></div>
   </a>
   <a href="services/seawalls-retention-waterproofing/">
     <span class="art"><img src="assets/photo-seawalls-retention-waterproofing.jpg" alt="" aria-hidden="true"></span>
-    <span class="cap"><h3>Seawalls, Retention &amp; Waterproofing</h3><span class="fn">FIELD NOTE 05</span></span>
+    <div class="cap"><h3>Seawalls, Retention &amp; Waterproofing</h3><span class="fn">FIELD NOTE 05</span></div>
   </a>
   <a href="services/site-prep-culverts/">
     <span class="art"><img src="assets/photo-site-prep-culverts.jpg" alt="" aria-hidden="true"></span>
-    <span class="cap"><h3>Site Preparation &amp; Culverts</h3><span class="fn">FIELD NOTE 06</span></span>
+    <div class="cap"><h3>Site Preparation &amp; Culverts</h3><span class="fn">FIELD NOTE 06</span></div>
   </a>
   <a href="services/driveways/">
     <span class="art"><img src="assets/photo-driveways.jpg" alt="" aria-hidden="true"></span>
-    <span class="cap"><h3>Driveways</h3><span class="fn">FIELD NOTE 07</span></span>
+    <div class="cap"><h3>Driveways</h3><span class="fn">FIELD NOTE 07</span></div>
   </a>
   </div>
 </section>
 <section class="sec" style="padding-top:0">
-  <p class="eyebrow">who we are —</p><h2 class="display">Family-owned. Moultrie ground.</h2><div class="rule-red"></div>
+  <p class="eyebrow">who we are —</p><h2 class="display">Family-owned. Moultrie ground.</h2><div class="rule-red" aria-hidden="true"></div>
   <p style="max-width:52ch;margin-top:1rem">Family-owned and operated. Based at 33 Pine Cone Road, Moultrie, GA.
   The fastest way to talk through a site is a phone call.</p>
   <div class="btn-row" style="margin-top:1.2rem">
@@ -147,21 +159,21 @@ window.addEventListener('resize',f);f();})();
 <div class="stage-pos"><div class="stage">
   <div class="foot-in">
     <div>
-      <h4>Environmental Construction Services</h4>
+      <h2>Environmental Construction Services</h2>
       <ul>
         <li>Family-owned and operated.</li>
         <li>33 Pine Cone Road, Moultrie, GA</li>
       </ul>
     </div>
     <div>
-      <h4>Reach Us</h4>
+      <h2>Reach Us</h2>
       <ul>
         <li><a href="tel:+12295160821">(229) 516-0821</a></li>
         <li><a href="mailto:ecs.outdoorcustoms@gmail.com">ecs.outdoorcustoms@gmail.com</a></li>
       </ul>
     </div>
     <div>
-      <h4>Concept Pages</h4>
+      <h2>Concept Pages</h2>
       <ul>
         <li><a href="services/">Services</a></li>
         <li><a href="blog/">Blog</a></li>

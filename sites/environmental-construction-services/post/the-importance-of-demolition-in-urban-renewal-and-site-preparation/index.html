@@ -17,8 +17,8 @@
 <body data-page="interior">
 <script>
 (function(){var f=function(){var z=1;
-if(window.matchMedia('(min-width: 901px)').matches){
-z=Math.min(window.innerWidth/1536,window.innerHeight/1024);}
+if(window.matchMedia('(min-width: 1101px)').matches){
+z=Math.min(1,window.innerWidth/1536);}
 document.documentElement.style.setProperty('--zoom',z);};
 window.addEventListener('resize',f);f();})();
 </script>
@@ -33,29 +33,33 @@ window.addEventListener('resize',f);f();})();
       <img class="nm-ink" src="../../assets/wordmark-ink.png" alt="Environmental Construction Services">
     </a>
     <span class="locnote" aria-hidden="true"><span class="locline">Moultrie, Georgia</span><span class="coords">31° 11′ 45″ N  83° 46′ 21″ W</span></span>
-    <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
-    <nav class="primary" aria-label="Primary">
-      <a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation-mobile" aria-label="Open menu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+    <nav class="primary" id="primary-navigation-mobile" aria-label="Mobile primary navigation">
+      <a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="location">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a>
     </nav>
   </div>
 </header>
 </div>
 <div class="stage-pos d-only">
  <div class="stage">
-  <header class="board-header" style="background-image:url('../../assets/header-strip.png')">
+  <div class="board-header" style="background-image:url('../../assets/header-strip.png')">
     <a class="logo-live" href="../../" aria-label="Environmental Construction Services — home"><img src="../../assets/ecs-logo-plated.png" alt=""></a>
-    <nav class="primary stage-nav" aria-label="Primary"><a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="page">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a></nav>
-  </header>
+    <span class="desktop-locnote" aria-hidden="true">
+      <span class="desktop-locline">Moultrie, Georgia</span>
+      <span class="desktop-coords">31° 11′ 45″ N  83° 46′ 21″ W</span>
+    </span>
+    <nav class="primary stage-nav" aria-label="Desktop primary navigation"><a href="../../">Home</a><a href="../../services/">Services</a><a href="../../blog/" aria-current="location">Blog</a><a href="../../about/">About</a><a href="../../contact/">Contact</a></nav>
+  </div>
  </div>
 </div>
-<main id="main">
+<main id="main" tabindex="-1">
 <div class="stage-pos"><div class="stage"><div class="wrap">
 <section class="sec">
-  <p class="crumbs"><a href="../../blog/">Blog</a> / Field log</p>
+  <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../blog/">Blog</a></li><li aria-current="page">Field log</li></ol></nav>
   <article class="post">
     <p class="meta">January 28, 2026 — Environmental Construction Services</p>
-    <p class="eyebrow">field log —</p><h2 class="display">The Importance of Demolition in Urban Renewal and Site Preparation</h2><div class="rule-red"></div>
-    <figure class="post-img cover"><img src="../../assets/blog-img-11.jpg" alt="The Importance of Demolition in Urban Renewal and Site Preparation"></figure>
+    <p class="eyebrow">field log —</p><h1 class="display">The Importance of Demolition in Urban Renewal and Site Preparation</h1><div class="rule-red" aria-hidden="true"></div>
+    <figure class="post-img cover"><img src="../../assets/blog-img-11.jpg" alt="Excavators working beside a partially demolished building"></figure>
     <p class="lead">Demolition plays a crucial role in shaping the future of our cities and communities. Removing old, unsafe, or unsightly buildings clears the way for new construction, revitalizes neighborhoods, and ensures public safety. Companies like ECS provide quick and affordable demolition services, including site preparation for any new build. This post explores why demolition matters, how it supports urban renewal, and what makes professional demolition essential for successful construction projects.</p>
 <figure class="post-img"><img src="../../assets/blog-img-04.jpg" alt="Eye-level view of a demolition site with heavy machinery tearing down an old building" loading="lazy"></figure>
 <h2>Why Demolition Is Essential for Urban Renewal</h2>
@@ -150,21 +154,21 @@ window.addEventListener('resize',f);f();})();
 <div class="stage-pos"><div class="stage">
   <div class="foot-in">
     <div>
-      <h4>Environmental Construction Services</h4>
+      <h2>Environmental Construction Services</h2>
       <ul>
         <li>Family-owned and operated.</li>
         <li>33 Pine Cone Road, Moultrie, GA</li>
       </ul>
     </div>
     <div>
-      <h4>Reach Us</h4>
+      <h2>Reach Us</h2>
       <ul>
         <li><a href="tel:+12295160821">(229) 516-0821</a></li>
         <li><a href="mailto:ecs.outdoorcustoms@gmail.com">ecs.outdoorcustoms@gmail.com</a></li>
       </ul>
     </div>
     <div>
-      <h4>Concept Pages</h4>
+      <h2>Concept Pages</h2>
       <ul>
         <li><a href="../../services/">Services</a></li>
         <li><a href="../../blog/">Blog</a></li>
