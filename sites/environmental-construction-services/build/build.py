@@ -44,10 +44,6 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current=None, kind='int
 <div class="stage-pos d-only home-header-overlay">
  <div class="stage home-header-stage">
     <a class="logo-live" href="./" aria-label="Environmental Construction Services — home"><img src="assets/ecs-logo-plated.png" alt=""></a>
-    <span class="desktop-locnote" aria-hidden="true">
-      <span class="desktop-locline">{e(D.FACTS['location_annotation'])}</span>
-      <span class="desktop-coords">{e(D.FACTS['location_coords'])}</span>
-    </span>
     <nav class="primary stage-nav" aria-label="Desktop primary navigation">{nav}</nav>
  </div>
 </div>"""
@@ -57,10 +53,6 @@ def page(route, title, desc, body, note='FIELD NOTE 01', current=None, kind='int
  <div class="stage">
   <div class="board-header" style="background-image:url('{rel}assets/header-strip.png')">
     <a class="logo-live" href="{rel}" aria-label="Environmental Construction Services — home"><img src="{rel}assets/ecs-logo-plated.png" alt=""></a>
-    <span class="desktop-locnote" aria-hidden="true">
-      <span class="desktop-locline">{e(D.FACTS['location_annotation'])}</span>
-      <span class="desktop-coords">{e(D.FACTS['location_coords'])}</span>
-    </span>
     <nav class="primary stage-nav" aria-label="Desktop primary navigation">{nav}</nav>
   </div>
  </div>

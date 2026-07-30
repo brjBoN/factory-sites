@@ -496,7 +496,7 @@ footer.site a { text-underline-offset: 4px; }
   .desktop-locnote {
     position: absolute; left: calc(350px * var(--zoom)); top: calc(30px * var(--zoom));
     width: calc(360px * var(--zoom)); min-height: calc(105px * var(--zoom));
-    display: flex; flex-direction: column; justify-content: center; z-index: 2;
+    display: none; flex-direction: column; justify-content: center; z-index: 2;
     padding: calc(6px * var(--zoom)) calc(12px * var(--zoom));
     background: var(--paper) url("paper-grain.png"); background-size: 560px;
     transform: rotate(-0.6deg); color: var(--ink);
