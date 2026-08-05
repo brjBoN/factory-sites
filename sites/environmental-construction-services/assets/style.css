@@ -16,7 +16,7 @@
   --steel: #595c56;
   --rule: rgb(23 25 28 / 18%);
   --display: "League Gothic", "Roboto Condensed", "Arial Narrow", Impact, sans-serif;
-  --body: "Courier Prime", "Courier New", ui-monospace, monospace;
+  --body: "Barlow", "Segoe UI", Arial, sans-serif;
   --ui: "Barlow Condensed", "Roboto Condensed", "Arial Narrow", system-ui, sans-serif;
   --hand: "Caveat", "Segoe Print", cursive;
   --max: 90rem;
@@ -37,8 +37,8 @@
 
 body {
   font-family: var(--body);
-  font-size: 15px;
-  line-height: 1.65;
+  font-size: 16px;
+  line-height: 1.62;
   color: var(--ink);
   background: var(--paper) url("paper-grain.png");
   background-size: 560px;
@@ -199,7 +199,7 @@ nav.primary a[aria-current]::after {  /* rough red hand scribble (cropped from c
 .btn.fill:hover { background: var(--red-text); }
 .btn.line {
   border: 2px solid var(--ink); color: var(--ink); background: transparent;
-  font-family: var(--body); font-size: 20px; font-weight: 400; letter-spacing: .02em;
+  font-family: var(--ui); font-size: 19px; font-weight: 600; letter-spacing: .08em;
   padding: 13px 16px;
 }
 .btn.line:hover { background: rgb(23 25 28 / 6%); }
@@ -331,13 +331,13 @@ h1.display, h2.display {
 .atlas h2, .atlas h3 {
   font-family: var(--display); text-transform: uppercase; font-size: 22px; letter-spacing: .05em;
 }
-.atlas .fn { font-family: var(--body); font-size: 11px; color: var(--steel); letter-spacing: .08em; white-space: nowrap; }
+.atlas .fn { font-family: var(--ui); font-weight: 600; font-size: 12px; color: var(--steel); letter-spacing: .08em; white-space: nowrap; }
 
 /* service page */
 .svc-grid { display: grid; grid-template-columns: minmax(0, 52%) minmax(0, 48%); gap: clamp(1.6rem, 4vw, 4rem); align-items: start; margin-top: 1.6rem; }
 .svc-art { background: var(--paper-aged); border: 1px solid var(--rule); padding: 12px; box-shadow: var(--shadow-paper); transform: rotate(-0.3deg); }
 .svc-art img { border: 1px solid var(--rule); }
-.svc-art figcaption { font-family: var(--body); font-size: 11px; color: var(--steel); padding-top: 8px; letter-spacing: .06em; }
+.svc-art figcaption { font-family: var(--body); font-size: 12px; color: var(--steel); padding-top: 8px; letter-spacing: .03em; }
 .svc-copy p { margin: 1rem 0; max-width: 52ch; }
 .svc-copy a { overflow-wrap: anywhere; }
 .crumbs { font-family: var(--ui); letter-spacing: .14em; font-size: 14px; text-transform: uppercase; margin-bottom: 1rem; }
