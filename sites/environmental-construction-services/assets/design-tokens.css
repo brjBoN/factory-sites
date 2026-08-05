@@ -13,7 +13,7 @@
 
   --ecs-font-display: "League Gothic", "Roboto Condensed", "Arial Narrow",
     Impact, sans-serif;
-  --ecs-font-body: "Courier Prime", "Courier New", ui-monospace, monospace;
+  --ecs-font-body: "Barlow", "Segoe UI", Arial, sans-serif;
   --ecs-font-ui: "Barlow Condensed", "Roboto Condensed", "Arial Narrow",
     system-ui, sans-serif;
   --ecs-font-hand: "Caveat", "Segoe Print", cursive;
