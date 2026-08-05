@@ -1,24 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/((?!maintenance).*)",
-      "destination": "/maintenance.html"
-    }
-  ],
-  "headers": [
+      "src": "/api/maintenance(?:\\.js)?$",
+      "dest": "/api/maintenance.js"
+    },
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store, max-age=0"
-        },
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
+      "src": "/(?!api/maintenance(?:\\.js)?$).*",
+      "dest": "/api/maintenance.js"
     }
   ]
 }
