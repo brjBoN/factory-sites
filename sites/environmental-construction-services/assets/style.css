@@ -1407,9 +1407,8 @@ blockquote.testimonial-sheet {
 }
 
 /* About facts and full client-feedback set ------------------------------ */
-.fact-strip {
-  padding-right: 0;
-  padding-left: 0;
+section.sec.fact-strip {
+  padding: clamp(2rem, 2.75vw, 3rem) 0;
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
 }
@@ -1419,19 +1418,28 @@ blockquote.testimonial-sheet {
 }
 .fact-strip-item {
   display: grid;
-  gap: .35rem;
-  padding: 1.2rem;
+  align-content: center;
+  gap: .6rem;
+  padding: clamp(1.25rem, 1.6vw, 1.8rem);
 }
 .fact-strip-item + .fact-strip-item { border-left: 1px dashed rgb(23 25 28 / 34%); }
 .fact-strip-item span {
   color: var(--red-text);
   font-family: var(--ui);
-  font-size: .7rem;
+  font-size: clamp(.78rem, .85vw, .9rem);
   font-weight: 700;
-  letter-spacing: .12em;
+  letter-spacing: .16em;
   text-transform: uppercase;
 }
-.fact-strip-item strong { line-height: 1.25; }
+.fact-strip-item strong {
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 2.15vw, 2.45rem);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1626,6 +1634,7 @@ blockquote.testimonial-sheet {
   .blueprint-archive-grid,
   .fact-strip-grid { grid-template-columns: 1fr; }
   .fact-strip-item + .fact-strip-item { border-top: 1px dashed rgb(23 25 28 / 34%); border-left: 0; }
+  .fact-strip-item strong { font-size: clamp(1.75rem, 8vw, 2.1rem); }
   nav.primary { gap: 1rem; }
   nav.primary a { font-size: 25px; }
   .form-submit-row { align-items: stretch; flex-direction: column; }
