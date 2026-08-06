@@ -64,4 +64,70 @@
       });
     }, { passive: true });
   }
+
+  // The worksheet never posts to this site. It prepares a message locally and
+  // hands it to the visitor's own email application for review and sending.
+  var requestForm = document.querySelector('[data-ecs-request]');
+  if (requestForm) {
+    requestForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var field = function (name) {
+        return requestForm.querySelector('[name="' + name + '"]');
+      };
+      var value = function (name) {
+        var control = field(name);
+        return control ? control.value.trim() : '';
+      };
+      var name = value('name');
+      var phone = value('phone');
+      var email = value('email');
+      var location = value('location');
+      var service = value('service');
+      var issue = value('issue');
+      var timing = value('timing');
+      var notes = value('notes');
+      var status = requestForm.querySelector('.form-status');
+
+      requestForm.querySelectorAll('[aria-invalid="true"]').forEach(function (control) {
+        control.removeAttribute('aria-invalid');
+      });
+
+      var missing = !name ? field('name') :
+        (!phone && !email) ? field('phone') :
+        !service ? field('service') :
+        !issue ? field('issue') : null;
+
+      if (missing) {
+        if (status) {
+          status.textContent = 'Please add your name, one way to reach you, the service, and a short description of the issue.';
+        }
+        missing.setAttribute('aria-invalid', 'true');
+        missing.focus();
+        return;
+      }
+
+      var subject = 'Website request — ' + service + ' — ' + name;
+      var body = [
+        'Name: ' + name,
+        'Phone: ' + (phone || 'Not provided'),
+        'Email: ' + (email || 'Not provided'),
+        'Property location: ' + (location || 'Not provided'),
+        'Service: ' + service,
+        'Timing: ' + (timing || 'Not provided'),
+        '',
+        'What is happening:',
+        issue,
+        '',
+        'Additional notes:',
+        notes || 'None'
+      ].join('\n');
+
+      if (status) {
+        status.textContent = 'Your email app is opening with this request prepared. Review it, then press send.';
+      }
+      window.location.href = 'mailto:ecs.outdoorcustoms@gmail.com?subject=' +
+        encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  }
 })();

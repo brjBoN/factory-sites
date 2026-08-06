@@ -1,0 +1,5 @@
+build/
+.git/
+.vercel/
+tests/
+*.log
